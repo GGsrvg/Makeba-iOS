@@ -12,7 +12,16 @@
 		4BEC91BE53FA95B1CF7996DC /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71643606A8A05F4674E2A41 /* Pods_makebaTests.framework */; };
 		5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
 		5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1D24F96DEA00FD80B0 /* Preference.swift */; };
-		5B219A2024F96EED00FD80B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* Data.swift */; };
+		5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
+		5B219A2424F9766300FD80B0 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2324F9766300FD80B0 /* Server.swift */; };
+		5B219A2724FAAA0600FD80B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2524FAAA0600FD80B0 /* Model.xcdatamodeld */; };
+		5B219A3024FABE6700FD80B0 /* ServerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2F24FABE6700FD80B0 /* ServerCase.swift */; };
+		5B219A4424FBCBCE00FD80B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4324FBCBCE00FD80B0 /* CoreDataStack.swift */; };
+		5B219A4724FBD8AA00FD80B0 /* ServerEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */; };
+		5B219A4A24FBDC3200FD80B0 /* BaseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4924FBDC3200FD80B0 /* BaseCase.swift */; };
+		5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */; };
+		5B219A4F24FBEB3C00FD80B0 /* ServerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4D24FBEB3C00FD80B0 /* ServerEntity+CoreDataClass.swift */; };
+		5B219A5024FBEB3C00FD80B0 /* ServerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4E24FBEB3C00FD80B0 /* ServerEntity+CoreDataProperties.swift */; };
 		5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53AA2E24D52C120051C296 /* R.generated.swift */; };
 		5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3624CDA01100C3A22C /* AppDelegate.swift */; };
 		5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3824CDA01100C3A22C /* SceneDelegate.swift */; };
@@ -20,6 +29,9 @@
 		5BBABE4324CDA01200C3A22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBABE4124CDA01200C3A22C /* LaunchScreen.storyboard */; };
 		5BBABE4E24CDA01200C3A22C /* makebaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE4D24CDA01200C3A22C /* makebaTests.swift */; };
 		5BBABE5924CDA01200C3A22C /* makebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE5824CDA01200C3A22C /* makebaUITests.swift */; };
+		5BBD27DC24FE8DC90022994D /* RequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27DB24FE8DC90022994D /* RequestStatus.swift */; };
+		5BBD27E024FEC6420022994D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27DF24FEC6420022994D /* Binding.swift */; };
+		5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27E124FF57B90022994D /* UIMTextField.swift */; };
 		5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCAE60E24D68FEA0002945B /* TabBarController.swift */; };
 		5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */; };
 		5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9C24D88DBC00618676 /* AddServerView.swift */; };
@@ -109,7 +121,16 @@
 		42E106C5BD5659A6103A33BB /* Pods-Data-DataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data-DataTests.release.xcconfig"; path = "Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		5B219A1D24F96DEA00FD80B0 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
-		5B219A1F24F96EED00FD80B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
+		5B219A2324F9766300FD80B0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		5B219A2624FAAA0600FD80B0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5B219A2F24FABE6700FD80B0 /* ServerCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCase.swift; sourceTree = "<group>"; };
+		5B219A4324FBCBCE00FD80B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEntityCase.swift; sourceTree = "<group>"; };
+		5B219A4924FBDC3200FD80B0 /* BaseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCase.swift; sourceTree = "<group>"; };
+		5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityCase.swift; sourceTree = "<group>"; };
+		5B219A4D24FBEB3C00FD80B0 /* ServerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		5B219A4E24FBEB3C00FD80B0 /* ServerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		5B53AA2E24D52C120051C296 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5BBABE3324CDA01100C3A22C /* Makeba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makeba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBABE3624CDA01100C3A22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +143,9 @@
 		5BBABE5424CDA01200C3A22C /* makebaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makebaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBABE5824CDA01200C3A22C /* makebaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makebaUITests.swift; sourceTree = "<group>"; };
 		5BBABE5A24CDA01200C3A22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BBD27DB24FE8DC90022994D /* RequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStatus.swift; sourceTree = "<group>"; };
+		5BBD27DF24FEC6420022994D /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		5BBD27E124FF57B90022994D /* UIMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMTextField.swift; sourceTree = "<group>"; };
 		5BCAE60E24D68FEA0002945B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewModel.swift; sourceTree = "<group>"; };
 		5BCB7E9C24D88DBC00618676 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
@@ -214,6 +238,10 @@
 		5B219A1124F9666700FD80B0 /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				5B219A4224FAC16C00FD80B0 /* Stack */,
+				5B219A4124FAC16500FD80B0 /* Entities */,
+				5B219A4524FBD74D00FD80B0 /* UseCase */,
+				5B219A2524FAAA0600FD80B0 /* Model.xcdatamodeld */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -264,6 +292,74 @@
 				5B219A1B24F96DB900FD80B0 /* Requests.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		5B219A2124F975EF00FD80B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A2324F9766300FD80B0 /* Server.swift */,
+				5BBD27DB24FE8DC90022994D /* RequestStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B219A2C24FABDF700FD80B0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A4824FBDC2100FD80B0 /* BaseCase */,
+				5B219A2E24FABE0900FD80B0 /* Stats */,
+				5B219A2D24FABDFF00FD80B0 /* Server */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		5B219A2D24FABDFF00FD80B0 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A2F24FABE6700FD80B0 /* ServerCase.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		5B219A2E24FABE0900FD80B0 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		5B219A4124FAC16500FD80B0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A4D24FBEB3C00FD80B0 /* ServerEntity+CoreDataClass.swift */,
+				5B219A4E24FBEB3C00FD80B0 /* ServerEntity+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5B219A4224FAC16C00FD80B0 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A4324FBCBCE00FD80B0 /* CoreDataStack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		5B219A4524FBD74D00FD80B0 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */,
+				5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		5B219A4824FBDC2100FD80B0 /* BaseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5B219A4924FBDC3200FD80B0 /* BaseCase.swift */,
+			);
+			path = BaseCase;
 			sourceTree = "<group>";
 		};
 		5B53AA2B24D52BDB0051C296 /* Resources */ = {
@@ -334,6 +430,14 @@
 				5BBABE5A24CDA01200C3A22C /* Info.plist */,
 			);
 			path = makebaUITests;
+			sourceTree = "<group>";
+		};
+		5BBD27DD24FEC6200022994D /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				5BBD27DF24FEC6420022994D /* Binding.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 		5BC7D9D724D6F8E40037BC59 /* Extensions */ = {
@@ -498,6 +602,7 @@
 		5BDEE32F24D45402000B5AF3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5BBD27DD24FEC6200022994D /* Rx */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -505,12 +610,14 @@
 		5BF5386624DFC4EC004B513D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				5B219A2C24FABDF700FD80B0 /* UseCase */,
 				5B219A1324F9668300FD80B0 /* Preference */,
 				5B219A1224F9667A00FD80B0 /* Network */,
 				5B219A1124F9666700FD80B0 /* DB */,
+				5B219A2124F975EF00FD80B0 /* Models */,
 				5BF5386724DFC4EC004B513D /* Data.h */,
 				5BF5386824DFC4EC004B513D /* Info.plist */,
-				5B219A1F24F96EED00FD80B0 /* Data.swift */,
+				5B219A1F24F96EED00FD80B0 /* DataLayer.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -527,6 +634,7 @@
 		5BF5388224DFC6AC004B513D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				5BBD27E124FF57B90022994D /* UIMTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -991,8 +1099,10 @@
 				5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */,
 				5BD4914324D6971C00BF0C8A /* BaseViewModel.swift in Sources */,
 				5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */,
+				5BBD27E024FEC6420022994D /* Binding.swift in Sources */,
 				5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */,
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,
+				5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */,
 				5BCC3BC024D1F42500A7C7DA /* NavigationRule.swift in Sources */,
 				5BD4914524D699E800BF0C8A /* ServerListViewModel.swift in Sources */,
 				5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */,
@@ -1024,9 +1134,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B219A4724FBD8AA00FD80B0 /* ServerEntityCase.swift in Sources */,
 				5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */,
-				5B219A2024F96EED00FD80B0 /* Data.swift in Sources */,
+				5B219A4A24FBDC3200FD80B0 /* BaseCase.swift in Sources */,
+				5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */,
+				5B219A4424FBCBCE00FD80B0 /* CoreDataStack.swift in Sources */,
+				5B219A2724FAAA0600FD80B0 /* Model.xcdatamodeld in Sources */,
+				5B219A2424F9766300FD80B0 /* Server.swift in Sources */,
+				5B219A3024FABE6700FD80B0 /* ServerCase.swift in Sources */,
 				5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */,
+				5B219A5024FBEB3C00FD80B0 /* ServerEntity+CoreDataProperties.swift in Sources */,
+				5B219A4F24FBEB3C00FD80B0 /* ServerEntity+CoreDataClass.swift in Sources */,
+				5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */,
+				5BBD27DC24FE8DC90022994D /* RequestStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1347,7 +1467,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1378,7 +1498,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Data/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1496,6 +1616,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5B219A2524FAAA0600FD80B0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5B219A2624FAAA0600FD80B0 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5B219A2624FAAA0600FD80B0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5BBABE2B24CDA01100C3A22C /* Project object */;
 }

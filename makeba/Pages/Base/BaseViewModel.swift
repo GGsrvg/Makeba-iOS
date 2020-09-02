@@ -7,14 +7,17 @@
 //
 
 import Foundation
+import Data
+import RxSwift
 
-
-protocol BaseViewModel {
+class BaseViewModel {
+    let disposeBag: DisposeBag = DisposeBag()
 //    var network: Domain.UseCasesProvider { get }
-    init()
+    required init() {
+        
+    }
 }
 
 extension BaseViewModel {
-    
 //    var network: Domain.UseCasesProvider { get { _network } }
 }

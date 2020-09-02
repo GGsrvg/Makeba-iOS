@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import RxSwift
 
 class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel> {
+    
+    private let diseposeBag = DisposeBag()
     
     lazy var addServerBarButton: UIBarButtonItem = {
         let button = UIButton(type: .system)
@@ -23,7 +26,26 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
         super.viewDidLoad()
         setupNavigationItem()
         setupView()
+        setup()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        _viewModel.loadData()
+    }
+    
+    func setup() {
+        _viewModel.servers.subscribe({ event in
+            switch event {
+            case .next(_):
+                self._view.tableView.reloadData()
+            case .error(_):
+                break
+            case .completed:
+                break
+            }
+            }).disposed(by: diseposeBag)
     }
     
     private func setupNavigationItem() {
@@ -44,12 +66,15 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
 
 extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        let count = try? _viewModel.servers.value().count
+        return count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
-        cell.setupData(title: "The Base #\(indexPath.row)", host: "66.60.06.66", description: "The Very Good")
+        if let server = try? _viewModel.servers.value()[indexPath.row] {
+            cell.setupData(title: server.name, host: server.path, description: server.description)
+        }
         return cell
     }
     

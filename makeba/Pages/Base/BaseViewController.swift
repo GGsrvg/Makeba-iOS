@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RxSwift
 
 class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
+    let disposeBag: DisposeBag = DisposeBag()
     let _view: V
     let _viewModel: VM
     
@@ -22,7 +24,7 @@ class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
     required init?(coder: NSCoder) {
         // init view
         self._view = V()
-        self._viewModel = VM()
+        self._viewModel = VM.init()
         super.init(coder: coder)
     }
     

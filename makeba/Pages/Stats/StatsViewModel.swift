@@ -14,6 +14,7 @@ class StatsViewModel: BaseViewModel {
 //    let statsObservable: BehaviorSubject<[StatsContainer]> = .init(value: .init())
     
     required init() {
+        super.init()
         loadStats()
     }
     

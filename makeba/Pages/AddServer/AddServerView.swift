@@ -33,43 +33,47 @@ class AddServerView: UIView {
         return label
     }()
     
-    lazy var hostPathTextField: UITextField = {
-        let textField = UITextField()
+    lazy var hostPathTextField: UIMTextField = {
+        let textField = UIMTextField()
         textField.delegate = listener
         textField.placeholder = "0.0.0.0"
         textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
         textField.layer.borderWidth = 1
+        textField.layer.cornerRadius = 6
+        textField.padding = .init(top: 6, left: 8, bottom: 6, right: 8)
         textField.keyboardType = .decimalPad
         return textField
     }()
     
     lazy var hostNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Host path"
+        label.text = "Host name"
         return label
     }()
     
-    lazy var hostNameTextField: UITextField = {
-        let textField = UITextField()
+    lazy var hostNameTextField: UIMTextField = {
+        let textField = UIMTextField()
         textField.placeholder = "My stats"
         textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
         textField.layer.borderWidth = 1
+        textField.layer.cornerRadius = 6
+        textField.padding = .init(top: 6, left: 8, bottom: 6, right: 8)
         return textField
     }()
     
     lazy var hostDescriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Host path"
+        label.text = "Host description"
         return label
     }()
     
-    lazy var hostDescriptionTextField: UITextField = {
-        let textField = UITextField()
-        textField.delegate = listener
+    lazy var hostDescriptionTextField: UIMTextField = {
+        let textField = UIMTextField()
         textField.placeholder = "Server status"
         textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
         textField.layer.borderWidth = 1
-        textField.keyboardType = .decimalPad
+        textField.layer.cornerRadius = 6
+        textField.padding = .init(top: 6, left: 8, bottom: 6, right: 8)
         return textField
     }()
     

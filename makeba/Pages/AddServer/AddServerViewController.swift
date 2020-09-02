@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxRelay
+import RxCocoa
 
 class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel> {
     
@@ -15,7 +18,7 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
         button.setTitle("Save", for: .normal)
         button.setImage(UIImage(systemName: "save"), for: .normal)
         button.frame.size = .init(width: 30, height: 30)
-//        button.addTarget(self, action: #selector(goToAddServer), for: .touchUpInside)
+        button.addTarget(self, action: #selector(saveAction), for: .touchUpInside)
         let barButton = UIBarButtonItem(customView: button)
         return barButton
     }()
@@ -23,10 +26,22 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationItem()
+        setupBinding()
+    }
+    
+    private func setupBinding() {
+        (_view.hostPathTextField.rx.text --> _viewModel.hostPath).disposed(by: disposeBag)
+        (_view.hostNameTextField.rx.text --> _viewModel.hostName).disposed(by: disposeBag)
+        (_view.hostDescriptionTextField.rx.text --> _viewModel.hostDescription).disposed(by: disposeBag)
     }
     
     private func setupNavigationItem() {
         self.navigationItem.title = "Host"
         self.navigationItem.setRightBarButton(saveHostBarButton, animated: true)
+    }
+    
+    @objc private func saveAction() {
+        self.view.endEditing(true)
+        self._viewModel.save()
     }
 }
