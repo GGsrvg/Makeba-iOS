@@ -12,8 +12,10 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = _viewModel.server?.name
         configurateView()
         configurateBinding()
+        _viewModel.loadData()
     }
     
     private func configurateView() {
@@ -23,34 +25,38 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel> {
     }
     
     private func configurateBinding() {
-//        let _ = _viewModel.statsObservable.subscribe {
-//            switch $0 {
-//            case .next(_):
-//                self._view.tableView.reloadData()
-//            default:
-//                break
-//            }
-//        }
+        _viewModel.containers.subscribe({ event in
+            switch event {
+            case .next(_):
+                self._view.tableView.reloadData()
+            case .error(_):
+                break
+            case .completed:
+                break
+            }
+        }).disposed(by: disposeBag)
     }
 }
 
 extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return  0 //(try? _viewModel.statsObservable.value().count) ??
+        return  _viewModel.containers.value.count //(try? _viewModel.statsObservable.value().count) ??
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0 // (try? _viewModel.statsObservable.value()[section].stats?.count) ??
+        return _viewModel.containers.value[section].stats?.count ?? 0 // (try? _viewModel.statsObservable.value()[section].stats?.count) ??
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "---" // (try? _viewModel.statsObservable.value()[section].title) ??
+        return _viewModel.containers.value[section].title // (try? _viewModel.statsObservable.value()[section].title) ??
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
-//        let data = try! _viewModel.statsObservable.value()[indexPath.section].stats?[indexPath.row]
-        cell.setupData(title: "", host: "", description: "")
+        //        let data = try! _viewModel.statsObservable.value()[indexPath.section].stats?[indexPath.row]
+        if let data =  _viewModel.containers.value[indexPath.section].stats?[indexPath.row] {
+            cell.setupData(title: data.title ?? "", host: "", description: data.model?.text ?? "")
+        }
         return cell
     }
     

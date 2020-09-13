@@ -11,8 +11,6 @@ import RxSwift
 
 class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel> {
     
-    private let diseposeBag = DisposeBag()
-    
     lazy var addServerBarButton: UIBarButtonItem = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "plus"), for: .normal)
@@ -45,7 +43,7 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
             case .completed:
                 break
             }
-            }).disposed(by: diseposeBag)
+            }).disposed(by: disposeBag)
     }
     
     private func setupNavigationItem() {
@@ -66,20 +64,21 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
 
 extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = try? _viewModel.servers.value().count
-        return count ?? 0
+        let count = _viewModel.servers.value.count
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
-        if let server = try? _viewModel.servers.value()[indexPath.row] {
-            cell.setupData(title: server.name, host: server.path, description: server.description)
-        }
+        let server = _viewModel.servers.value[indexPath.row]
+        cell.setupData(title: server.name, host: server.path, description: server.description)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        show(StatsViewController(), sender: nil)
+        let vc = StatsViewController()
+        vc._viewModel.server = _viewModel.servers.value[indexPath.row]
+        show(vc, sender: nil)
     }
 }

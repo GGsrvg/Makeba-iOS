@@ -77,8 +77,9 @@ class ServerInfoTableViewCell: UITableViewCell {
     
     // MARK: - setup data
     func setupData(title: String, host: String, description: String?){
-        labelTitle.text         = title
-        labelHost.text          = host
-        labelDescription.text   = description ?? "nil"
+        let emptyString = "-"
+        labelTitle.text         = title.isEmpty ? emptyString : title
+        labelHost.text          = host.isEmpty ? emptyString : host
+        labelDescription.text   = (description ?? "").isEmpty ? emptyString : description
     }
 }

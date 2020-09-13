@@ -7,14 +7,13 @@
 //
 
 import Foundation
+import RxRelay
 import RxSwift
 import Data
 
 class ServerListViewModel: BaseViewModel {
 
-    private let diseposeBag = DisposeBag()
-    private let data = DataLayer()
-    let servers: BehaviorSubject<[Server]> = .init(value: [])
+    let servers: BehaviorRelay<[Server]> = .init(value: [])
     
     required init() {
         super.init()
@@ -27,10 +26,10 @@ class ServerListViewModel: BaseViewModel {
             .subscribe({ single in
                 switch single {
                 case .success(let data):
-                    self.servers.onNext(data)
+                    self.servers.accept(data)
                 case .error(_):
                     break
                 }
-            }).disposed(by: diseposeBag)
+            }).disposed(by: disposeBag)
     }
 }

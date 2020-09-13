@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import Data
 import RxRelay
+import RxSwift
 
 class AddServerViewModel: BaseViewModel {
     let hostPath = BehaviorRelay<String?>(value: nil)
@@ -19,12 +21,27 @@ class AddServerViewModel: BaseViewModel {
     }
     
     func save() {
-        print("====================================")
-        print("Host")
-        print("path: \(hostPath.value ?? "nil")")
-        print("name: \(hostName.value ?? "nil")")
-        print("description: \(hostDescription.value ?? "nil")")
-        print("====================================")
+        func emptyFieldAlert(message: String) {
+            self.alert.accept(.default(title: "Error", message: message))
+        }
+        
+        guard let hostPath = hostPath.value, !hostPath.isEmpty, hostPath.count >= 7 else { return emptyFieldAlert(message: "Host path field is no correct") }
+        guard let hostName = hostName.value, !hostName.isEmpty else { return emptyFieldAlert(message: "Host name is empty") }
+        guard let hostDescription = hostDescription.value, !hostDescription.isEmpty else { return emptyFieldAlert(message: "Host description is empty") }
+        
+        data.server.save(.init(name: hostName, path: hostPath, description: hostDescription, dateCreated: .init()))
+            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe({ single in
+                switch single {
+                case .success:
+                    self.isNeedClosed.accept(true)
+                case .error(let error):
+                    if let queryError = error as? QueryError {
+                        self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+                    }
+                }
+            }).disposed(by: disposeBag)
     }
     
 }

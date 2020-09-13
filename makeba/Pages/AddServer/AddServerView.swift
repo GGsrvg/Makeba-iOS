@@ -11,12 +11,6 @@ import InputMask
 
 class AddServerView: UIView {
     
-    lazy var listener: MaskedTextFieldDelegate = {
-        let chSet: CharacterSet = .init(charactersIn: ".")
-        let listener: MaskedTextFieldDelegate =  MaskedTextFieldDelegate(primaryFormat: "[099]{.}[099]{.}[099]{.}[099]", autocomplete: false, autocompleteOnFocus: false, autoskip: false, rightToLeft: false, affineFormats: [], affinityCalculationStrategy: .capacity, customNotations: [Notation(character: ",", characterSet: chSet, isOptional: false)], onMaskedTextChangedCallback: nil)
-        return listener
-    }()
-    
     lazy var contentStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -35,13 +29,11 @@ class AddServerView: UIView {
     
     lazy var hostPathTextField: UIMTextField = {
         let textField = UIMTextField()
-        textField.delegate = listener
         textField.placeholder = "0.0.0.0"
         textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 6
         textField.padding = .init(top: 6, left: 8, bottom: 6, right: 8)
-        textField.keyboardType = .decimalPad
         return textField
     }()
     

@@ -7,30 +7,35 @@
 //
 
 import Foundation
+import RxRelay
 import RxSwift
+import Data
 
 class StatsViewModel: BaseViewModel {
     
-//    let statsObservable: BehaviorSubject<[StatsContainer]> = .init(value: .init())
+    var containers: BehaviorRelay<[StatsContainer]> = .init(value: [])
+    var server: Server? = nil
     
     required init() {
         super.init()
-        loadStats()
     }
     
-    private func loadStats() {
-//        let _ = network.mainCase.getStats()
-//            .observeOn(MainScheduler.instance)
-//            .subscribe {
-//                switch $0 {
-//                case .next(let stats):
-//                    self.statsObservable.onNext(stats)
-//                    break
-//                case .error(_):
-//                    break
-//                case .completed:
-//                    break
-//                }
-//        }
+    func loadData() {
+        if let server = self.server {
+            data.stat.get(server: server)
+                .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+                .observeOn(MainScheduler.instance)
+                .subscribe({ single in
+                    switch single {
+                    case .success(let data):
+                        self.containers.accept(data)
+//                        self.isNeedClosed.accept(true)
+                    case .error(let error):
+                        if let queryError = error as? QueryError {
+                            self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+                        }
+                    }
+                }).disposed(by: disposeBag)
+        }
     }
 }

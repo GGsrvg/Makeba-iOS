@@ -8,7 +8,14 @@
 
 import Foundation
 
-public struct Server {
+public class Server {
+    public init(name: String, path: String, description: String, dateCreated: Date) {
+        self.name = name
+        self.path = path
+        self.description = description
+        self.dateCreated = dateCreated
+    }
+    
     public let name: String
     public let path: String
     public let description: String

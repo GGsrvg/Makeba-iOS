@@ -8,10 +8,12 @@
 
 import Foundation
 
-public class BaseCase<EC : BaseEntityCase, N> {
+public class BaseCase<EC : BaseEntityCase> {
     let entityCase: EC
+    let network: Requests
     
-    init(coreDataStack: CoreDataStack) {
+    init(coreDataStack: CoreDataStack, network: Requests) {
         entityCase = EC.init(coreDataStack: coreDataStack)
+        self.network = network
     }
 }

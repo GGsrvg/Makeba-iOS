@@ -29,7 +29,7 @@ target 'makeba' do
 	use_frameworks!
 
   	# Pods for makeba
-  	rx
+  rx
 	pod 'R.swift', '~> 5'
 	pod 'InputMask'
 

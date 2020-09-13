@@ -15,8 +15,10 @@ public final class DataLayer {
     private let coreData: CoreDataStack = CoreDataStack()
     
     public let server: ServerCase
+    public let stat: StatCase
     
     public init() {
-        server = ServerCase(coreDataStack: self.coreData)
+        server = ServerCase(coreDataStack: self.coreData, network: request)
+        stat = StatCase(coreDataStack: self.coreData, network: request)
     }
 }

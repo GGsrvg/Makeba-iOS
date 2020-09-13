@@ -9,15 +9,24 @@
 import Foundation
 import Data
 import RxSwift
+import RxRelay
 
 class BaseViewModel {
     let disposeBag: DisposeBag = DisposeBag()
-//    var network: Domain.UseCasesProvider { get }
+    let data: DataLayer
+    let isNeedClosed: BehaviorRelay<Bool> = .init(value: false)
+    let alert: BehaviorRelay<Alert> = .init(value: .none)
+//    let messageError: BehaviorSubject<Bool> = .init(value: false)
+    
     required init() {
-        
+        guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }
+        self.data = data
     }
 }
 
 extension BaseViewModel {
-//    var network: Domain.UseCasesProvider { get { _network } }
+    enum Alert {
+        case none
+        case `default`(title: String, message: String, successTitle: String = "OK")
+    }
 }

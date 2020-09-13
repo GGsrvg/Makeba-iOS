@@ -9,6 +9,14 @@
 import UIKit
 
 class UIMTextField: UITextField {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.autocorrectionType = .no
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     var padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0);
 

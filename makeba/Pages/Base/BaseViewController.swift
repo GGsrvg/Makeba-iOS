@@ -33,8 +33,32 @@ class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
         self.view = _view
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        subscribeToObservable()
+    }
+    
     @objc func closeAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
 //        dismiss(animated: true, completion: nil)
+    }
+    
+    private func subscribeToObservable() {
+        _viewModel.isNeedClosed.bind(onNext: {
+            if $0 {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }).disposed(by: self.disposeBag)
+        _viewModel.alert.bind(onNext: {
+            switch $0 {
+            case .none:
+                break
+            case .default(title: let title, message: let message, successTitle: let successTitle):
+                let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                let successAction = UIAlertAction(title: successTitle, style: .cancel, handler: nil)
+                alertController.addAction(successAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }).disposed(by: self.disposeBag)
     }
 }

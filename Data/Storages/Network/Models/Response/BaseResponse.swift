@@ -1,14 +1,13 @@
 //
-//  Requests.swift
+//  BaseResponse.swift
 //  Data
 //
-//  Created by GGsrvg on 28.08.2020.
+//  Created by GGsrvg on 02.09.2020.
 //  Copyright © 2020 GGsrvg. All rights reserved.
 //
 
 import Foundation
-import RxSwift
 
-class Requests {
+internal protocol BaseResponse {
     
 }
