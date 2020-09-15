@@ -13,7 +13,7 @@ import RxRelay
 
 class BaseViewModel {
     let disposeBag: DisposeBag = DisposeBag()
-    let data: DataLayer
+    weak var data: DataLayer?
     let isNeedClosed: BehaviorRelay<Bool> = .init(value: false)
     let alert: BehaviorRelay<Alert> = .init(value: .none)
 //    let messageError: BehaviorSubject<Bool> = .init(value: false)
@@ -21,6 +21,10 @@ class BaseViewModel {
     required init() {
         guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }
         self.data = data
+    }
+    
+    deinit {
+        data = nil
     }
 }
 

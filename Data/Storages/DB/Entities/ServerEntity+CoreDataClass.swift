@@ -1,9 +1,8 @@
 //
 //  ServerEntity+CoreDataClass.swift
-//  Data
+//  
 //
-//  Created by GGsrvg on 30.08.2020.
-//  Copyright © 2020 GGsrvg. All rights reserved.
+//  Created by GGsrvg on 13.09.2020.
 //
 //
 
@@ -16,7 +15,6 @@ public class ServerEntity: NSManagedObject {
         self.init(context: context)
         name = model.name
         path = model.path
-        characteristic = model.description
         dateCreated = model.dateCreated
     }
 }

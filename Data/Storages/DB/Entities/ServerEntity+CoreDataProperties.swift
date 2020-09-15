@@ -1,9 +1,8 @@
 //
 //  ServerEntity+CoreDataProperties.swift
-//  Data
+//  
 //
-//  Created by GGsrvg on 30.08.2020.
-//  Copyright © 2020 GGsrvg. All rights reserved.
+//  Created by GGsrvg on 13.09.2020.
 //
 //
 
@@ -17,9 +16,8 @@ extension ServerEntity {
         return NSFetchRequest<ServerEntity>(entityName: "ServerEntity")
     }
 
+    @NSManaged public var dateCreated: Date?
     @NSManaged public var name: String?
     @NSManaged public var path: String?
-    @NSManaged public var characteristic: String?
-    @NSManaged public var dateCreated: Date?
 
 }

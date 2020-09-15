@@ -13,7 +13,7 @@ public class ServerEntityCase: BaseEntityCase {
 //    public required init() { }
     
     func get() -> DBStatus<[ServerEntity]?> {
-        let request:  NSFetchRequest<ServerEntity> = ServerEntity.fetchRequest()
+        let request: NSFetchRequest<ServerEntity> = ServerEntity.fetchRequest()
         do {
             let servers = try context.fetch(request)
             return .init(data: servers)

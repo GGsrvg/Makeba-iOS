@@ -53,22 +53,6 @@ class AddServerView: UIView {
         return textField
     }()
     
-    lazy var hostDescriptionLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Host description"
-        return label
-    }()
-    
-    lazy var hostDescriptionTextField: UIMTextField = {
-        let textField = UIMTextField()
-        textField.placeholder = "Server status"
-        textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
-        textField.layer.borderWidth = 1
-        textField.layer.cornerRadius = 6
-        textField.padding = .init(top: 6, left: 8, bottom: 6, right: 8)
-        return textField
-    }()
-    
     init() {
         super.init(frame: .zero)
         setupView()
@@ -87,8 +71,6 @@ class AddServerView: UIView {
         contentStackView.addArrangedSubview(hostPathTextField)
         contentStackView.addArrangedSubview(hostNameLabel)
         contentStackView.addArrangedSubview(hostNameTextField)
-        contentStackView.addArrangedSubview(hostDescriptionLabel)
-        contentStackView.addArrangedSubview(hostDescriptionTextField)
         // setop constraints
         setupLayout()
     }

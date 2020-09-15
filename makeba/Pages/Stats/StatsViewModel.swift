@@ -14,7 +14,7 @@ import Data
 class StatsViewModel: BaseViewModel {
     
     var containers: BehaviorRelay<[StatsContainer]> = .init(value: [])
-    var server: Server? = nil
+    weak var server: Server? = nil
     
     required init() {
         super.init()
@@ -22,7 +22,7 @@ class StatsViewModel: BaseViewModel {
     
     func loadData() {
         if let server = self.server {
-            data.stat.get(server: server)
+            data?.stat.get(server: server)
                 .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
                 .observeOn(MainScheduler.instance)
                 .subscribe({ single in

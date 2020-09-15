@@ -21,7 +21,7 @@ public class ServerCase: BaseCase<ServerEntityCase> {
             
             var servers: [Server] = []
             for serverEntity in data {
-                servers.append(.init(name: serverEntity.name ?? "NIL", path: serverEntity.path ?? "NIL", description: serverEntity.characteristic ?? "NIL", dateCreated: serverEntity.dateCreated ?? .init()))
+                servers.append(.init(name: serverEntity.name ?? "NIL", path: serverEntity.path ?? "NIL", dateCreated: serverEntity.dateCreated ?? .init()))
             }
             
             single(.success(servers))

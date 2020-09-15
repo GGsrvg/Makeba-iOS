@@ -20,7 +20,7 @@ class ServerListViewModel: BaseViewModel {
     }
     
     func loadData() {
-        data.server.get()
+        data?.server.get()
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe({ single in

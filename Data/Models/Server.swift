@@ -9,15 +9,13 @@
 import Foundation
 
 public class Server {
-    public init(name: String, path: String, description: String, dateCreated: Date) {
+    public init(name: String, path: String, dateCreated: Date) {
         self.name = name
         self.path = path
-        self.description = description
         self.dateCreated = dateCreated
     }
     
     public let name: String
     public let path: String
-    public let description: String
     public let dateCreated: Date
 }

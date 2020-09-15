@@ -14,7 +14,6 @@ import RxSwift
 class AddServerViewModel: BaseViewModel {
     let hostPath = BehaviorRelay<String?>(value: nil)
     let hostName = BehaviorRelay<String?>(value: nil)
-    let hostDescription = BehaviorRelay<String?>(value: nil)
     
     required init() {
         super.init()
@@ -27,9 +26,8 @@ class AddServerViewModel: BaseViewModel {
         
         guard let hostPath = hostPath.value, !hostPath.isEmpty, hostPath.count >= 7 else { return emptyFieldAlert(message: "Host path field is no correct") }
         guard let hostName = hostName.value, !hostName.isEmpty else { return emptyFieldAlert(message: "Host name is empty") }
-        guard let hostDescription = hostDescription.value, !hostDescription.isEmpty else { return emptyFieldAlert(message: "Host description is empty") }
         
-        data.server.save(.init(name: hostName, path: hostPath, description: hostDescription, dateCreated: .init()))
+        data?.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe({ single in

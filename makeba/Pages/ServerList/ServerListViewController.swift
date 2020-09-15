@@ -11,6 +11,8 @@ import RxSwift
 
 class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel> {
     
+    lazy var refreshControl = UIRefreshControl()
+    
     lazy var addServerBarButton: UIBarButtonItem = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "plus"), for: .normal)
@@ -30,13 +32,14 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        _viewModel.loadData()
+        self.updateData()
     }
     
     func setup() {
         _viewModel.servers.subscribe({ event in
             switch event {
             case .next(_):
+                self.refreshControl.endRefreshing()
                 self._view.tableView.reloadData()
             case .error(_):
                 break
@@ -46,15 +49,26 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
             }).disposed(by: disposeBag)
     }
     
+    func updateData() {
+        _viewModel.loadData()
+    }
+    
     private func setupNavigationItem() {
         self.navigationItem.title = R.string.localization.servers()
         self.navigationItem.setRightBarButton(addServerBarButton, animated: true)
     }
     
     private func setupView() {
+        refreshControl.addTarget(self, action: #selector(valueChangedAction(_:)), for: .valueChanged)
+        
         _view.tableView.register(ServerInfoTableViewCell.self, forCellReuseIdentifier: "\(ServerInfoTableViewCell.self)")
         _view.tableView.delegate    = self
         _view.tableView.dataSource  = self
+        _view.tableView.refreshControl = self.refreshControl
+    }
+    
+    @objc private func valueChangedAction(_ sender: UIRefreshControl) {
+        self.updateData()
     }
     
     @objc private func goToAddServer() {
@@ -71,7 +85,7 @@ extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
         let server = _viewModel.servers.value[indexPath.row]
-        cell.setupData(title: server.name, host: server.path, description: server.description)
+        cell.setupData(title: server.name, host: server.path, isOnline: true)
         return cell
     }
     

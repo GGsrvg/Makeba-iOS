@@ -11,10 +11,10 @@ import UIKit
 class ServerInfoTableViewCell: UITableViewCell {
     // MARK: - UI Elements
     /*
-     -------------------------
-     -labelTitle----labelHost-
-     -labelDescription       -
-     -------------------------
+     -----------------------------
+     -labelTitle------------------
+     -labelDescription-labelState-
+     -----------------------------
      */
     let labelTitle: UILabel = {
         let label = UILabel()
@@ -25,13 +25,13 @@ class ServerInfoTableViewCell: UITableViewCell {
     let labelHost: UILabel = {
         let label = UILabel()
         label.font = label.font.withSize(12)
-        label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    let labelDescription: UILabel = {
+    let labelState: UILabel = {
         let label = UILabel()
-        label.font = label.font.withSize(14)
+        label.font = label.font.withSize(12)
+        label.textAlignment = .right
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -54,7 +54,8 @@ class ServerInfoTableViewCell: UITableViewCell {
     private func setupView() {
         addSubview(labelTitle)
         addSubview(labelHost)
-        addSubview(labelDescription)
+        addSubview(labelState)
+//        addSubview(labelDescription)
         setupLayout()
     }
     
@@ -62,24 +63,27 @@ class ServerInfoTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             labelTitle.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             labelTitle.topAnchor.constraint(equalTo: self.topAnchor, constant: 14),
+            self.trailingAnchor.constraint(equalTo: labelTitle.trailingAnchor, constant: 16),
             
-            labelHost.topAnchor.constraint(equalTo: self.topAnchor, constant: 14),
-            self.trailingAnchor.constraint(equalTo: labelHost.trailingAnchor, constant: 16),
             
-            labelDescription.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            self.trailingAnchor.constraint(equalTo: labelDescription.trailingAnchor, constant: 16),
-            self.bottomAnchor.constraint(equalTo: labelDescription.bottomAnchor, constant: 14),
+            labelHost.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            labelHost.topAnchor.constraint(equalTo: labelTitle.bottomAnchor, constant: 10),
+            self.bottomAnchor.constraint(equalTo: labelHost.bottomAnchor, constant: 14),
             
-            labelHost.leadingAnchor.constraint(equalTo: labelTitle.trailingAnchor, constant: 6),
-            labelDescription.topAnchor.constraint(equalTo: labelTitle.bottomAnchor, constant: 6),
+            labelState.leadingAnchor.constraint(equalTo: labelHost.trailingAnchor, constant: 16),
+            
+            labelState.topAnchor.constraint(equalTo: labelTitle.bottomAnchor, constant: 10),
+            self.trailingAnchor.constraint(equalTo: labelState.trailingAnchor, constant: 16),
+            self.bottomAnchor.constraint(equalTo: labelState.bottomAnchor, constant: 14),
+            
+            labelState.widthAnchor.constraint(equalToConstant: 46),
         ])
     }
     
     // MARK: - setup data
-    func setupData(title: String, host: String, description: String?){
-        let emptyString = "-"
-        labelTitle.text         = title.isEmpty ? emptyString : title
-        labelHost.text          = host.isEmpty ? emptyString : host
-        labelDescription.text   = (description ?? "").isEmpty ? emptyString : description
+    func setupData(title: String?, host: String?, isOnline: Bool){
+        labelTitle.text = title
+        labelHost.text  = host
+        labelState.text = isOnline ? "online" : "offline"
     }
 }

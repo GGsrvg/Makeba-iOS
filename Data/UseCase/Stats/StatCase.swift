@@ -14,7 +14,7 @@ public class StatCase: BaseCase<BaseEntityCase> {
         return network.stats(server: server)
             .map({ statsContainers -> [StatsContainer] in
                 var result: [StatsContainer] = []
-                for container in statsContainers.data {
+                for container in statsContainers.data! {
                     var parsedStats: [Stat]? = nil
                     if let stats = container.stats {
                         parsedStats = []

@@ -32,7 +32,6 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
     private func setupBinding() {
         (_view.hostPathTextField.rx.text --> _viewModel.hostPath).disposed(by: disposeBag)
         (_view.hostNameTextField.rx.text --> _viewModel.hostName).disposed(by: disposeBag)
-        (_view.hostDescriptionTextField.rx.text --> _viewModel.hostDescription).disposed(by: disposeBag)
     }
     
     private func setupNavigationItem() {

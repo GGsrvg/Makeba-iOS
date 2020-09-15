@@ -40,22 +40,21 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel> {
 
 extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return  _viewModel.containers.value.count //(try? _viewModel.statsObservable.value().count) ??
+        return  _viewModel.containers.value.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _viewModel.containers.value[section].stats?.count ?? 0 // (try? _viewModel.statsObservable.value()[section].stats?.count) ??
+        return _viewModel.containers.value[section].stats?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return _viewModel.containers.value[section].title // (try? _viewModel.statsObservable.value()[section].title) ??
+        return _viewModel.containers.value[section].title
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
-        //        let data = try! _viewModel.statsObservable.value()[indexPath.section].stats?[indexPath.row]
         if let data =  _viewModel.containers.value[indexPath.section].stats?[indexPath.row] {
-            cell.setupData(title: data.title ?? "", host: "", description: data.model?.text ?? "")
+            cell.setupData(title: data.title, host: data.model?.text, isOnline: false)
         }
         return cell
     }
