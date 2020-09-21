@@ -32,4 +32,22 @@ class ServerListViewModel: BaseViewModel {
                 }
             }).disposed(by: disposeBag)
     }
+    
+    func removeByIndex(_ i: Int) {
+        data?.server.delete(servers.value[i])
+            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe({ single in
+                switch single {
+                case .success(let data):
+                    if data {
+                        var servers = self.servers.value
+                        servers.remove(at: i)
+                        self.servers.accept(servers)
+                    }
+                case .error(_):
+                    break
+                }
+            }).disposed(by: disposeBag)
+    }
 }

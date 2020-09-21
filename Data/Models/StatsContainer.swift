@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class StatsContainer {
+public class Stats {
     public let title: String?
     public let stats: [Stat]?
     

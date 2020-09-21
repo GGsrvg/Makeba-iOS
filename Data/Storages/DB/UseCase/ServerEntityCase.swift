@@ -31,4 +31,17 @@ public class ServerEntityCase: BaseEntityCase {
             return .init(isSuccessfullyCompleted: false, message: error.localizedDescription, data: false)
         }
     }
+    
+    func delete(server: Server) -> DBStatus<Bool> {
+        let request: NSFetchRequest<ServerEntity> = ServerEntity.fetchRequest()
+        do {
+            let servers = try context.fetch(request)
+            guard let deleteServer = servers.first(where: { $0.name == server.name }) else { return .init(data: false) }
+            context.delete(deleteServer)
+            try save()
+            return .init(data: true)
+        } catch {
+            return .init(isSuccessfullyCompleted: false, message: error.localizedDescription, data: false)
+        }
+    }
 }

@@ -13,7 +13,7 @@ import Data
 
 class StatsViewModel: BaseViewModel {
     
-    var containers: BehaviorRelay<[StatsContainer]> = .init(value: [])
+    var containers: BehaviorRelay<[Stats]> = .init(value: [])
     weak var server: Server? = nil
     
     required init() {

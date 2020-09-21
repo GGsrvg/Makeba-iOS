@@ -10,19 +10,16 @@ import Foundation
 
 class NetworkError: Error {
     enum ErrorType {
+        case unsuccessfulInit
         case noInternet
         case url
         case jsonNotCorrect
+        case convertToHTTPURLResponse
         case custom
     }
     
     let type: ErrorType
     let message: String
-    
-    internal init(type: NetworkError.ErrorType, message: String) {
-        self.type = type
-        self.message = message
-    }
     
     internal init(message: String) {
         self.type = .custom
@@ -32,12 +29,16 @@ class NetworkError: Error {
     internal init(type: NetworkError.ErrorType) {
         self.type = type
         switch type {
+        case .unsuccessfulInit:
+            self.message = "Unsuccessful init"
         case .noInternet:
             self.message = "No internet access"
         case .url:
             self.message = "URL not correct"
         case .jsonNotCorrect:
             self.message = "JSON not correct"
+        case .convertToHTTPURLResponse:
+            self.message = "Response is not HTTPURLResponse"
         case .custom:
             fatalError("If you need use \"custom\" type, use init(message: String)")
         }

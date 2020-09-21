@@ -41,6 +41,16 @@ public class ServerCase: BaseCase<ServerEntityCase> {
         })
     }
     
-    public func delete(_ server: Server) {}
+    public func delete(_ server: Server) -> Single<Bool> {
+        return .create(subscribe: { single in
+            let addStatus = self.entityCase.delete(server: server)
+            if addStatus.isSuccessfullyCompleted {
+                single(.success(addStatus.data))
+            } else {
+                single(.error(QueryError(typeError: .database, message: addStatus.message)))
+            }
+            return Disposables.create()
+        })
+    }
     public func update(_ server: Server) {}
 }

@@ -10,11 +10,21 @@ import Foundation
 import RxSwift
 
 public class StatCase: BaseCase<BaseEntityCase> {
-    public func get(server: Server) -> Single<[StatsContainer]> {
+    public func get(server: Server) -> Single<[Stats]> {
         return network.stats(server: server)
-            .map({ statsContainers -> [StatsContainer] in
-                var result: [StatsContainer] = []
-                for container in statsContainers.data! {
+            .catchError({ error in
+                guard let networkError = error as? NetworkError else { fatalError("Error is not equil type of the NetworkError") }
+                let correctError = QueryError(typeError: .network(statusCode: 0), message: networkError.message)
+                return .error(correctError)
+            })
+            .map({ response -> [Stats] in
+                var result: [Stats] = []
+                guard let data = response.data else {
+                    print(response)
+                    throw QueryError(typeError: .network(statusCode: response.statusCode), message: response.description)
+                }
+                
+                for container in data.data {
                     var parsedStats: [Stat]? = nil
                     if let stats = container.stats {
                         parsedStats = []

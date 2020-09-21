@@ -11,6 +11,11 @@ import RxSwift
 
 public final class QueryError: Error {
     
+    public enum TypeError {
+        case database
+        case network(statusCode: Int)
+    }
+    
     public let typeError: TypeError
     
     public let message: String
@@ -24,12 +29,5 @@ public final class QueryError: Error {
     internal init(typeError: QueryError.TypeError, message: String) {
         self.typeError = typeError
         self.message = message
-    }
-}
-
-extension QueryError {
-    public enum TypeError {
-        case database
-        case network(statusCode: Int)
     }
 }

@@ -20,10 +20,13 @@
 		5B219A4724FBD8AA00FD80B0 /* ServerEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */; };
 		5B219A4A24FBDC3200FD80B0 /* BaseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4924FBDC3200FD80B0 /* BaseCase.swift */; };
 		5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */; };
+		5B23E143251775DF00ECC89A /* SNStatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E142251775DF00ECC89A /* SNStatModel.swift */; };
+		5B23E1492517773500ECC89A /* SNStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E1482517773500ECC89A /* SNStat.swift */; };
+		5B23E14F2517774300ECC89A /* SNStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E14E2517774300ECC89A /* SNStats.swift */; };
+		5B23E1592517778000ECC89A /* StatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E1582517778000ECC89A /* StatsResponse.swift */; };
 		5B27AF66250E2776001577CC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27AF65250E2776001577CC /* NetworkError.swift */; };
 		5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53AA2E24D52C120051C296 /* R.generated.swift */; };
 		5B59AD66250530AD00397FF5 /* StatCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59AD65250530AD00397FF5 /* StatCase.swift */; };
-		5BA987BB2504F8CC0015104E /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA987BA2504F8CC0015104E /* Responses.swift */; };
 		5BACE48D24FFE66A003EB2BE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48C24FFE66A003EB2BE /* NetworkStatus.swift */; };
 		5BACE49024FFE793003EB2BE /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48F24FFE793003EB2BE /* BaseResponse.swift */; };
 		5BACE49524FFE817003EB2BE /* DBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE49424FFE817003EB2BE /* DBStatus.swift */; };
@@ -141,10 +144,13 @@
 		5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEntityCase.swift; sourceTree = "<group>"; };
 		5B219A4924FBDC3200FD80B0 /* BaseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCase.swift; sourceTree = "<group>"; };
 		5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityCase.swift; sourceTree = "<group>"; };
+		5B23E142251775DF00ECC89A /* SNStatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStatModel.swift; sourceTree = "<group>"; };
+		5B23E1482517773500ECC89A /* SNStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStat.swift; sourceTree = "<group>"; };
+		5B23E14E2517774300ECC89A /* SNStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStats.swift; sourceTree = "<group>"; };
+		5B23E1582517778000ECC89A /* StatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsResponse.swift; sourceTree = "<group>"; };
 		5B27AF65250E2776001577CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5B53AA2E24D52C120051C296 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5B59AD65250530AD00397FF5 /* StatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCase.swift; sourceTree = "<group>"; };
-		5BA987BA2504F8CC0015104E /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		5BACE48C24FFE66A003EB2BE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		5BACE48F24FFE793003EB2BE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5BACE49424FFE817003EB2BE /* DBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStatus.swift; sourceTree = "<group>"; };
@@ -290,6 +296,7 @@
 		5B219A1524F96A9A00FD80B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B23E13D251774FD00ECC89A /* Composite */,
 				5B219A1724F96AA800FD80B0 /* Response */,
 				5B219A1624F96AA000FD80B0 /* Request */,
 				5B12E94725067AAB00647C60 /* NetworkResponse.swift */,
@@ -309,7 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				5BACE48F24FFE793003EB2BE /* BaseResponse.swift */,
-				5BA987BA2504F8CC0015104E /* Responses.swift */,
+				5B23E1582517778000ECC89A /* StatsResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -332,14 +339,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5B219A2C24FABDF700FD80B0 /* UseCase */ = {
+		5B219A2C24FABDF700FD80B0 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 				5B219A4824FBDC2100FD80B0 /* BaseCase */,
 				5B219A2E24FABE0900FD80B0 /* Stats */,
 				5B219A2D24FABDFF00FD80B0 /* Server */,
 			);
-			path = UseCase;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		5B219A2D24FABDFF00FD80B0 /* Server */ = {
@@ -390,6 +397,16 @@
 				5B219A4924FBDC3200FD80B0 /* BaseCase.swift */,
 			);
 			path = BaseCase;
+			sourceTree = "<group>";
+		};
+		5B23E13D251774FD00ECC89A /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				5B23E142251775DF00ECC89A /* SNStatModel.swift */,
+				5B23E1482517773500ECC89A /* SNStat.swift */,
+				5B23E14E2517774300ECC89A /* SNStats.swift */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 		5B53AA2B24D52BDB0051C296 /* Resources */ = {
@@ -667,12 +684,12 @@
 		5BF5386624DFC4EC004B513D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				5B219A2C24FABDF700FD80B0 /* UseCase */,
+				5B219A2C24FABDF700FD80B0 /* UseCases */,
 				5B219A2124F975EF00FD80B0 /* Models */,
 				5BACE49624FFE9D3003EB2BE /* Storages */,
 				5BF5386724DFC4EC004B513D /* Data.h */,
-				5BF5386824DFC4EC004B513D /* Info.plist */,
 				5B219A1F24F96EED00FD80B0 /* DataLayer.swift */,
+				5BF5386824DFC4EC004B513D /* Info.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -847,7 +864,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = GGsrvg;
 				TargetAttributes = {
 					5BBABE3224CDA01100C3A22C = {
@@ -1196,7 +1213,11 @@
 				5BACE48D24FFE66A003EB2BE /* NetworkStatus.swift in Sources */,
 				5BC29862250E72120067A949 /* Model.xcdatamodeld in Sources */,
 				5B27AF66250E2776001577CC /* NetworkError.swift in Sources */,
+				5B23E143251775DF00ECC89A /* SNStatModel.swift in Sources */,
+				5B23E1492517773500ECC89A /* SNStat.swift in Sources */,
+				5B23E14F2517774300ECC89A /* SNStats.swift in Sources */,
 				5B219A2424F9766300FD80B0 /* Server.swift in Sources */,
+				5B23E1592517778000ECC89A /* StatsResponse.swift in Sources */,
 				5B12E9462505EF1700647C60 /* StatsContainer.swift in Sources */,
 				5B219A3024FABE6700FD80B0 /* ServerCase.swift in Sources */,
 				5BC29859250E6FFD0067A949 /* ServerEntity+CoreDataProperties.swift in Sources */,
@@ -1204,7 +1225,6 @@
 				5B59AD66250530AD00397FF5 /* StatCase.swift in Sources */,
 				5B12E94B2506996100647C60 /* StatusCode.swift in Sources */,
 				5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */,
-				5BA987BB2504F8CC0015104E /* Responses.swift in Sources */,
 				5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */,
 				5BACE49524FFE817003EB2BE /* DBStatus.swift in Sources */,
 			);
@@ -1296,6 +1316,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1357,6 +1378,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1392,6 +1414,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GUPNP9UD97;
 				INFOPLIST_FILE = makeba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;

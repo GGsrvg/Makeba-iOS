@@ -10,37 +10,35 @@ import Foundation
 import RxSwift
 
 final class Requests {
-    func stats(server: Server) -> Single<NetworkResponse<[StatsContainerResponse]?>> {
+    func stats(server: Server) -> Single<NetworkResponse<StatsResponse?>> {
         return .create(subscribe: { single in
-            if let url = URL(string: server.path) {
-                let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let url = URL(string: server.path) else {
+                single(.error(NetworkError(type: .url)))
+                return Disposables.create()
+            }
+            
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                if let error = error {
+                    single(.error(error))
+                    return
+                }
+                
+                guard let response = response as? HTTPURLResponse else {
+                    return single(.error(NetworkError(type: .convertToHTTPURLResponse)))
+                }
+                
+                if response.statusCode == StatusCode.ok.rawValue {
                     if let data = data {
-                        // parse json
-                        if let array: [StatsContainerResponse] = try? JSONDecoder().decode([StatsContainerResponse].self, from: data) {
-                            if let httpResponse = NetworkResponse<[StatsContainerResponse]?>(response: response as! HTTPURLResponse, data: array) {
-                                single(.success(httpResponse))
-                            } else {
-                                single(.error(NetworkError(type: .custom, message: "NetworkResponse return nil")))
-                            }
-                        } else {
-                            single(.error(NetworkError(type: .jsonNotCorrect)))
-                        }
-                    } else {
-                        if let response = response {
-                            if let networkResponse = NetworkResponse<[StatsContainerResponse]?>(response: response as! HTTPURLResponse, data: nil) {
-                                single(.success(networkResponse))
-                            }
-                        } else if let error = error {
-                            single(.error(error))
-                        } else {
-                            single(.error(NetworkError(type: .custom, message: "")))
+                        if let array: StatsResponse = try? JSONDecoder().decode(StatsResponse.self, from: data) {
+                            single(.success(NetworkResponse<StatsResponse?>(response: response, data: array)!))
                         }
                     }
                 }
-                task.resume()
-            } else {
-                single(.error(NetworkError(type: .url)))
+                
+                single(.success(NetworkResponse<StatsResponse?>(response: response, data: nil)!))
             }
+            task.resume()
+            
             return Disposables.create()
         })
     }

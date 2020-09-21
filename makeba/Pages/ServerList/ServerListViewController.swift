@@ -95,4 +95,25 @@ extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
         vc._viewModel.server = _viewModel.servers.value[indexPath.row]
         show(vc, sender: nil)
     }
+    
+    // MARK: - Swipe actions
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let changeAction = UIContextualAction(style: .normal, title: "Change") { (action, view, success) in
+//            success(false)
+        }
+        changeAction.backgroundColor = .systemOrange
+        let removeAction = UIContextualAction(style: .normal, title: "Remove") { (action, view, success) in
+            let alert = UIAlertController(title: "Delete Server", message: nil, preferredStyle: .alert)
+            let yesAction = UIAlertAction(title: "Yes", style: .destructive, handler: { action in
+                self._viewModel.removeByIndex(indexPath.row)
+                success(true)
+            })
+            let noAction = UIAlertAction(title: "No", style: .cancel, handler: { action in success(false) })
+            alert.addAction(yesAction)
+            alert.addAction(noAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+        removeAction.backgroundColor = .systemRed
+        return UISwipeActionsConfiguration(actions: [removeAction, changeAction])
+    }
 }
