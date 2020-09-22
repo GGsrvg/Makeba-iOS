@@ -1,15 +1,15 @@
 //
-//  DataTests.swift
-//  DataTests
+//  MakebaDataTests.swift
+//  MakebaDataTests
 //
-//  Created by GGsrvg on 09.08.2020.
+//  Created by GGsrvg on 22.09.2020.
 //  Copyright © 2020 GGsrvg. All rights reserved.
 //
 
 import XCTest
-@testable import Data
+@testable import MakebaData
 
-class DataTests: XCTestCase {
+class MakebaDataTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

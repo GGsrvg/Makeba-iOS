@@ -12,6 +12,38 @@
 		5B12E94825067AAB00647C60 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94725067AAB00647C60 /* NetworkResponse.swift */; };
 		5B12E94B2506996100647C60 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94A2506996100647C60 /* StatusCode.swift */; };
 		5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1616F32519D87500A3D78F /* StatTableViewCell.swift */; };
+		5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; };
+		5B16171F2519E12600A3D78F /* MakebaDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16171E2519E12600A3D78F /* MakebaDataTests.swift */; };
+		5B1617212519E12600A3D78F /* MakebaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617112519E12600A3D78F /* MakebaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; };
+		5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617492519E29100A3D78F /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617392519E29100A3D78F /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B16174C2519E29100A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B16176A2519E2A300A3D78F /* MakebaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; };
+		5B1617712519E2A300A3D78F /* MakebaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1617702519E2A300A3D78F /* MakebaAPITests.swift */; };
+		5B1617732519E2A300A3D78F /* MakebaAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617632519E2A300A3D78F /* MakebaAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B1617762519E2A300A3D78F /* MakebaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; };
+		5B1617772519E2A300A3D78F /* MakebaAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617AA2519E30500A3D78F /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617A82519E30500A3D78F /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617C92519E31400A3D78F /* MakebaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; };
+		5B1617D02519E31400A3D78F /* MakebaStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */; };
+		5B1617D22519E31400A3D78F /* MakebaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617C22519E31400A3D78F /* MakebaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B1617D52519E31400A3D78F /* MakebaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; };
+		5B1617D62519E31400A3D78F /* MakebaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617E82519E36400A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5B1617E92519E36400A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617ED2519E36C00A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5B1617EE2519E36C00A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
+		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617F72519E39000A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5B1617F82519E39000A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1617FB2519E39000A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5B1617FC2519E39000A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B1618002519E3C700A3D78F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFF260924E1BDEB00C83286 /* CoreData.framework */; };
 		5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
 		5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1D24F96DEA00FD80B0 /* Preference.swift */; };
 		5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
@@ -61,19 +93,128 @@
 		5BDEE33624D45782000B5AF3 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BDEE33824D45782000B5AF3 /* Localization.strings */; };
 		5BF5385D24DF270F004B513D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5385C24DF270F004B513D /* StatsView.swift */; };
 		5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5385E24DF271A004B513D /* StatsViewModel.swift */; };
-		5BF5386E24DFC4EC004B513D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
-		5BF5387524DFC4EC004B513D /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5387424DFC4EC004B513D /* DataTests.swift */; };
 		5BF5387724DFC4EC004B513D /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF5386724DFC4EC004B513D /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BFF260A24E1BDEB00C83286 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFF260924E1BDEB00C83286 /* CoreData.framework */; };
 		9CDAD62319930A28AAC5B080 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711DAB4CE8B55EAA69D8FF0B /* Pods_Data.framework */; };
 		C9B6C2FAC3F8E716EC9B7027 /* Pods_makeba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188CB3227B2267638DB93B0F /* Pods_makeba.framework */; };
-		CE1FD8712841455843F5D164 /* Pods_Data_DataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32AFA1B1F35A1A1DD96C08B /* Pods_Data_DataTests.framework */; };
 		D13D114CEC0CF103533B1761 /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B741C19E08B63B75FDC9A22E /* Pods_makebaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B1617192519E12600A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B16170E2519E12600A3D78F;
+			remoteInfo = MakebaData;
+		};
+		5B16171B2519E12600A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
+			remoteInfo = makeba;
+		};
+		5B1617222519E12600A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B16170E2519E12600A3D78F;
+			remoteInfo = MakebaData;
+		};
+		5B16174A2519E29100A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617362519E29100A3D78F;
+			remoteInfo = API;
+		};
+		5B16176B2519E2A300A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617602519E2A300A3D78F;
+			remoteInfo = MakebaAPI;
+		};
+		5B16176D2519E2A300A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
+			remoteInfo = makeba;
+		};
+		5B1617742519E2A300A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617602519E2A300A3D78F;
+			remoteInfo = MakebaAPI;
+		};
+		5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
+			remoteInfo = Storage;
+		};
+		5B1617CA2519E31400A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617BF2519E31400A3D78F;
+			remoteInfo = MakebaStorage;
+		};
+		5B1617CC2519E31400A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
+			remoteInfo = makeba;
+		};
+		5B1617D32519E31400A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617BF2519E31400A3D78F;
+			remoteInfo = MakebaStorage;
+		};
+		5B1617EA2519E36400A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
+			remoteInfo = Storage;
+		};
+		5B1617EF2519E36C00A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617362519E29100A3D78F;
+			remoteInfo = API;
+		};
+		5B1617F42519E37500A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF5386424DFC4EC004B513D;
+			remoteInfo = Data;
+		};
+		5B1617F92519E39000A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617362519E29100A3D78F;
+			remoteInfo = API;
+		};
+		5B1617FD2519E39000A3D78F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
+			remoteInfo = Storage;
+		};
 		5BBABE4A24CDA01200C3A22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
@@ -82,20 +223,6 @@
 			remoteInfo = makeba;
 		};
 		5BBABE5524CDA01200C3A22C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
-			remoteInfo = makeba;
-		};
-		5BF5386F24DFC4EC004B513D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BF5386424DFC4EC004B513D;
-			remoteInfo = Data;
-		};
-		5BF5387124DFC4EC004B513D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
 			proxyType = 1;
@@ -112,6 +239,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5B1617EC2519E36400A3D78F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B1617E92519E36400A3D78F /* Storage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617F12519E36C00A3D78F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B1617EE2519E36C00A3D78F /* API.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617F62519E37500A3D78F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617FF2519E39000A3D78F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B1617FC2519E39000A3D78F /* Storage.framework in Embed Frameworks */,
+				5B1617F82519E39000A3D78F /* API.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5B960D5524D32A2B00E7850D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -119,6 +291,11 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */,
+				5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */,
+				5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */,
+				5B1617D62519E31400A3D78F /* MakebaStorage.framework in Embed Frameworks */,
+				5B1617772519E2A300A3D78F /* MakebaAPI.framework in Embed Frameworks */,
+				5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +314,30 @@
 		5B12E94725067AAB00647C60 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		5B12E94A2506996100647C60 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		5B1616F32519D87500A3D78F /* StatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
+		5B16170F2519E12600A3D78F /* MakebaData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakebaData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617112519E12600A3D78F /* MakebaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakebaData.h; sourceTree = "<group>"; };
+		5B1617122519E12600A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617172519E12600A3D78F /* MakebaDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakebaDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B16171E2519E12600A3D78F /* MakebaDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakebaDataTests.swift; sourceTree = "<group>"; };
+		5B1617202519E12600A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617372519E29100A3D78F /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617392519E29100A3D78F /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		5B16173A2519E29100A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617612519E2A300A3D78F /* MakebaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakebaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617632519E2A300A3D78F /* MakebaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakebaAPI.h; sourceTree = "<group>"; };
+		5B1617642519E2A300A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakebaAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617702519E2A300A3D78F /* MakebaAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakebaAPITests.swift; sourceTree = "<group>"; };
+		5B1617722519E2A300A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617A62519E30500A3D78F /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617A82519E30500A3D78F /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		5B1617A92519E30500A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617C02519E31400A3D78F /* MakebaStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakebaStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617C22519E31400A3D78F /* MakebaStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakebaStorage.h; sourceTree = "<group>"; };
+		5B1617C32519E31400A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakebaStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakebaStorageTests.swift; sourceTree = "<group>"; };
+		5B1617D12519E31400A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		5B219A1D24F96DEA00FD80B0 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
@@ -196,9 +397,6 @@
 		5BF5386524DFC4EC004B513D /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF5386724DFC4EC004B513D /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		5BF5386824DFC4EC004B513D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5BF5386D24DFC4EC004B513D /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF5387424DFC4EC004B513D /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
-		5BF5387624DFC4EC004B513D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BFF260924E1BDEB00C83286 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		711DAB4CE8B55EAA69D8FF0B /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		713810359CF14BAD932AB15E /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,12 +409,80 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B16170C2519E12600A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617F22519E37500A3D78F /* Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617142519E12600A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617342519E29100A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B16175E2519E2A300A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617ED2519E36C00A3D78F /* API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617662519E2A300A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B16176A2519E2A300A3D78F /* MakebaAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617A32519E30500A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617BD2519E31400A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617E82519E36400A3D78F /* Storage.framework in Frameworks */,
+				5B1618002519E3C700A3D78F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617C52519E31400A3D78F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617C92519E31400A3D78F /* MakebaStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBABE3024CDA01100C3A22C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */,
+				5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */,
+				5B1617D52519E31400A3D78F /* MakebaStorage.framework in Frameworks */,
+				5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */,
 				C9B6C2FAC3F8E716EC9B7027 /* Pods_makeba.framework in Frameworks */,
+				5B1617762519E2A300A3D78F /* MakebaAPI.framework in Frameworks */,
+				5B16174C2519E29100A3D78F /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,16 +507,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFF260A24E1BDEB00C83286 /* CoreData.framework in Frameworks */,
+				5B1617F72519E39000A3D78F /* API.framework in Frameworks */,
+				5B1617FB2519E39000A3D78F /* Storage.framework in Frameworks */,
 				9CDAD62319930A28AAC5B080 /* Pods_Data.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BF5386A24DFC4EC004B513D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BF5386E24DFC4EC004B513D /* Data.framework in Frameworks */,
-				CE1FD8712841455843F5D164 /* Pods_Data_DataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +530,78 @@
 				5B1616F32519D87500A3D78F /* StatTableViewCell.swift */,
 			);
 			path = Stat;
+			sourceTree = "<group>";
+		};
+		5B1617102519E12600A3D78F /* MakebaData */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617112519E12600A3D78F /* MakebaData.h */,
+				5B1617122519E12600A3D78F /* Info.plist */,
+			);
+			path = MakebaData;
+			sourceTree = "<group>";
+		};
+		5B16171D2519E12600A3D78F /* MakebaDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B16171E2519E12600A3D78F /* MakebaDataTests.swift */,
+				5B1617202519E12600A3D78F /* Info.plist */,
+			);
+			path = MakebaDataTests;
+			sourceTree = "<group>";
+		};
+		5B1617382519E29100A3D78F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617392519E29100A3D78F /* API.h */,
+				5B16173A2519E29100A3D78F /* Info.plist */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5B1617622519E2A300A3D78F /* MakebaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617632519E2A300A3D78F /* MakebaAPI.h */,
+				5B1617642519E2A300A3D78F /* Info.plist */,
+			);
+			path = MakebaAPI;
+			sourceTree = "<group>";
+		};
+		5B16176F2519E2A300A3D78F /* MakebaAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617702519E2A300A3D78F /* MakebaAPITests.swift */,
+				5B1617722519E2A300A3D78F /* Info.plist */,
+			);
+			path = MakebaAPITests;
+			sourceTree = "<group>";
+		};
+		5B1617A72519E30500A3D78F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617A82519E30500A3D78F /* Storage.h */,
+				5B1617A92519E30500A3D78F /* Info.plist */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5B1617C12519E31400A3D78F /* MakebaStorage */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617C22519E31400A3D78F /* MakebaStorage.h */,
+				5B1617C32519E31400A3D78F /* Info.plist */,
+			);
+			path = MakebaStorage;
+			sourceTree = "<group>";
+		};
+		5B1617CE2519E31400A3D78F /* MakebaStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */,
+				5B1617D12519E31400A3D78F /* Info.plist */,
+			);
+			path = MakebaStorageTests;
 			sourceTree = "<group>";
 		};
 		5B219A1124F9666700FD80B0 /* DB */ = {
@@ -461,7 +792,14 @@
 				5BBABE4C24CDA01200C3A22C /* makebaTests */,
 				5BBABE5724CDA01200C3A22C /* makebaUITests */,
 				5BF5386624DFC4EC004B513D /* Data */,
-				5BF5387324DFC4EC004B513D /* DataTests */,
+				5B1617102519E12600A3D78F /* MakebaData */,
+				5B16171D2519E12600A3D78F /* MakebaDataTests */,
+				5B1617382519E29100A3D78F /* API */,
+				5B1617622519E2A300A3D78F /* MakebaAPI */,
+				5B16176F2519E2A300A3D78F /* MakebaAPITests */,
+				5B1617A72519E30500A3D78F /* Storage */,
+				5B1617C12519E31400A3D78F /* MakebaStorage */,
+				5B1617CE2519E31400A3D78F /* MakebaStorageTests */,
 				5BBABE3424CDA01100C3A22C /* Products */,
 				BABDF36AF2B8C83ED3C4B9F9 /* Pods */,
 				70ED656271621F509858388E /* Frameworks */,
@@ -475,7 +813,14 @@
 				5BBABE4924CDA01200C3A22C /* makebaTests.xctest */,
 				5BBABE5424CDA01200C3A22C /* makebaUITests.xctest */,
 				5BF5386524DFC4EC004B513D /* Data.framework */,
-				5BF5386D24DFC4EC004B513D /* DataTests.xctest */,
+				5B16170F2519E12600A3D78F /* MakebaData.framework */,
+				5B1617172519E12600A3D78F /* MakebaDataTests.xctest */,
+				5B1617372519E29100A3D78F /* API.framework */,
+				5B1617612519E2A300A3D78F /* MakebaAPI.framework */,
+				5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */,
+				5B1617A62519E30500A3D78F /* Storage.framework */,
+				5B1617C02519E31400A3D78F /* MakebaStorage.framework */,
+				5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -705,15 +1050,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		5BF5387324DFC4EC004B513D /* DataTests */ = {
-			isa = PBXGroup;
-			children = (
-				5BF5387424DFC4EC004B513D /* DataTests.swift */,
-				5BF5387624DFC4EC004B513D /* Info.plist */,
-			);
-			path = DataTests;
-			sourceTree = "<group>";
-		};
 		5BF5388224DFC6AC004B513D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,6 +1091,46 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		5B16170A2519E12600A3D78F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617212519E12600A3D78F /* MakebaData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617322519E29100A3D78F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617492519E29100A3D78F /* API.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B16175C2519E2A300A3D78F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617732519E2A300A3D78F /* MakebaAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617A12519E30500A3D78F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617AA2519E30500A3D78F /* Storage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617BB2519E31400A3D78F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617D22519E31400A3D78F /* MakebaStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BF5386024DFC4EC004B513D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -766,6 +1142,159 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5B16170E2519E12600A3D78F /* MakebaData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B16172A2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaData" */;
+			buildPhases = (
+				5B16170A2519E12600A3D78F /* Headers */,
+				5B16170B2519E12600A3D78F /* Sources */,
+				5B16170C2519E12600A3D78F /* Frameworks */,
+				5B16170D2519E12600A3D78F /* Resources */,
+				5B1617F62519E37500A3D78F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1617F52519E37500A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaData;
+			productName = MakebaData;
+			productReference = 5B16170F2519E12600A3D78F /* MakebaData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B1617162519E12600A3D78F /* MakebaDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B16172B2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaDataTests" */;
+			buildPhases = (
+				5B1617132519E12600A3D78F /* Sources */,
+				5B1617142519E12600A3D78F /* Frameworks */,
+				5B1617152519E12600A3D78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B16171A2519E12600A3D78F /* PBXTargetDependency */,
+				5B16171C2519E12600A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaDataTests;
+			productName = MakebaDataTests;
+			productReference = 5B1617172519E12600A3D78F /* MakebaDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B1617362519E29100A3D78F /* API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B16174E2519E29200A3D78F /* Build configuration list for PBXNativeTarget "API" */;
+			buildPhases = (
+				5B1617322519E29100A3D78F /* Headers */,
+				5B1617332519E29100A3D78F /* Sources */,
+				5B1617342519E29100A3D78F /* Frameworks */,
+				5B1617352519E29100A3D78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = API;
+			productName = API;
+			productReference = 5B1617372519E29100A3D78F /* API.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B1617602519E2A300A3D78F /* MakebaAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1617782519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPI" */;
+			buildPhases = (
+				5B16175C2519E2A300A3D78F /* Headers */,
+				5B16175D2519E2A300A3D78F /* Sources */,
+				5B16175E2519E2A300A3D78F /* Frameworks */,
+				5B16175F2519E2A300A3D78F /* Resources */,
+				5B1617F12519E36C00A3D78F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1617F02519E36C00A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaAPI;
+			productName = MakebaAPI;
+			productReference = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B1617682519E2A300A3D78F /* MakebaAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B16177B2519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPITests" */;
+			buildPhases = (
+				5B1617652519E2A300A3D78F /* Sources */,
+				5B1617662519E2A300A3D78F /* Frameworks */,
+				5B1617672519E2A300A3D78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B16176C2519E2A300A3D78F /* PBXTargetDependency */,
+				5B16176E2519E2A300A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaAPITests;
+			productName = MakebaAPITests;
+			productReference = 5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B1617A52519E30500A3D78F /* Storage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1617AF2519E30500A3D78F /* Build configuration list for PBXNativeTarget "Storage" */;
+			buildPhases = (
+				5B1617A12519E30500A3D78F /* Headers */,
+				5B1617A22519E30500A3D78F /* Sources */,
+				5B1617A32519E30500A3D78F /* Frameworks */,
+				5B1617A42519E30500A3D78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Storage;
+			productName = Storage;
+			productReference = 5B1617A62519E30500A3D78F /* Storage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B1617BF2519E31400A3D78F /* MakebaStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1617D72519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorage" */;
+			buildPhases = (
+				5B1617BB2519E31400A3D78F /* Headers */,
+				5B1617BC2519E31400A3D78F /* Sources */,
+				5B1617BD2519E31400A3D78F /* Frameworks */,
+				5B1617BE2519E31400A3D78F /* Resources */,
+				5B1617EC2519E36400A3D78F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1617EB2519E36400A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaStorage;
+			productName = MakebaStorage;
+			productReference = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B1617C72519E31400A3D78F /* MakebaStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1617DA2519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorageTests" */;
+			buildPhases = (
+				5B1617C42519E31400A3D78F /* Sources */,
+				5B1617C52519E31400A3D78F /* Frameworks */,
+				5B1617C62519E31400A3D78F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1617CB2519E31400A3D78F /* PBXTargetDependency */,
+				5B1617CD2519E31400A3D78F /* PBXTargetDependency */,
+			);
+			name = MakebaStorageTests;
+			productName = MakebaStorageTests;
+			productReference = 5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5BBABE3224CDA01100C3A22C /* makeba */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE5D24CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makeba" */;
@@ -782,6 +1311,11 @@
 			);
 			dependencies = (
 				5BF5387924DFC4EC004B513D /* PBXTargetDependency */,
+				5B1617232519E12600A3D78F /* PBXTargetDependency */,
+				5B16174B2519E29100A3D78F /* PBXTargetDependency */,
+				5B1617752519E2A300A3D78F /* PBXTargetDependency */,
+				5B1617AC2519E30500A3D78F /* PBXTargetDependency */,
+				5B1617D42519E31400A3D78F /* PBXTargetDependency */,
 			);
 			name = makeba;
 			productName = makeba;
@@ -837,36 +1371,18 @@
 				5BF5386124DFC4EC004B513D /* Sources */,
 				5BF5386224DFC4EC004B513D /* Frameworks */,
 				5BF5386324DFC4EC004B513D /* Resources */,
+				5B1617FF2519E39000A3D78F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B1617FA2519E39000A3D78F /* PBXTargetDependency */,
+				5B1617FE2519E39000A3D78F /* PBXTargetDependency */,
 			);
 			name = Data;
 			productName = Data;
 			productReference = 5BF5386524DFC4EC004B513D /* Data.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		5BF5386C24DFC4EC004B513D /* DataTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5BF5387F24DFC4EC004B513D /* Build configuration list for PBXNativeTarget "DataTests" */;
-			buildPhases = (
-				9A60E98F00F9750A46424275 /* [CP] Check Pods Manifest.lock */,
-				5BF5386924DFC4EC004B513D /* Sources */,
-				5BF5386A24DFC4EC004B513D /* Frameworks */,
-				5BF5386B24DFC4EC004B513D /* Resources */,
-				9B499BA3A6D35A62D6A83915 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BF5387024DFC4EC004B513D /* PBXTargetDependency */,
-				5BF5387224DFC4EC004B513D /* PBXTargetDependency */,
-			);
-			name = DataTests;
-			productName = DataTests;
-			productReference = 5BF5386D24DFC4EC004B513D /* DataTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -874,10 +1390,37 @@
 		5BBABE2B24CDA01100C3A22C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = GGsrvg;
 				TargetAttributes = {
+					5B16170E2519E12600A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5B1617162519E12600A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5BBABE3224CDA01100C3A22C;
+					};
+					5B1617362519E29100A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5B1617602519E2A300A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5B1617682519E2A300A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5BBABE3224CDA01100C3A22C;
+					};
+					5B1617A52519E30500A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5B1617BF2519E31400A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					5B1617C72519E31400A3D78F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 5BBABE3224CDA01100C3A22C;
+					};
 					5BBABE3224CDA01100C3A22C = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -892,10 +1435,6 @@
 					5BF5386424DFC4EC004B513D = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
-					};
-					5BF5386C24DFC4EC004B513D = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 5BBABE3224CDA01100C3A22C;
 					};
 				};
 			};
@@ -917,12 +1456,75 @@
 				5BBABE4824CDA01200C3A22C /* makebaTests */,
 				5BBABE5324CDA01200C3A22C /* makebaUITests */,
 				5BF5386424DFC4EC004B513D /* Data */,
-				5BF5386C24DFC4EC004B513D /* DataTests */,
+				5B16170E2519E12600A3D78F /* MakebaData */,
+				5B1617162519E12600A3D78F /* MakebaDataTests */,
+				5B1617362519E29100A3D78F /* API */,
+				5B1617602519E2A300A3D78F /* MakebaAPI */,
+				5B1617682519E2A300A3D78F /* MakebaAPITests */,
+				5B1617A52519E30500A3D78F /* Storage */,
+				5B1617BF2519E31400A3D78F /* MakebaStorage */,
+				5B1617C72519E31400A3D78F /* MakebaStorageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B16170D2519E12600A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617152519E12600A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617352519E29100A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B16175F2519E2A300A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617672519E2A300A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617A42519E30500A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617BE2519E31400A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617C62519E31400A3D78F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBABE3124CDA01100C3A22C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -948,13 +1550,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5BF5386324DFC4EC004B513D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BF5386B24DFC4EC004B513D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -998,45 +1593,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A60E98F00F9750A46424275 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Data-DataTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B499BA3A6D35A62D6A83915 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9EB9A2928A4DA748525A3FDC /* [CP] Check Pods Manifest.lock */ = {
@@ -1164,6 +1720,65 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B16170B2519E12600A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617132519E12600A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B16171F2519E12600A3D78F /* MakebaDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617332519E29100A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B16175D2519E2A300A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617652519E2A300A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617712519E2A300A3D78F /* MakebaAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617A22519E30500A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617BC2519E31400A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B1617C42519E31400A3D78F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1617D02519E31400A3D78F /* MakebaStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BBABE2F24CDA01100C3A22C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1242,17 +1857,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5BF5386924DFC4EC004B513D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BF5387524DFC4EC004B513D /* DataTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B16171A2519E12600A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B16170E2519E12600A3D78F /* MakebaData */;
+			targetProxy = 5B1617192519E12600A3D78F /* PBXContainerItemProxy */;
+		};
+		5B16171C2519E12600A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BBABE3224CDA01100C3A22C /* makeba */;
+			targetProxy = 5B16171B2519E12600A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617232519E12600A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B16170E2519E12600A3D78F /* MakebaData */;
+			targetProxy = 5B1617222519E12600A3D78F /* PBXContainerItemProxy */;
+		};
+		5B16174B2519E29100A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617362519E29100A3D78F /* API */;
+			targetProxy = 5B16174A2519E29100A3D78F /* PBXContainerItemProxy */;
+		};
+		5B16176C2519E2A300A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617602519E2A300A3D78F /* MakebaAPI */;
+			targetProxy = 5B16176B2519E2A300A3D78F /* PBXContainerItemProxy */;
+		};
+		5B16176E2519E2A300A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BBABE3224CDA01100C3A22C /* makeba */;
+			targetProxy = 5B16176D2519E2A300A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617752519E2A300A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617602519E2A300A3D78F /* MakebaAPI */;
+			targetProxy = 5B1617742519E2A300A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617AC2519E30500A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617A52519E30500A3D78F /* Storage */;
+			targetProxy = 5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617CB2519E31400A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617BF2519E31400A3D78F /* MakebaStorage */;
+			targetProxy = 5B1617CA2519E31400A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617CD2519E31400A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BBABE3224CDA01100C3A22C /* makeba */;
+			targetProxy = 5B1617CC2519E31400A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617D42519E31400A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617BF2519E31400A3D78F /* MakebaStorage */;
+			targetProxy = 5B1617D32519E31400A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617EB2519E36400A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617A52519E30500A3D78F /* Storage */;
+			targetProxy = 5B1617EA2519E36400A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617F02519E36C00A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617362519E29100A3D78F /* API */;
+			targetProxy = 5B1617EF2519E36C00A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617F52519E37500A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF5386424DFC4EC004B513D /* Data */;
+			targetProxy = 5B1617F42519E37500A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617FA2519E39000A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617362519E29100A3D78F /* API */;
+			targetProxy = 5B1617F92519E39000A3D78F /* PBXContainerItemProxy */;
+		};
+		5B1617FE2519E39000A3D78F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617A52519E30500A3D78F /* Storage */;
+			targetProxy = 5B1617FD2519E39000A3D78F /* PBXContainerItemProxy */;
+		};
 		5BBABE4B24CDA01200C3A22C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BBABE3224CDA01100C3A22C /* makeba */;
@@ -1262,16 +1949,6 @@
 			isa = PBXTargetDependency;
 			target = 5BBABE3224CDA01100C3A22C /* makeba */;
 			targetProxy = 5BBABE5524CDA01200C3A22C /* PBXContainerItemProxy */;
-		};
-		5BF5387024DFC4EC004B513D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BF5386424DFC4EC004B513D /* Data */;
-			targetProxy = 5BF5386F24DFC4EC004B513D /* PBXContainerItemProxy */;
-		};
-		5BF5387224DFC4EC004B513D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BBABE3224CDA01100C3A22C /* makeba */;
-			targetProxy = 5BF5387124DFC4EC004B513D /* PBXContainerItemProxy */;
 		};
 		5BF5387924DFC4EC004B513D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1301,6 +1978,422 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B1617262519E12600A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B1617272519E12600A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B1617282519E12600A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Debug;
+		};
+		5B1617292519E12600A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Release;
+		};
+		5B16174F2519E29200A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = API/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.API;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B1617502519E29200A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = API/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.API;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B1617792519E2A300A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B16177A2519E2A300A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B16177C2519E2A300A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Debug;
+		};
+		5B16177D2519E2A300A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Release;
+		};
+		5B1617B02519E30500A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Storage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.Storage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B1617B12519E30500A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Storage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.Storage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B1617D82519E31400A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B1617D92519E31400A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MakebaStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B1617DB2519E31400A3D78F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaStorageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Debug;
+		};
+		5B1617DC2519E31400A3D78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUPNP9UD97;
+				INFOPLIST_FILE = MakebaStorageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
+			};
+			name = Release;
+		};
 		5BBABE5B24CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1615,53 +2708,81 @@
 			};
 			name = Release;
 		};
-		5BF5388024DFC4EC004B513D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2E388F9281743674BDC9BAD /* Pods-Data-DataTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = DataTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.DataTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
-			};
-			name = Debug;
-		};
-		5BF5388124DFC4EC004B513D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D46BFAEB437F0A1127E7F86 /* Pods-Data-DataTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = DataTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.DataTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B16172A2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617262519E12600A3D78F /* Debug */,
+				5B1617272519E12600A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B16172B2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617282519E12600A3D78F /* Debug */,
+				5B1617292519E12600A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B16174E2519E29200A3D78F /* Build configuration list for PBXNativeTarget "API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B16174F2519E29200A3D78F /* Debug */,
+				5B1617502519E29200A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1617782519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617792519E2A300A3D78F /* Debug */,
+				5B16177A2519E2A300A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B16177B2519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B16177C2519E2A300A3D78F /* Debug */,
+				5B16177D2519E2A300A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1617AF2519E30500A3D78F /* Build configuration list for PBXNativeTarget "Storage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617B02519E30500A3D78F /* Debug */,
+				5B1617B12519E30500A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1617D72519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617D82519E31400A3D78F /* Debug */,
+				5B1617D92519E31400A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B1617DA2519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1617DB2519E31400A3D78F /* Debug */,
+				5B1617DC2519E31400A3D78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5BBABE2E24CDA01100C3A22C /* Build configuration list for PBXProject "makeba" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1703,15 +2824,6 @@
 			buildConfigurations = (
 				5BF5387D24DFC4EC004B513D /* Debug */,
 				5BF5387E24DFC4EC004B513D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5BF5387F24DFC4EC004B513D /* Build configuration list for PBXNativeTarget "DataTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5BF5388024DFC4EC004B513D /* Debug */,
-				5BF5388124DFC4EC004B513D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
