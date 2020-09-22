@@ -19,7 +19,7 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel> {
     }
     
     private func configurateView() {
-        _view.tableView.register(ServerInfoTableViewCell.self, forCellReuseIdentifier: "\(ServerInfoTableViewCell.self)")
+        _view.tableView.register(StatTableViewCell.self, forCellReuseIdentifier: "\(StatTableViewCell.self)")
         _view.tableView.delegate    = self
         _view.tableView.dataSource  = self
     }
@@ -52,9 +52,9 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! StatTableViewCell
         if let data =  _viewModel.containers.value[indexPath.section].stats?[indexPath.row] {
-            cell.setupData(title: data.title, host: data.model?.text, isOnline: false)
+            cell.setupData(title: data.title, value: data.model?.text)
         }
         return cell
     }

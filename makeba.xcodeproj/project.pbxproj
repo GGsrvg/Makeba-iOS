@@ -11,6 +11,7 @@
 		5B12E9462505EF1700647C60 /* StatsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E9452505EF1600647C60 /* StatsContainer.swift */; };
 		5B12E94825067AAB00647C60 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94725067AAB00647C60 /* NetworkResponse.swift */; };
 		5B12E94B2506996100647C60 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94A2506996100647C60 /* StatusCode.swift */; };
+		5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1616F32519D87500A3D78F /* StatTableViewCell.swift */; };
 		5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
 		5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1D24F96DEA00FD80B0 /* Preference.swift */; };
 		5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
@@ -135,6 +136,7 @@
 		5B12E9452505EF1600647C60 /* StatsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsContainer.swift; sourceTree = "<group>"; };
 		5B12E94725067AAB00647C60 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		5B12E94A2506996100647C60 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		5B1616F32519D87500A3D78F /* StatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		5B219A1D24F96DEA00FD80B0 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
@@ -261,6 +263,14 @@
 				5B12E94A2506996100647C60 /* StatusCode.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5B1616EE2519D84100A3D78F /* Stat */ = {
+			isa = PBXGroup;
+			children = (
+				5B1616F32519D87500A3D78F /* StatTableViewCell.swift */,
+			);
+			path = Stat;
 			sourceTree = "<group>";
 		};
 		5B219A1124F9666700FD80B0 /* DB */ = {
@@ -637,6 +647,7 @@
 		5BD4913224D6930100BF0C8A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				5B1616EE2519D84100A3D78F /* Stat */,
 				5BD4914824D6EF8C00BF0C8A /* ServerInfo */,
 			);
 			path = Cell;
@@ -1164,6 +1175,7 @@
 				5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */,
 				5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
+				5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */,
 				5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */,
 				5BD4914324D6971C00BF0C8A /* BaseViewModel.swift in Sources */,
 				5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */,

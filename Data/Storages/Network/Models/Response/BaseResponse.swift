@@ -11,7 +11,7 @@ import Foundation
 protocol BaseResponse: Codable {
     associatedtype Object: Any
     
-    var message: String { get }
-    var errorMessage: String { get }
+    var message: String? { get }
+    var errorMessage: String? { get }
     var data: Object { get }
 }

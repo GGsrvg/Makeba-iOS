@@ -55,7 +55,6 @@ class ServerInfoTableViewCell: UITableViewCell {
         addSubview(labelTitle)
         addSubview(labelHost)
         addSubview(labelState)
-//        addSubview(labelDescription)
         setupLayout()
     }
     

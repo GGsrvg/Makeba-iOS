@@ -10,8 +10,8 @@ import Foundation
 
 struct StatsResponse: BaseResponse {
     
-    var message: String
-    var errorMessage: String
+    var message: String?
+    var errorMessage: String?
     var data: [SNStats]
     
     enum CodingKeys: String, CodingKey {
