@@ -44,7 +44,7 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _viewModel.containers.value[section].stats?.count ?? 0
+        return _viewModel.containers.value[section].stats.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -53,9 +53,8 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! StatTableViewCell
-        if let data =  _viewModel.containers.value[indexPath.section].stats?[indexPath.row] {
-            cell.setupData(title: data.title, value: data.model?.text)
-        }
+        let data =  _viewModel.containers.value[indexPath.section].stats[indexPath.row]
+        cell.setupData(title: data.title, value: data.model?.text)
         return cell
     }
     

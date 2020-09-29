@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5149386B86D4C2A3F796669C /* Pods_makeba_makebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6FBF8F96E439EB0AEAF6622 /* Pods_makeba_makebaUITests.framework */; };
-		5B12E9462505EF1700647C60 /* StatsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E9452505EF1600647C60 /* StatsContainer.swift */; };
-		5B12E94825067AAB00647C60 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94725067AAB00647C60 /* NetworkResponse.swift */; };
-		5B12E94B2506996100647C60 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94A2506996100647C60 /* StatusCode.swift */; };
+		06B54FD080C1EE3C509FCEF4 /* Pods_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */; };
+		160904FF4939EF8DB1574FCE /* Pods_makeba_makebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */; };
+		29732A0C1547077F024380C6 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C52354A2D52F1A03A77743 /* Pods_Data.framework */; };
+		48985FE5479CC487E08FFCBA /* Pods_makeba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5945C6159641D51F064EACA2 /* Pods_makeba.framework */; };
+		50FCDD9F1251F05C99A7BEEA /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9601E2B37A6585F07A982D20 /* Pods_API.framework */; };
 		5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1616F32519D87500A3D78F /* StatTableViewCell.swift */; };
 		5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; };
 		5B16171F2519E12600A3D78F /* MakebaDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16171E2519E12600A3D78F /* MakebaDataTests.swift */; };
@@ -20,49 +21,16 @@
 		5B1617492519E29100A3D78F /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617392519E29100A3D78F /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B16174C2519E29100A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
 		5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B16176A2519E2A300A3D78F /* MakebaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; };
-		5B1617712519E2A300A3D78F /* MakebaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1617702519E2A300A3D78F /* MakebaAPITests.swift */; };
-		5B1617732519E2A300A3D78F /* MakebaAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617632519E2A300A3D78F /* MakebaAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1617762519E2A300A3D78F /* MakebaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; };
-		5B1617772519E2A300A3D78F /* MakebaAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617AA2519E30500A3D78F /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617A82519E30500A3D78F /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
 		5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617C92519E31400A3D78F /* MakebaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; };
-		5B1617D02519E31400A3D78F /* MakebaStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */; };
-		5B1617D22519E31400A3D78F /* MakebaStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617C22519E31400A3D78F /* MakebaStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1617D52519E31400A3D78F /* MakebaStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; };
-		5B1617D62519E31400A3D78F /* MakebaStorage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617E82519E36400A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
-		5B1617E92519E36400A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617ED2519E36C00A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
-		5B1617EE2519E36C00A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617F72519E39000A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
-		5B1617F82519E39000A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617FB2519E39000A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
-		5B1617FC2519E39000A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1618002519E3C700A3D78F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFF260924E1BDEB00C83286 /* CoreData.framework */; };
-		5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
-		5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1D24F96DEA00FD80B0 /* Preference.swift */; };
-		5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
-		5B219A2424F9766300FD80B0 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2324F9766300FD80B0 /* Server.swift */; };
-		5B219A3024FABE6700FD80B0 /* ServerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2F24FABE6700FD80B0 /* ServerCase.swift */; };
-		5B219A4424FBCBCE00FD80B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4324FBCBCE00FD80B0 /* CoreDataStack.swift */; };
-		5B219A4724FBD8AA00FD80B0 /* ServerEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */; };
-		5B219A4A24FBDC3200FD80B0 /* BaseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4924FBDC3200FD80B0 /* BaseCase.swift */; };
-		5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */; };
-		5B23E143251775DF00ECC89A /* SNStatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E142251775DF00ECC89A /* SNStatModel.swift */; };
-		5B23E1492517773500ECC89A /* SNStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E1482517773500ECC89A /* SNStat.swift */; };
-		5B23E14F2517774300ECC89A /* SNStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E14E2517774300ECC89A /* SNStats.swift */; };
-		5B23E1592517778000ECC89A /* StatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E1582517778000ECC89A /* StatsResponse.swift */; };
-		5B27AF66250E2776001577CC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27AF65250E2776001577CC /* NetworkError.swift */; };
 		5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53AA2E24D52C120051C296 /* R.generated.swift */; };
-		5B59AD66250530AD00397FF5 /* StatCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59AD65250530AD00397FF5 /* StatCase.swift */; };
-		5BACE48D24FFE66A003EB2BE /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48C24FFE66A003EB2BE /* NetworkStatus.swift */; };
-		5BACE49024FFE793003EB2BE /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48F24FFE793003EB2BE /* BaseResponse.swift */; };
-		5BACE49524FFE817003EB2BE /* DBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE49424FFE817003EB2BE /* DBStatus.swift */; };
+		5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE7D252254CF0053D8E7 /* Stats.swift */; };
+		5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE83252254EA0053D8E7 /* Stat.swift */; };
+		5B81EE8A252255060053D8E7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE89252255060053D8E7 /* Model.swift */; };
+		5B81EE9F2523B5E50053D8E7 /* MDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE9E2523B5E50053D8E7 /* MDError.swift */; };
 		5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3624CDA01100C3A22C /* AppDelegate.swift */; };
 		5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3824CDA01100C3A22C /* SceneDelegate.swift */; };
 		5BBABE4024CDA01200C3A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBABE3F24CDA01200C3A22C /* Assets.xcassets */; };
@@ -71,15 +39,40 @@
 		5BBABE5924CDA01200C3A22C /* makebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE5824CDA01200C3A22C /* makebaUITests.swift */; };
 		5BBD27E024FEC6420022994D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27DF24FEC6420022994D /* Binding.swift */; };
 		5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27E124FF57B90022994D /* UIMTextField.swift */; };
-		5BC038E32501FE6100E7BADE /* QueryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC038E22501FE6100E7BADE /* QueryError.swift */; };
-		5BC29859250E6FFD0067A949 /* ServerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29857250E6FFC0067A949 /* ServerEntity+CoreDataProperties.swift */; };
-		5BC2985A250E6FFD0067A949 /* ServerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29858250E6FFC0067A949 /* ServerEntity+CoreDataClass.swift */; };
-		5BC29862250E72120067A949 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29860250E72120067A949 /* Model.xcdatamodeld */; };
+		5BCAB5822520F61000247BF4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
+		5BCAB5832520F61000247BF4 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BCAB5872520F61600247BF4 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
+		5BCAB5882520F61600247BF4 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCAE60E24D68FEA0002945B /* TabBarController.swift */; };
 		5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */; };
 		5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9C24D88DBC00618676 /* AddServerView.swift */; };
 		5BCC3BC024D1F42500A7C7DA /* NavigationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC3BBF24D1F42500A7C7DA /* NavigationRule.swift */; };
 		5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC3BC124D1F4A800A7C7DA /* ViewControllers.swift */; };
+		5BD31901251A19F0005BFAF7 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94A2506996100647C60 /* StatusCode.swift */; };
+		5BD31903251A19F0005BFAF7 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
+		5BD31907251A19F0005BFAF7 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48F24FFE793003EB2BE /* BaseResponse.swift */; };
+		5BD31908251A19F0005BFAF7 /* StatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B23E1582517778000ECC89A /* StatsResponse.swift */; };
+		5BD31909251A19F0005BFAF7 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94725067AAB00647C60 /* NetworkResponse.swift */; };
+		5BD3190A251A19F0005BFAF7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B27AF65250E2776001577CC /* NetworkError.swift */; };
+		5BD3195F251A228A005BFAF7 /* DBStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE49424FFE817003EB2BE /* DBStatus.swift */; };
+		5BD31960251A228A005BFAF7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4324FBCBCE00FD80B0 /* CoreDataStack.swift */; };
+		5BD31961251A228A005BFAF7 /* ServerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29858250E6FFC0067A949 /* ServerEntity+CoreDataClass.swift */; };
+		5BD31962251A228A005BFAF7 /* ServerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29857250E6FFC0067A949 /* ServerEntity+CoreDataProperties.swift */; };
+		5BD31963251A228A005BFAF7 /* ServerEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */; };
+		5BD31964251A228A005BFAF7 /* BaseEntityCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */; };
+		5BD31975251A74CC005BFAF7 /* MStatCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD31974251A74CC005BFAF7 /* MStatCase.swift */; };
+		5BD3197E251A75AD005BFAF7 /* MServerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3197D251A75AD005BFAF7 /* MServerCase.swift */; };
+		5BD319D1251BB5AD005BFAF7 /* BaseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A4924FBDC3200FD80B0 /* BaseCase.swift */; };
+		5BD319D2251BB5AD005BFAF7 /* StatCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B59AD65250530AD00397FF5 /* StatCase.swift */; };
+		5BD319D3251BB5AD005BFAF7 /* ServerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2F24FABE6700FD80B0 /* ServerCase.swift */; };
+		5BD319D4251BB5AD005BFAF7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2324F9766300FD80B0 /* Server.swift */; };
+		5BD319D5251BB5AD005BFAF7 /* DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC038E22501FE6100E7BADE /* DError.swift */; };
+		5BD319DF251BB5BA005BFAF7 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
+		5BD319F6251BB76C005BFAF7 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5BD319F7251BB76C005BFAF7 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD319FA251BB76C005BFAF7 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5BD319FB251BB76C005BFAF7 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD31A0F251CD7B2005BFAF7 /* MDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD31A0E251CD7B2005BFAF7 /* MDataLayer.swift */; };
 		5BD4913624D6933000BF0C8A /* ServerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4913524D6933000BF0C8A /* ServerListViewController.swift */; };
 		5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4913724D6933900BF0C8A /* StatsViewController.swift */; };
 		5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4913924D6934200BF0C8A /* AddServerViewController.swift */; };
@@ -96,10 +89,9 @@
 		5BF5387724DFC4EC004B513D /* Data.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF5386724DFC4EC004B513D /* Data.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5BFF260A24E1BDEB00C83286 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BFF260924E1BDEB00C83286 /* CoreData.framework */; };
-		9CDAD62319930A28AAC5B080 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711DAB4CE8B55EAA69D8FF0B /* Pods_Data.framework */; };
-		C9B6C2FAC3F8E716EC9B7027 /* Pods_makeba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188CB3227B2267638DB93B0F /* Pods_makeba.framework */; };
-		D13D114CEC0CF103533B1761 /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B741C19E08B63B75FDC9A22E /* Pods_makebaTests.framework */; };
+		64C01F7CDBD0F6536D8C7228 /* Pods_MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */; };
+		A27CED656412141179531FFD /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */; };
+		FFF6EA83A97F0C4F535BC877 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,27 +123,6 @@
 			remoteGlobalIDString = 5B1617362519E29100A3D78F;
 			remoteInfo = API;
 		};
-		5B16176B2519E2A300A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617602519E2A300A3D78F;
-			remoteInfo = MakebaAPI;
-		};
-		5B16176D2519E2A300A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
-			remoteInfo = makeba;
-		};
-		5B1617742519E2A300A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617602519E2A300A3D78F;
-			remoteInfo = MakebaAPI;
-		};
 		5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
@@ -159,61 +130,12 @@
 			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
 			remoteInfo = Storage;
 		};
-		5B1617CA2519E31400A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617BF2519E31400A3D78F;
-			remoteInfo = MakebaStorage;
-		};
-		5B1617CC2519E31400A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
-			remoteInfo = makeba;
-		};
-		5B1617D32519E31400A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617BF2519E31400A3D78F;
-			remoteInfo = MakebaStorage;
-		};
-		5B1617EA2519E36400A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
-			remoteInfo = Storage;
-		};
-		5B1617EF2519E36C00A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617362519E29100A3D78F;
-			remoteInfo = API;
-		};
 		5B1617F42519E37500A3D78F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5BF5386424DFC4EC004B513D;
 			remoteInfo = Data;
-		};
-		5B1617F92519E39000A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617362519E29100A3D78F;
-			remoteInfo = API;
-		};
-		5B1617FD2519E39000A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
-			remoteInfo = Storage;
 		};
 		5BBABE4A24CDA01200C3A22C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -229,6 +151,34 @@
 			remoteGlobalIDString = 5BBABE3224CDA01100C3A22C;
 			remoteInfo = makeba;
 		};
+		5BCAB5842520F61000247BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF5386424DFC4EC004B513D;
+			remoteInfo = Data;
+		};
+		5BCAB5892520F61600247BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF5386424DFC4EC004B513D;
+			remoteInfo = Data;
+		};
+		5BD319F8251BB76C005BFAF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617362519E29100A3D78F;
+			remoteInfo = API;
+		};
+		5BD319FC251BB76C005BFAF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
+			remoteInfo = Storage;
+		};
 		5BF5387824DFC4EC004B513D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
@@ -239,28 +189,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5B1617EC2519E36400A3D78F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5B1617E92519E36400A3D78F /* Storage.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617F12519E36C00A3D78F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5B1617EE2519E36C00A3D78F /* API.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B1617F62519E37500A3D78F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,18 +196,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617FF2519E39000A3D78F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5B1617FC2519E39000A3D78F /* Storage.framework in Embed Frameworks */,
-				5B1617F82519E39000A3D78F /* API.framework in Embed Frameworks */,
+				5BD319F7251BB76C005BFAF7 /* API.framework in Embed Frameworks */,
+				5BD319FB251BB76C005BFAF7 /* Storage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,9 +211,29 @@
 				5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */,
 				5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */,
 				5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */,
-				5B1617D62519E31400A3D78F /* MakebaStorage.framework in Embed Frameworks */,
-				5B1617772519E2A300A3D78F /* MakebaAPI.framework in Embed Frameworks */,
 				5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCAB5862520F61000247BF4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BCAB5832520F61000247BF4 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BCAB58B2520F61600247BF4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BCAB5882520F61600247BF4 /* Data.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +241,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C51DB8F7DDA033554468517 /* Pods-makeba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.debug.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.debug.xcconfig"; sourceTree = "<group>"; };
-		0C6B90F469C0212F3CE1BD65 /* Pods-makeba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.release.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.release.xcconfig"; sourceTree = "<group>"; };
-		148B8ED5FAB41706F40F33C4 /* Pods-makeba-makebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.release.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		188CB3227B2267638DB93B0F /* Pods_makeba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FB4708D2203B8182C5683FF /* Pods-makebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.release.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.release.xcconfig"; sourceTree = "<group>"; };
-		3780417EF95D9A8C53623609 /* Pods-makebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.debug.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		44F20E08459B0482E53E827E /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
-		5B12E9452505EF1600647C60 /* StatsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsContainer.swift; sourceTree = "<group>"; };
+		066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.release.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F8BADB2EE1E44F054E56943 /* Pods_MakebaStorage_MakebaStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaStorage_MakebaStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
+		35DDF84EF45605B8E074520B /* Pods_MakebaStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2A1475662ED59C483A7684 /* Pods-MakebaAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI.release.xcconfig"; path = "Target Support Files/Pods-MakebaAPI/Pods-MakebaAPI.release.xcconfig"; sourceTree = "<group>"; };
+		44864B8A34DF12365939B3EA /* Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaStorage-MakebaStorageTests/Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
+		4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.debug.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5945C6159641D51F064EACA2 /* Pods_makeba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B12E94725067AAB00647C60 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		5B12E94A2506996100647C60 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		5B1616F32519D87500A3D78F /* StatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
@@ -323,23 +263,10 @@
 		5B1617372519E29100A3D78F /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1617392519E29100A3D78F /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		5B16173A2519E29100A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B1617612519E2A300A3D78F /* MakebaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakebaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1617632519E2A300A3D78F /* MakebaAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakebaAPI.h; sourceTree = "<group>"; };
-		5B1617642519E2A300A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakebaAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1617702519E2A300A3D78F /* MakebaAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakebaAPITests.swift; sourceTree = "<group>"; };
-		5B1617722519E2A300A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1617A62519E30500A3D78F /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1617A82519E30500A3D78F /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		5B1617A92519E30500A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B1617C02519E31400A3D78F /* MakebaStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MakebaStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1617C22519E31400A3D78F /* MakebaStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakebaStorage.h; sourceTree = "<group>"; };
-		5B1617C32519E31400A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MakebaStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakebaStorageTests.swift; sourceTree = "<group>"; };
-		5B1617D12519E31400A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
-		5B219A1D24F96DEA00FD80B0 /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
 		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
 		5B219A2324F9766300FD80B0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		5B219A2F24FABE6700FD80B0 /* ServerCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCase.swift; sourceTree = "<group>"; };
@@ -347,14 +274,14 @@
 		5B219A4624FBD8AA00FD80B0 /* ServerEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEntityCase.swift; sourceTree = "<group>"; };
 		5B219A4924FBDC3200FD80B0 /* BaseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCase.swift; sourceTree = "<group>"; };
 		5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityCase.swift; sourceTree = "<group>"; };
-		5B23E142251775DF00ECC89A /* SNStatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStatModel.swift; sourceTree = "<group>"; };
-		5B23E1482517773500ECC89A /* SNStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStat.swift; sourceTree = "<group>"; };
-		5B23E14E2517774300ECC89A /* SNStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNStats.swift; sourceTree = "<group>"; };
 		5B23E1582517778000ECC89A /* StatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsResponse.swift; sourceTree = "<group>"; };
 		5B27AF65250E2776001577CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5B53AA2E24D52C120051C296 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5B59AD65250530AD00397FF5 /* StatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCase.swift; sourceTree = "<group>"; };
-		5BACE48C24FFE66A003EB2BE /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		5B81EE7D252254CF0053D8E7 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		5B81EE83252254EA0053D8E7 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
+		5B81EE89252255060053D8E7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5B81EE9E2523B5E50053D8E7 /* MDError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDError.swift; sourceTree = "<group>"; };
 		5BACE48F24FFE793003EB2BE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5BACE49424FFE817003EB2BE /* DBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStatus.swift; sourceTree = "<group>"; };
 		5BBABE3324CDA01100C3A22C /* Makeba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makeba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,7 +297,7 @@
 		5BBABE5A24CDA01200C3A22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BBD27DF24FEC6420022994D /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		5BBD27E124FF57B90022994D /* UIMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMTextField.swift; sourceTree = "<group>"; };
-		5BC038E22501FE6100E7BADE /* QueryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryError.swift; sourceTree = "<group>"; };
+		5BC038E22501FE6100E7BADE /* DError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DError.swift; sourceTree = "<group>"; };
 		5BC29857250E6FFC0067A949 /* ServerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5BC29858250E6FFC0067A949 /* ServerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5BC29861250E72120067A949 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -379,6 +306,9 @@
 		5BCB7E9C24D88DBC00618676 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
 		5BCC3BBF24D1F42500A7C7DA /* NavigationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRule.swift; sourceTree = "<group>"; };
 		5BCC3BC124D1F4A800A7C7DA /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		5BD31974251A74CC005BFAF7 /* MStatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MStatCase.swift; sourceTree = "<group>"; };
+		5BD3197D251A75AD005BFAF7 /* MServerCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MServerCase.swift; sourceTree = "<group>"; };
+		5BD31A0E251CD7B2005BFAF7 /* MDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDataLayer.swift; sourceTree = "<group>"; };
 		5BD4913524D6933000BF0C8A /* ServerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListViewController.swift; sourceTree = "<group>"; };
 		5BD4913724D6933900BF0C8A /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		5BD4913924D6934200BF0C8A /* AddServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewController.swift; sourceTree = "<group>"; };
@@ -398,14 +328,32 @@
 		5BF5386724DFC4EC004B513D /* Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
 		5BF5386824DFC4EC004B513D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BFF260924E1BDEB00C83286 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		711DAB4CE8B55EAA69D8FF0B /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		713810359CF14BAD932AB15E /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
-		9D46BFAEB437F0A1127E7F86 /* Pods-Data-DataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data-DataTests.release.xcconfig"; path = "Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests.release.xcconfig"; sourceTree = "<group>"; };
-		A2E388F9281743674BDC9BAD /* Pods-Data-DataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data-DataTests.debug.xcconfig"; path = "Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B741C19E08B63B75FDC9A22E /* Pods_makebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D32AFA1B1F35A1A1DD96C08B /* Pods_Data_DataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data_DataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6FBF8F96E439EB0AEAF6622 /* Pods_makeba_makebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba_makebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC172A7CFEDCDD78C2706262 /* Pods-makeba-makebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.debug.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
+		66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.release.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.release.xcconfig"; sourceTree = "<group>"; };
+		80FA3C2D60BE41D13DD57B04 /* Pods_MakebaAPI_MakebaAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaAPI_MakebaAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C52354A2D52F1A03A77743 /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EC83C0540ABE2903EF4D50 /* Pods_MakebaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ACA7C6E41898E730312F219 /* Pods-MakebaStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage.release.xcconfig"; path = "Target Support Files/Pods-MakebaStorage/Pods-MakebaStorage.release.xcconfig"; sourceTree = "<group>"; };
+		9601E2B37A6585F07A982D20 /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		999D1CA58C9B2B40515F16A9 /* Pods-MakebaAPI-MakebaAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI-MakebaAPITests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaAPI-MakebaAPITests/Pods-MakebaAPI-MakebaAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
+		A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba_makebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData_MakebaDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39669BF38C9C2C2C5F0044E /* Pods-MakebaAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI.debug.xcconfig"; path = "Target Support Files/Pods-MakebaAPI/Pods-MakebaAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.debug.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.debug.xcconfig"; sourceTree = "<group>"; };
+		C446B6563AC9A5848B12EE00 /* Pods-MakebaStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage.debug.xcconfig"; path = "Target Support Files/Pods-MakebaStorage/Pods-MakebaStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.release.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.release.xcconfig"; sourceTree = "<group>"; };
+		DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.debug.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
+		DE1372895C90E1462D963EC4 /* Pods-MakebaAPI-MakebaAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI-MakebaAPITests.release.xcconfig"; path = "Target Support Files/Pods-MakebaAPI-MakebaAPITests/Pods-MakebaAPI-MakebaAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
+		E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.release.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.release.xcconfig"; sourceTree = "<group>"; };
+		F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.release.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F87CA2AD626FD1E828CBB9CD /* Pods-MakebaStorage-MakebaStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage-MakebaStorageTests.release.xcconfig"; path = "Target Support Files/Pods-MakebaStorage-MakebaStorageTests/Pods-MakebaStorage-MakebaStorageTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +362,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1617F22519E37500A3D78F /* Data.framework in Frameworks */,
+				5BD319F6251BB76C005BFAF7 /* API.framework in Frameworks */,
+				5BD319FA251BB76C005BFAF7 /* Storage.framework in Frameworks */,
+				64C01F7CDBD0F6536D8C7228 /* Pods_MakebaData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */,
+				FFF6EA83A97F0C4F535BC877 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,22 +381,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B16175E2519E2A300A3D78F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617ED2519E36C00A3D78F /* API.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617662519E2A300A3D78F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B16176A2519E2A300A3D78F /* MakebaAPI.framework in Frameworks */,
+				5BCAB5822520F61000247BF4 /* Data.framework in Frameworks */,
+				50FCDD9F1251F05C99A7BEEA /* Pods_API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,23 +390,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617BD2519E31400A3D78F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617E82519E36400A3D78F /* Storage.framework in Frameworks */,
-				5B1618002519E3C700A3D78F /* CoreData.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617C52519E31400A3D78F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617C92519E31400A3D78F /* MakebaStorage.framework in Frameworks */,
+				5BCAB5872520F61600247BF4 /* Data.framework in Frameworks */,
+				06B54FD080C1EE3C509FCEF4 /* Pods_Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +401,9 @@
 			files = (
 				5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */,
 				5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */,
-				5B1617D52519E31400A3D78F /* MakebaStorage.framework in Frameworks */,
 				5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */,
-				C9B6C2FAC3F8E716EC9B7027 /* Pods_makeba.framework in Frameworks */,
-				5B1617762519E2A300A3D78F /* MakebaAPI.framework in Frameworks */,
 				5B16174C2519E29100A3D78F /* API.framework in Frameworks */,
+				48985FE5479CC487E08FFCBA /* Pods_makeba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +411,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13D114CEC0CF103533B1761 /* Pods_makebaTests.framework in Frameworks */,
+				A27CED656412141179531FFD /* Pods_makebaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +419,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5149386B86D4C2A3F796669C /* Pods_makeba_makebaUITests.framework in Frameworks */,
+				160904FF4939EF8DB1574FCE /* Pods_makeba_makebaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,10 +427,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BFF260A24E1BDEB00C83286 /* CoreData.framework in Frameworks */,
-				5B1617F72519E39000A3D78F /* API.framework in Frameworks */,
-				5B1617FB2519E39000A3D78F /* Storage.framework in Frameworks */,
-				9CDAD62319930A28AAC5B080 /* Pods_Data.framework in Frameworks */,
+				29732A0C1547077F024380C6 /* Pods_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,8 +453,11 @@
 		5B1617102519E12600A3D78F /* MakebaData */ = {
 			isa = PBXGroup;
 			children = (
+				5B81EE9C2523B5A30053D8E7 /* Models */,
+				5BD31973251A747D005BFAF7 /* UseCases */,
 				5B1617112519E12600A3D78F /* MakebaData.h */,
 				5B1617122519E12600A3D78F /* Info.plist */,
+				5BD31A0E251CD7B2005BFAF7 /* MDataLayer.swift */,
 			);
 			path = MakebaData;
 			sourceTree = "<group>";
@@ -553,91 +474,32 @@
 		5B1617382519E29100A3D78F /* API */ = {
 			isa = PBXGroup;
 			children = (
+				5B12E9492506995500647C60 /* Utils */,
+				5B219A1824F96D4B00FD80B0 /* Requests */,
+				5B219A1524F96A9A00FD80B0 /* Models */,
 				5B1617392519E29100A3D78F /* API.h */,
 				5B16173A2519E29100A3D78F /* Info.plist */,
 			);
 			path = API;
 			sourceTree = "<group>";
 		};
-		5B1617622519E2A300A3D78F /* MakebaAPI */ = {
-			isa = PBXGroup;
-			children = (
-				5B1617632519E2A300A3D78F /* MakebaAPI.h */,
-				5B1617642519E2A300A3D78F /* Info.plist */,
-			);
-			path = MakebaAPI;
-			sourceTree = "<group>";
-		};
-		5B16176F2519E2A300A3D78F /* MakebaAPITests */ = {
-			isa = PBXGroup;
-			children = (
-				5B1617702519E2A300A3D78F /* MakebaAPITests.swift */,
-				5B1617722519E2A300A3D78F /* Info.plist */,
-			);
-			path = MakebaAPITests;
-			sourceTree = "<group>";
-		};
 		5B1617A72519E30500A3D78F /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				5B1617A82519E30500A3D78F /* Storage.h */,
-				5B1617A92519E30500A3D78F /* Info.plist */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		5B1617C12519E31400A3D78F /* MakebaStorage */ = {
-			isa = PBXGroup;
-			children = (
-				5B1617C22519E31400A3D78F /* MakebaStorage.h */,
-				5B1617C32519E31400A3D78F /* Info.plist */,
-			);
-			path = MakebaStorage;
-			sourceTree = "<group>";
-		};
-		5B1617CE2519E31400A3D78F /* MakebaStorageTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B1617CF2519E31400A3D78F /* MakebaStorageTests.swift */,
-				5B1617D12519E31400A3D78F /* Info.plist */,
-			);
-			path = MakebaStorageTests;
-			sourceTree = "<group>";
-		};
-		5B219A1124F9666700FD80B0 /* DB */ = {
 			isa = PBXGroup;
 			children = (
 				5BACE49124FFE7DF003EB2BE /* Status */,
 				5B219A4224FAC16C00FD80B0 /* Stack */,
 				5B219A4124FAC16500FD80B0 /* Entities */,
 				5B219A4524FBD74D00FD80B0 /* UseCase */,
+				5BC29860250E72120067A949 /* Model.xcdatamodeld */,
+				5B1617A82519E30500A3D78F /* Storage.h */,
+				5B1617A92519E30500A3D78F /* Info.plist */,
 			);
-			path = DB;
-			sourceTree = "<group>";
-		};
-		5B219A1224F9667A00FD80B0 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				5B12E9492506995500647C60 /* Utils */,
-				5BACE49224FFE7F3003EB2BE /* Status */,
-				5B219A1824F96D4B00FD80B0 /* Requests */,
-				5B219A1524F96A9A00FD80B0 /* Models */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		5B219A1324F9668300FD80B0 /* Preference */ = {
-			isa = PBXGroup;
-			children = (
-				5B219A1D24F96DEA00FD80B0 /* Preference.swift */,
-			);
-			path = Preference;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		5B219A1524F96A9A00FD80B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5B23E13D251774FD00ECC89A /* Composite */,
 				5B219A1724F96AA800FD80B0 /* Response */,
 				5B219A1624F96AA000FD80B0 /* Request */,
 				5B12E94725067AAB00647C60 /* NetworkResponse.swift */,
@@ -673,9 +535,11 @@
 		5B219A2124F975EF00FD80B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B81EE9325225C0D0053D8E7 /* Helpers */,
+				5B81EE7D252254CF0053D8E7 /* Stats.swift */,
 				5B219A2324F9766300FD80B0 /* Server.swift */,
-				5BC038E22501FE6100E7BADE /* QueryError.swift */,
-				5B12E9452505EF1600647C60 /* StatsContainer.swift */,
+				5B81EE83252254EA0053D8E7 /* Stat.swift */,
+				5B81EE89252255060053D8E7 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -683,27 +547,11 @@
 		5B219A2C24FABDF700FD80B0 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				5B219A4824FBDC2100FD80B0 /* BaseCase */,
-				5B219A2E24FABE0900FD80B0 /* Stats */,
-				5B219A2D24FABDFF00FD80B0 /* Server */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		5B219A2D24FABDFF00FD80B0 /* Server */ = {
-			isa = PBXGroup;
-			children = (
+				5B219A4924FBDC3200FD80B0 /* BaseCase.swift */,
+				5B59AD65250530AD00397FF5 /* StatCase.swift */,
 				5B219A2F24FABE6700FD80B0 /* ServerCase.swift */,
 			);
-			path = Server;
-			sourceTree = "<group>";
-		};
-		5B219A2E24FABE0900FD80B0 /* Stats */ = {
-			isa = PBXGroup;
-			children = (
-				5B59AD65250530AD00397FF5 /* StatCase.swift */,
-			);
-			path = Stats;
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		5B219A4124FAC16500FD80B0 /* Entities */ = {
@@ -732,24 +580,6 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
-		5B219A4824FBDC2100FD80B0 /* BaseCase */ = {
-			isa = PBXGroup;
-			children = (
-				5B219A4924FBDC3200FD80B0 /* BaseCase.swift */,
-			);
-			path = BaseCase;
-			sourceTree = "<group>";
-		};
-		5B23E13D251774FD00ECC89A /* Composite */ = {
-			isa = PBXGroup;
-			children = (
-				5B23E142251775DF00ECC89A /* SNStatModel.swift */,
-				5B23E1482517773500ECC89A /* SNStat.swift */,
-				5B23E14E2517774300ECC89A /* SNStats.swift */,
-			);
-			path = Composite;
-			sourceTree = "<group>";
-		};
 		5B53AA2B24D52BDB0051C296 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,31 +588,36 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5B81EE9325225C0D0053D8E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BC038E22501FE6100E7BADE /* DError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5B81EE9C2523B5A30053D8E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B81EE9D2523B5C90053D8E7 /* Helpers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B81EE9D2523B5C90053D8E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5B81EE9E2523B5E50053D8E7 /* MDError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5BACE49124FFE7DF003EB2BE /* Status */ = {
 			isa = PBXGroup;
 			children = (
 				5BACE49424FFE817003EB2BE /* DBStatus.swift */,
 			);
 			path = Status;
-			sourceTree = "<group>";
-		};
-		5BACE49224FFE7F3003EB2BE /* Status */ = {
-			isa = PBXGroup;
-			children = (
-				5BACE48C24FFE66A003EB2BE /* NetworkStatus.swift */,
-			);
-			path = Status;
-			sourceTree = "<group>";
-		};
-		5BACE49624FFE9D3003EB2BE /* Storages */ = {
-			isa = PBXGroup;
-			children = (
-				5B219A1324F9668300FD80B0 /* Preference */,
-				5B219A1224F9667A00FD80B0 /* Network */,
-				5B219A1124F9666700FD80B0 /* DB */,
-				5BC29860250E72120067A949 /* Model.xcdatamodeld */,
-			);
-			path = Storages;
 			sourceTree = "<group>";
 		};
 		5BBABE2A24CDA01100C3A22C = {
@@ -795,11 +630,7 @@
 				5B1617102519E12600A3D78F /* MakebaData */,
 				5B16171D2519E12600A3D78F /* MakebaDataTests */,
 				5B1617382519E29100A3D78F /* API */,
-				5B1617622519E2A300A3D78F /* MakebaAPI */,
-				5B16176F2519E2A300A3D78F /* MakebaAPITests */,
 				5B1617A72519E30500A3D78F /* Storage */,
-				5B1617C12519E31400A3D78F /* MakebaStorage */,
-				5B1617CE2519E31400A3D78F /* MakebaStorageTests */,
 				5BBABE3424CDA01100C3A22C /* Products */,
 				BABDF36AF2B8C83ED3C4B9F9 /* Pods */,
 				70ED656271621F509858388E /* Frameworks */,
@@ -816,11 +647,7 @@
 				5B16170F2519E12600A3D78F /* MakebaData.framework */,
 				5B1617172519E12600A3D78F /* MakebaDataTests.xctest */,
 				5B1617372519E29100A3D78F /* API.framework */,
-				5B1617612519E2A300A3D78F /* MakebaAPI.framework */,
-				5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */,
 				5B1617A62519E30500A3D78F /* Storage.framework */,
-				5B1617C02519E31400A3D78F /* MakebaStorage.framework */,
-				5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -953,6 +780,15 @@
 			path = NavigationRule;
 			sourceTree = "<group>";
 		};
+		5BD31973251A747D005BFAF7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				5BD31974251A74CC005BFAF7 /* MStatCase.swift */,
+				5BD3197D251A75AD005BFAF7 /* MServerCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		5BD4912E24D692E200BF0C8A /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -1042,7 +878,6 @@
 			children = (
 				5B219A2C24FABDF700FD80B0 /* UseCases */,
 				5B219A2124F975EF00FD80B0 /* Models */,
-				5BACE49624FFE9D3003EB2BE /* Storages */,
 				5BF5386724DFC4EC004B513D /* Data.h */,
 				5B219A1F24F96EED00FD80B0 /* DataLayer.swift */,
 				5BF5386824DFC4EC004B513D /* Info.plist */,
@@ -1062,11 +897,18 @@
 			isa = PBXGroup;
 			children = (
 				5BFF260924E1BDEB00C83286 /* CoreData.framework */,
-				711DAB4CE8B55EAA69D8FF0B /* Pods_Data.framework */,
-				D32AFA1B1F35A1A1DD96C08B /* Pods_Data_DataTests.framework */,
-				188CB3227B2267638DB93B0F /* Pods_makeba.framework */,
-				D6FBF8F96E439EB0AEAF6622 /* Pods_makeba_makebaUITests.framework */,
-				B741C19E08B63B75FDC9A22E /* Pods_makebaTests.framework */,
+				9601E2B37A6585F07A982D20 /* Pods_API.framework */,
+				82C52354A2D52F1A03A77743 /* Pods_Data.framework */,
+				82EC83C0540ABE2903EF4D50 /* Pods_MakebaAPI.framework */,
+				80FA3C2D60BE41D13DD57B04 /* Pods_MakebaAPI_MakebaAPITests.framework */,
+				5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */,
+				B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */,
+				35DDF84EF45605B8E074520B /* Pods_MakebaStorage.framework */,
+				1F8BADB2EE1E44F054E56943 /* Pods_MakebaStorage_MakebaStorageTests.framework */,
+				CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */,
+				5945C6159641D51F064EACA2 /* Pods_makeba.framework */,
+				A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */,
+				B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1074,16 +916,30 @@
 		BABDF36AF2B8C83ED3C4B9F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				713810359CF14BAD932AB15E /* Pods-Data.debug.xcconfig */,
-				44F20E08459B0482E53E827E /* Pods-Data.release.xcconfig */,
-				A2E388F9281743674BDC9BAD /* Pods-Data-DataTests.debug.xcconfig */,
-				9D46BFAEB437F0A1127E7F86 /* Pods-Data-DataTests.release.xcconfig */,
-				0C51DB8F7DDA033554468517 /* Pods-makeba.debug.xcconfig */,
-				0C6B90F469C0212F3CE1BD65 /* Pods-makeba.release.xcconfig */,
-				DC172A7CFEDCDD78C2706262 /* Pods-makeba-makebaUITests.debug.xcconfig */,
-				148B8ED5FAB41706F40F33C4 /* Pods-makeba-makebaUITests.release.xcconfig */,
-				3780417EF95D9A8C53623609 /* Pods-makebaTests.debug.xcconfig */,
-				1FB4708D2203B8182C5683FF /* Pods-makebaTests.release.xcconfig */,
+				E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */,
+				DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */,
+				204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */,
+				47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */,
+				B39669BF38C9C2C2C5F0044E /* Pods-MakebaAPI.debug.xcconfig */,
+				3F2A1475662ED59C483A7684 /* Pods-MakebaAPI.release.xcconfig */,
+				999D1CA58C9B2B40515F16A9 /* Pods-MakebaAPI-MakebaAPITests.debug.xcconfig */,
+				DE1372895C90E1462D963EC4 /* Pods-MakebaAPI-MakebaAPITests.release.xcconfig */,
+				BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */,
+				E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */,
+				4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */,
+				066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */,
+				C446B6563AC9A5848B12EE00 /* Pods-MakebaStorage.debug.xcconfig */,
+				8ACA7C6E41898E730312F219 /* Pods-MakebaStorage.release.xcconfig */,
+				44864B8A34DF12365939B3EA /* Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig */,
+				F87CA2AD626FD1E828CBB9CD /* Pods-MakebaStorage-MakebaStorageTests.release.xcconfig */,
+				63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */,
+				9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */,
+				C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */,
+				D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */,
+				DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */,
+				F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */,
+				4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */,
+				66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1107,27 +963,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B16175C2519E2A300A3D78F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617732519E2A300A3D78F /* MakebaAPI.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B1617A12519E30500A3D78F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B1617AA2519E30500A3D78F /* Storage.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617BB2519E31400A3D78F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617D22519E31400A3D78F /* MakebaStorage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +986,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16172A2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaData" */;
 			buildPhases = (
+				F3296F29A3BEA1FB0379FDEB /* [CP] Check Pods Manifest.lock */,
 				5B16170A2519E12600A3D78F /* Headers */,
 				5B16170B2519E12600A3D78F /* Sources */,
 				5B16170C2519E12600A3D78F /* Frameworks */,
@@ -1156,6 +997,8 @@
 			);
 			dependencies = (
 				5B1617F52519E37500A3D78F /* PBXTargetDependency */,
+				5BD319F9251BB76C005BFAF7 /* PBXTargetDependency */,
+				5BD319FD251BB76C005BFAF7 /* PBXTargetDependency */,
 			);
 			name = MakebaData;
 			productName = MakebaData;
@@ -1166,9 +1009,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16172B2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaDataTests" */;
 			buildPhases = (
+				C54077ECA609B3BB71D04D9D /* [CP] Check Pods Manifest.lock */,
 				5B1617132519E12600A3D78F /* Sources */,
 				5B1617142519E12600A3D78F /* Frameworks */,
 				5B1617152519E12600A3D78F /* Resources */,
+				B5680EDBB600F88C9874F0C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1185,127 +1030,55 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16174E2519E29200A3D78F /* Build configuration list for PBXNativeTarget "API" */;
 			buildPhases = (
+				1DFD64CCE1E4529969521368 /* [CP] Check Pods Manifest.lock */,
 				5B1617322519E29100A3D78F /* Headers */,
 				5B1617332519E29100A3D78F /* Sources */,
 				5B1617342519E29100A3D78F /* Frameworks */,
 				5B1617352519E29100A3D78F /* Resources */,
+				5BCAB5862520F61000247BF4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5BCAB5852520F61000247BF4 /* PBXTargetDependency */,
 			);
 			name = API;
 			productName = API;
 			productReference = 5B1617372519E29100A3D78F /* API.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B1617602519E2A300A3D78F /* MakebaAPI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B1617782519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPI" */;
-			buildPhases = (
-				5B16175C2519E2A300A3D78F /* Headers */,
-				5B16175D2519E2A300A3D78F /* Sources */,
-				5B16175E2519E2A300A3D78F /* Frameworks */,
-				5B16175F2519E2A300A3D78F /* Resources */,
-				5B1617F12519E36C00A3D78F /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B1617F02519E36C00A3D78F /* PBXTargetDependency */,
-			);
-			name = MakebaAPI;
-			productName = MakebaAPI;
-			productReference = 5B1617612519E2A300A3D78F /* MakebaAPI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5B1617682519E2A300A3D78F /* MakebaAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B16177B2519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPITests" */;
-			buildPhases = (
-				5B1617652519E2A300A3D78F /* Sources */,
-				5B1617662519E2A300A3D78F /* Frameworks */,
-				5B1617672519E2A300A3D78F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B16176C2519E2A300A3D78F /* PBXTargetDependency */,
-				5B16176E2519E2A300A3D78F /* PBXTargetDependency */,
-			);
-			name = MakebaAPITests;
-			productName = MakebaAPITests;
-			productReference = 5B1617692519E2A300A3D78F /* MakebaAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5B1617A52519E30500A3D78F /* Storage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B1617AF2519E30500A3D78F /* Build configuration list for PBXNativeTarget "Storage" */;
 			buildPhases = (
+				A974B930A2027C5EC9A8CA08 /* [CP] Check Pods Manifest.lock */,
 				5B1617A12519E30500A3D78F /* Headers */,
 				5B1617A22519E30500A3D78F /* Sources */,
 				5B1617A32519E30500A3D78F /* Frameworks */,
 				5B1617A42519E30500A3D78F /* Resources */,
+				5BCAB58B2520F61600247BF4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5BCAB58A2520F61600247BF4 /* PBXTargetDependency */,
 			);
 			name = Storage;
 			productName = Storage;
 			productReference = 5B1617A62519E30500A3D78F /* Storage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B1617BF2519E31400A3D78F /* MakebaStorage */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B1617D72519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorage" */;
-			buildPhases = (
-				5B1617BB2519E31400A3D78F /* Headers */,
-				5B1617BC2519E31400A3D78F /* Sources */,
-				5B1617BD2519E31400A3D78F /* Frameworks */,
-				5B1617BE2519E31400A3D78F /* Resources */,
-				5B1617EC2519E36400A3D78F /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B1617EB2519E36400A3D78F /* PBXTargetDependency */,
-			);
-			name = MakebaStorage;
-			productName = MakebaStorage;
-			productReference = 5B1617C02519E31400A3D78F /* MakebaStorage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5B1617C72519E31400A3D78F /* MakebaStorageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B1617DA2519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorageTests" */;
-			buildPhases = (
-				5B1617C42519E31400A3D78F /* Sources */,
-				5B1617C52519E31400A3D78F /* Frameworks */,
-				5B1617C62519E31400A3D78F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B1617CB2519E31400A3D78F /* PBXTargetDependency */,
-				5B1617CD2519E31400A3D78F /* PBXTargetDependency */,
-			);
-			name = MakebaStorageTests;
-			productName = MakebaStorageTests;
-			productReference = 5B1617C82519E31400A3D78F /* MakebaStorageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5BBABE3224CDA01100C3A22C /* makeba */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE5D24CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makeba" */;
 			buildPhases = (
-				FD8660E410367EBD8DF89177 /* [CP] Check Pods Manifest.lock */,
+				19D99CD6D88DE371B514008E /* [CP] Check Pods Manifest.lock */,
 				5B35223624D52AC90090078D /* ShellScript */,
 				5BBABE2F24CDA01100C3A22C /* Sources */,
 				5BBABE3024CDA01100C3A22C /* Frameworks */,
 				5BBABE3124CDA01100C3A22C /* Resources */,
 				5B960D5524D32A2B00E7850D /* Embed Frameworks */,
-				CED19489059EE598464E9640 /* [CP] Embed Pods Frameworks */,
+				6C51B0BA394295B6371E8D0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1313,9 +1086,7 @@
 				5BF5387924DFC4EC004B513D /* PBXTargetDependency */,
 				5B1617232519E12600A3D78F /* PBXTargetDependency */,
 				5B16174B2519E29100A3D78F /* PBXTargetDependency */,
-				5B1617752519E2A300A3D78F /* PBXTargetDependency */,
 				5B1617AC2519E30500A3D78F /* PBXTargetDependency */,
-				5B1617D42519E31400A3D78F /* PBXTargetDependency */,
 			);
 			name = makeba;
 			productName = makeba;
@@ -1326,11 +1097,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE6024CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makebaTests" */;
 			buildPhases = (
-				B2708BC8118949977D409981 /* [CP] Check Pods Manifest.lock */,
+				113FE1999C01F786D7FC4A47 /* [CP] Check Pods Manifest.lock */,
 				5BBABE4524CDA01200C3A22C /* Sources */,
 				5BBABE4624CDA01200C3A22C /* Frameworks */,
 				5BBABE4724CDA01200C3A22C /* Resources */,
-				78C01DD61A0188FBE840C07A /* [CP] Embed Pods Frameworks */,
+				CF4B71B4E55B2B36A8ADAD6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1346,11 +1117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE6324CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makebaUITests" */;
 			buildPhases = (
-				A2BB52F7645436C0FC3F8FA6 /* [CP] Check Pods Manifest.lock */,
+				16F4FE88663084F1AB55466A /* [CP] Check Pods Manifest.lock */,
 				5BBABE5024CDA01200C3A22C /* Sources */,
 				5BBABE5124CDA01200C3A22C /* Frameworks */,
 				5BBABE5224CDA01200C3A22C /* Resources */,
-				DE8BAC6CC32351BB682BFCD4 /* [CP] Embed Pods Frameworks */,
+				C537052887AC997CE8508878 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1366,18 +1137,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF5387C24DFC4EC004B513D /* Build configuration list for PBXNativeTarget "Data" */;
 			buildPhases = (
-				9EB9A2928A4DA748525A3FDC /* [CP] Check Pods Manifest.lock */,
+				5B6022C1C61B7791C9AA7BFE /* [CP] Check Pods Manifest.lock */,
 				5BF5386024DFC4EC004B513D /* Headers */,
 				5BF5386124DFC4EC004B513D /* Sources */,
 				5BF5386224DFC4EC004B513D /* Frameworks */,
 				5BF5386324DFC4EC004B513D /* Resources */,
-				5B1617FF2519E39000A3D78F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5B1617FA2519E39000A3D78F /* PBXTargetDependency */,
-				5B1617FE2519E39000A3D78F /* PBXTargetDependency */,
 			);
 			name = Data;
 			productName = Data;
@@ -1396,6 +1164,7 @@
 				TargetAttributes = {
 					5B16170E2519E12600A3D78F = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					5B1617162519E12600A3D78F = {
 						CreatedOnToolsVersion = 12.0;
@@ -1404,22 +1173,8 @@
 					5B1617362519E29100A3D78F = {
 						CreatedOnToolsVersion = 12.0;
 					};
-					5B1617602519E2A300A3D78F = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					5B1617682519E2A300A3D78F = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 5BBABE3224CDA01100C3A22C;
-					};
 					5B1617A52519E30500A3D78F = {
 						CreatedOnToolsVersion = 12.0;
-					};
-					5B1617BF2519E31400A3D78F = {
-						CreatedOnToolsVersion = 12.0;
-					};
-					5B1617C72519E31400A3D78F = {
-						CreatedOnToolsVersion = 12.0;
-						TestTargetID = 5BBABE3224CDA01100C3A22C;
 					};
 					5BBABE3224CDA01100C3A22C = {
 						CreatedOnToolsVersion = 11.5;
@@ -1459,11 +1214,7 @@
 				5B16170E2519E12600A3D78F /* MakebaData */,
 				5B1617162519E12600A3D78F /* MakebaDataTests */,
 				5B1617362519E29100A3D78F /* API */,
-				5B1617602519E2A300A3D78F /* MakebaAPI */,
-				5B1617682519E2A300A3D78F /* MakebaAPITests */,
 				5B1617A52519E30500A3D78F /* Storage */,
-				5B1617BF2519E31400A3D78F /* MakebaStorage */,
-				5B1617C72519E31400A3D78F /* MakebaStorageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1490,35 +1241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B16175F2519E2A300A3D78F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617672519E2A300A3D78F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5B1617A42519E30500A3D78F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617BE2519E31400A3D78F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617C62519E31400A3D78F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1559,87 +1282,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B35223624D52AC90090078D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$TEMP_DIR/rswift-lastrun",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				$SRCROOT/R.generated.swift,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
-		};
-		78C01DD61A0188FBE840C07A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EB9A2928A4DA748525A3FDC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Data-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2BB52F7645436C0FC3F8FA6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-makeba-makebaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2708BC8118949977D409981 /* [CP] Check Pods Manifest.lock */ = {
+		113FE1999C01F786D7FC4A47 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1661,41 +1304,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CED19489059EE598464E9640 /* [CP] Embed Pods Frameworks */ = {
+		16F4FE88663084F1AB55466A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makeba-makebaUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE8BAC6CC32351BB682BFCD4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD8660E410367EBD8DF89177 /* [CP] Check Pods Manifest.lock */ = {
+		19D99CD6D88DE371B514008E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1717,6 +1348,203 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1DFD64CCE1E4529969521368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B35223624D52AC90090078D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		5B6022C1C61B7791C9AA7BFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Data-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C51B0BA394295B6371E8D0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A974B930A2027C5EC9A8CA08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Storage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5680EDBB600F88C9874F0C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C537052887AC997CE8508878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54077ECA609B3BB71D04D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakebaData-MakebaDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF4B71B4E55B2B36A8ADAD6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3296F29A3BEA1FB0379FDEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MakebaData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1724,6 +1552,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD3197E251A75AD005BFAF7 /* MServerCase.swift in Sources */,
+				5BD31A0F251CD7B2005BFAF7 /* MDataLayer.swift in Sources */,
+				5BD31975251A74CC005BFAF7 /* MStatCase.swift in Sources */,
+				5B81EE9F2523B5E50053D8E7 /* MDError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1739,21 +1571,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B16175D2519E2A300A3D78F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617652519E2A300A3D78F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617712519E2A300A3D78F /* MakebaAPITests.swift in Sources */,
+				5BD31901251A19F0005BFAF7 /* StatusCode.swift in Sources */,
+				5BD31903251A19F0005BFAF7 /* Requests.swift in Sources */,
+				5BD31907251A19F0005BFAF7 /* BaseResponse.swift in Sources */,
+				5BD31908251A19F0005BFAF7 /* StatsResponse.swift in Sources */,
+				5BD31909251A19F0005BFAF7 /* NetworkResponse.swift in Sources */,
+				5BD3190A251A19F0005BFAF7 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1761,21 +1584,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617BC2519E31400A3D78F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B1617C42519E31400A3D78F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B1617D02519E31400A3D78F /* MakebaStorageTests.swift in Sources */,
+				5BD3195F251A228A005BFAF7 /* DBStatus.swift in Sources */,
+				5BD31960251A228A005BFAF7 /* CoreDataStack.swift in Sources */,
+				5BD31961251A228A005BFAF7 /* ServerEntity+CoreDataClass.swift in Sources */,
+				5BD31962251A228A005BFAF7 /* ServerEntity+CoreDataProperties.swift in Sources */,
+				5BD31963251A228A005BFAF7 /* ServerEntityCase.swift in Sources */,
+				5BD31964251A228A005BFAF7 /* BaseEntityCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1829,31 +1643,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC038E32501FE6100E7BADE /* QueryError.swift in Sources */,
-				5BACE49024FFE793003EB2BE /* BaseResponse.swift in Sources */,
-				5B219A4724FBD8AA00FD80B0 /* ServerEntityCase.swift in Sources */,
-				5B219A1E24F96DEA00FD80B0 /* Preference.swift in Sources */,
-				5B219A4A24FBDC3200FD80B0 /* BaseCase.swift in Sources */,
-				5BC2985A250E6FFD0067A949 /* ServerEntity+CoreDataClass.swift in Sources */,
-				5B219A2024F96EED00FD80B0 /* DataLayer.swift in Sources */,
-				5B219A4424FBCBCE00FD80B0 /* CoreDataStack.swift in Sources */,
-				5BACE48D24FFE66A003EB2BE /* NetworkStatus.swift in Sources */,
-				5BC29862250E72120067A949 /* Model.xcdatamodeld in Sources */,
-				5B27AF66250E2776001577CC /* NetworkError.swift in Sources */,
-				5B23E143251775DF00ECC89A /* SNStatModel.swift in Sources */,
-				5B23E1492517773500ECC89A /* SNStat.swift in Sources */,
-				5B23E14F2517774300ECC89A /* SNStats.swift in Sources */,
-				5B219A2424F9766300FD80B0 /* Server.swift in Sources */,
-				5B23E1592517778000ECC89A /* StatsResponse.swift in Sources */,
-				5B12E9462505EF1700647C60 /* StatsContainer.swift in Sources */,
-				5B219A3024FABE6700FD80B0 /* ServerCase.swift in Sources */,
-				5BC29859250E6FFD0067A949 /* ServerEntity+CoreDataProperties.swift in Sources */,
-				5B12E94825067AAB00647C60 /* NetworkResponse.swift in Sources */,
-				5B59AD66250530AD00397FF5 /* StatCase.swift in Sources */,
-				5B12E94B2506996100647C60 /* StatusCode.swift in Sources */,
-				5B219A1C24F96DB900FD80B0 /* Requests.swift in Sources */,
-				5B219A4C24FBE47300FD80B0 /* BaseEntityCase.swift in Sources */,
-				5BACE49524FFE817003EB2BE /* DBStatus.swift in Sources */,
+				5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */,
+				5BD319DF251BB5BA005BFAF7 /* DataLayer.swift in Sources */,
+				5BD319D1251BB5AD005BFAF7 /* BaseCase.swift in Sources */,
+				5BD319D2251BB5AD005BFAF7 /* StatCase.swift in Sources */,
+				5BD319D3251BB5AD005BFAF7 /* ServerCase.swift in Sources */,
+				5B81EE8A252255060053D8E7 /* Model.swift in Sources */,
+				5BD319D4251BB5AD005BFAF7 /* Server.swift in Sources */,
+				5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */,
+				5BD319D5251BB5AD005BFAF7 /* DError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1880,65 +1678,15 @@
 			target = 5B1617362519E29100A3D78F /* API */;
 			targetProxy = 5B16174A2519E29100A3D78F /* PBXContainerItemProxy */;
 		};
-		5B16176C2519E2A300A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617602519E2A300A3D78F /* MakebaAPI */;
-			targetProxy = 5B16176B2519E2A300A3D78F /* PBXContainerItemProxy */;
-		};
-		5B16176E2519E2A300A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BBABE3224CDA01100C3A22C /* makeba */;
-			targetProxy = 5B16176D2519E2A300A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617752519E2A300A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617602519E2A300A3D78F /* MakebaAPI */;
-			targetProxy = 5B1617742519E2A300A3D78F /* PBXContainerItemProxy */;
-		};
 		5B1617AC2519E30500A3D78F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5B1617A52519E30500A3D78F /* Storage */;
 			targetProxy = 5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */;
 		};
-		5B1617CB2519E31400A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617BF2519E31400A3D78F /* MakebaStorage */;
-			targetProxy = 5B1617CA2519E31400A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617CD2519E31400A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5BBABE3224CDA01100C3A22C /* makeba */;
-			targetProxy = 5B1617CC2519E31400A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617D42519E31400A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617BF2519E31400A3D78F /* MakebaStorage */;
-			targetProxy = 5B1617D32519E31400A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617EB2519E36400A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617A52519E30500A3D78F /* Storage */;
-			targetProxy = 5B1617EA2519E36400A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617F02519E36C00A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617362519E29100A3D78F /* API */;
-			targetProxy = 5B1617EF2519E36C00A3D78F /* PBXContainerItemProxy */;
-		};
 		5B1617F52519E37500A3D78F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BF5386424DFC4EC004B513D /* Data */;
 			targetProxy = 5B1617F42519E37500A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617FA2519E39000A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617362519E29100A3D78F /* API */;
-			targetProxy = 5B1617F92519E39000A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617FE2519E39000A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617A52519E30500A3D78F /* Storage */;
-			targetProxy = 5B1617FD2519E39000A3D78F /* PBXContainerItemProxy */;
 		};
 		5BBABE4B24CDA01200C3A22C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1949,6 +1697,26 @@
 			isa = PBXTargetDependency;
 			target = 5BBABE3224CDA01100C3A22C /* makeba */;
 			targetProxy = 5BBABE5524CDA01200C3A22C /* PBXContainerItemProxy */;
+		};
+		5BCAB5852520F61000247BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF5386424DFC4EC004B513D /* Data */;
+			targetProxy = 5BCAB5842520F61000247BF4 /* PBXContainerItemProxy */;
+		};
+		5BCAB58A2520F61600247BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF5386424DFC4EC004B513D /* Data */;
+			targetProxy = 5BCAB5892520F61600247BF4 /* PBXContainerItemProxy */;
+		};
+		5BD319F9251BB76C005BFAF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617362519E29100A3D78F /* API */;
+			targetProxy = 5BD319F8251BB76C005BFAF7 /* PBXContainerItemProxy */;
+		};
+		5BD319FD251BB76C005BFAF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617A52519E30500A3D78F /* Storage */;
+			targetProxy = 5BD319FC251BB76C005BFAF7 /* PBXContainerItemProxy */;
 		};
 		5BF5387924DFC4EC004B513D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1980,7 +1748,9 @@
 /* Begin XCBuildConfiguration section */
 		5B1617262519E12600A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1990,7 +1760,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MakebaData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2000,6 +1770,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaData;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2009,7 +1780,9 @@
 		};
 		5B1617272519E12600A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2019,7 +1792,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MakebaData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2038,6 +1811,7 @@
 		};
 		5B1617282519E12600A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2059,6 +1833,7 @@
 		};
 		5B1617292519E12600A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2080,6 +1855,7 @@
 		};
 		5B16174F2519E29200A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2090,7 +1866,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = API/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2109,6 +1885,7 @@
 		};
 		5B1617502519E29200A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2119,7 +1896,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = API/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2136,108 +1913,9 @@
 			};
 			name = Release;
 		};
-		5B1617792519E2A300A3D78F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MakebaAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5B16177A2519E2A300A3D78F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MakebaAPI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5B16177C2519E2A300A3D78F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = MakebaAPITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
-			};
-			name = Debug;
-		};
-		5B16177D2519E2A300A3D78F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = MakebaAPITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
-			};
-			name = Release;
-		};
 		5B1617B02519E30500A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2248,7 +1926,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Storage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2267,6 +1945,7 @@
 		};
 		5B1617B12519E30500A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2277,7 +1956,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Storage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2291,106 +1970,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5B1617D82519E31400A3D78F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MakebaStorage/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorage;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5B1617D92519E31400A3D78F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = MakebaStorage/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorage;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5B1617DB2519E31400A3D78F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = MakebaStorageTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
-			};
-			name = Debug;
-		};
-		5B1617DC2519E31400A3D78F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUPNP9UD97;
-				INFOPLIST_FILE = MakebaStorageTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.MakebaStorageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
 			};
 			name = Release;
 		};
@@ -2514,7 +2093,7 @@
 		};
 		5BBABE5E24CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C51DB8F7DDA033554468517 /* Pods-makeba.debug.xcconfig */;
+			baseConfigurationReference = C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2537,7 +2116,7 @@
 		};
 		5BBABE5F24CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C6B90F469C0212F3CE1BD65 /* Pods-makeba.release.xcconfig */;
+			baseConfigurationReference = D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2559,7 +2138,7 @@
 		};
 		5BBABE6124CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3780417EF95D9A8C53623609 /* Pods-makebaTests.debug.xcconfig */;
+			baseConfigurationReference = 4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2582,7 +2161,7 @@
 		};
 		5BBABE6224CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FB4708D2203B8182C5683FF /* Pods-makebaTests.release.xcconfig */;
+			baseConfigurationReference = 66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2605,7 +2184,7 @@
 		};
 		5BBABE6424CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC172A7CFEDCDD78C2706262 /* Pods-makeba-makebaUITests.debug.xcconfig */;
+			baseConfigurationReference = DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2626,7 +2205,7 @@
 		};
 		5BBABE6524CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 148B8ED5FAB41706F40F33C4 /* Pods-makeba-makebaUITests.release.xcconfig */;
+			baseConfigurationReference = F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2647,7 +2226,7 @@
 		};
 		5BF5387D24DFC4EC004B513D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 713810359CF14BAD932AB15E /* Pods-Data.debug.xcconfig */;
+			baseConfigurationReference = 204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2679,7 +2258,7 @@
 		};
 		5BF5387E24DFC4EC004B513D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44F20E08459B0482E53E827E /* Pods-Data.release.xcconfig */;
+			baseConfigurationReference = 47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2738,47 +2317,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B1617782519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B1617792519E2A300A3D78F /* Debug */,
-				5B16177A2519E2A300A3D78F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B16177B2519E2A300A3D78F /* Build configuration list for PBXNativeTarget "MakebaAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B16177C2519E2A300A3D78F /* Debug */,
-				5B16177D2519E2A300A3D78F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5B1617AF2519E30500A3D78F /* Build configuration list for PBXNativeTarget "Storage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B1617B02519E30500A3D78F /* Debug */,
 				5B1617B12519E30500A3D78F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B1617D72519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorage" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B1617D82519E31400A3D78F /* Debug */,
-				5B1617D92519E31400A3D78F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B1617DA2519E31400A3D78F /* Build configuration list for PBXNativeTarget "MakebaStorageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B1617DB2519E31400A3D78F /* Debug */,
-				5B1617DC2519E31400A3D78F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

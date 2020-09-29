@@ -20,34 +20,34 @@ class ServerListViewModel: BaseViewModel {
     }
     
     func loadData() {
-        data?.server.get()
-            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
-            .observeOn(MainScheduler.instance)
-            .subscribe({ single in
-                switch single {
-                case .success(let data):
-                    self.servers.accept(data)
-                case .error(_):
-                    break
-                }
-            }).disposed(by: disposeBag)
+//        data?.server.get()
+//            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+//            .observeOn(MainScheduler.instance)
+//            .subscribe({ single in
+//                switch single {
+//                case .success(let data):
+//                    self.servers.accept(data)
+//                case .error(_):
+//                    break
+//                }
+//            }).disposed(by: disposeBag)
     }
     
     func removeByIndex(_ i: Int) {
-        data?.server.delete(servers.value[i])
-            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
-            .observeOn(MainScheduler.instance)
-            .subscribe({ single in
-                switch single {
-                case .success(let data):
-                    if data {
-                        var servers = self.servers.value
-                        servers.remove(at: i)
-                        self.servers.accept(servers)
-                    }
-                case .error(_):
-                    break
-                }
-            }).disposed(by: disposeBag)
+//        data?.server.delete(servers.value[i])
+//            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+//            .observeOn(MainScheduler.instance)
+//            .subscribe({ single in
+//                switch single {
+//                case .success(let data):
+//                    if data {
+//                        var servers = self.servers.value
+//                        servers.remove(at: i)
+//                        self.servers.accept(servers)
+//                    }
+//                case .error(_):
+//                    break
+//                }
+//            }).disposed(by: disposeBag)
     }
 }

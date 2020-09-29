@@ -21,21 +21,21 @@ class StatsViewModel: BaseViewModel {
     }
     
     func loadData() {
-        if let server = self.server {
-            data?.stat.get(server: server)
-                .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
-                .observeOn(MainScheduler.instance)
-                .subscribe({ single in
-                    switch single {
-                    case .success(let data):
-                        self.containers.accept(data)
-//                        self.isNeedClosed.accept(true)
-                    case .error(let error):
-                        if let queryError = error as? QueryError {
-                            self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
-                        }
-                    }
-                }).disposed(by: disposeBag)
-        }
+//        if let server = self.server {
+//            data?.stat.get(server: server)
+//                .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+//                .observeOn(MainScheduler.instance)
+//                .subscribe({ single in
+//                    switch single {
+//                    case .success(let data):
+//                        self.containers.accept(data)
+////                        self.isNeedClosed.accept(true)
+//                    case .error(let error):
+//                        if let queryError = error as? QueryError {
+//                            self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+//                        }
+//                    }
+//                }).disposed(by: disposeBag)
+//        }
     }
 }
