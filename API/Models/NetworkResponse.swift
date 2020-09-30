@@ -11,7 +11,7 @@ import Foundation
 
 public class NetworkResponse<D>: HTTPURLResponse {
     
-    let data: D?
+    public let data: D?
     
     init?(response: HTTPURLResponse, data: D?) {
         guard let url = response.url else { return nil }

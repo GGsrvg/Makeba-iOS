@@ -12,12 +12,17 @@ import API
 import Storage
 
 public final class MDataLayer: DataLayer {
-    public var server: ServerCase
-    public var stat: StatCase
+    private let api: Requests
+//    private let db:
+    
+    public let server: ServerCase
+    public let stat: StatCase
     
     public init() {
+        api = Requests()
+        
         server = MServerCase()
-        stat = MStatCase()
+        stat = MStatCase(api: api)
     }
     
 }

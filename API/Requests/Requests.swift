@@ -11,6 +11,8 @@ import RxSwift
 import Data
 
 public class Requests {
+    public init() {}
+    
     public func stats(server: Server) -> Single<NetworkResponse<StatsResponse>>
     {
         return .create(subscribe: { single in

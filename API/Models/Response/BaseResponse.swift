@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal protocol BaseResponse: Codable {
+public protocol BaseResponse: Codable {
     associatedtype Object: Any
     
     var message: String? { get }

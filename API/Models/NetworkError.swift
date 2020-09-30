@@ -19,8 +19,8 @@ public class NetworkError: Error {
         case custom
     }
     
-    let type: ErrorType
-    let message: String
+    public let type: ErrorType
+    public let message: String
     
     internal init(message: String) {
         self.type = .custom
