@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel> {
+class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel, AddServerInitViewController> {
     
     lazy var refreshControl = UIRefreshControl()
     
@@ -72,7 +72,9 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     }
     
     @objc private func goToAddServer() {
-        show(AddServerViewController(), sender: nil)
+//        show(AddServerViewController(), sender: nil)
+        
+        AddServerViewController.openIfCan(from: self, widthData: nil)
     }
 }
 

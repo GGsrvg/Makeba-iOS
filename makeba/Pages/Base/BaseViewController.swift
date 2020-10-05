@@ -9,7 +9,11 @@
 import UIKit
 import RxSwift
 
-class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
+class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewController>: UIViewController {
+    class func openIfCan(from viewController: UIViewController, widthData data: D?) {
+//        viewController.show(Self(), sender: nil)
+    }
+    
     let disposeBag: DisposeBag = DisposeBag()
     let _view: V
     let _viewModel: VM
@@ -28,6 +32,10 @@ class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
         super.init(coder: coder)
     }
     
+    deinit {
+        print("deinit \(self)")
+    }
+    
     // MARK: - life cycle
     override func loadView() {
         self.view = _view
@@ -44,12 +52,12 @@ class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
     }
     
     private func subscribeToObservable() {
-        _viewModel.isNeedClosed.bind(onNext: {
+        _viewModel.isNeedClosed.bind(onNext: { [weak self] in
             if $0 {
-                self.navigationController?.popViewController(animated: true)
+                self?.navigationController?.popViewController(animated: true)
             }
         }).disposed(by: self.disposeBag)
-        _viewModel.alert.bind(onNext: {
+        _viewModel.alert.bind(onNext: { [weak self] in
             switch $0 {
             case .none:
                 break
@@ -57,8 +65,9 @@ class BaseViewController<V : UIView, VM: BaseViewModel>: UIViewController {
                 let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
                 let successAction = UIAlertAction(title: successTitle, style: .cancel, handler: nil)
                 alertController.addAction(successAction)
-                self.present(alertController, animated: true, completion: nil)
+                self?.present(alertController, animated: true, completion: nil)
             }
         }).disposed(by: self.disposeBag)
+
     }
 }

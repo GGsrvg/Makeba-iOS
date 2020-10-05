@@ -13,19 +13,20 @@ import RxRelay
 
 class BaseViewModel {
     let disposeBag: DisposeBag = DisposeBag()
-//    weak var data: DataLayer?
-    let isNeedClosed: BehaviorRelay<Bool> = .init(value: false)
-    let alert: BehaviorRelay<Alert> = .init(value: .none)
-//    let messageError: BehaviorSubject<Bool> = .init(value: false)
+    weak var data: DataLayer?
+    var isNeedClosed: BehaviorRelay<Bool>! = .init(value: false)
+    var alert: BehaviorRelay<Alert>! = .init(value: .none)
     
     required init() {
-//        guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }
-//        self.data = data
+        guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }
+        self.data = data
     }
     
     deinit {
-//        data = nil
+        print("deinit \(self)")
     }
+    
+    
 }
 
 extension BaseViewModel {

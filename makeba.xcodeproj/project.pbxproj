@@ -26,7 +26,10 @@
 		5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B2A82A725288BCF000C8ADF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29860250E72120067A949 /* Model.xcdatamodeld */; };
 		5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53AA2E24D52C120051C296 /* R.generated.swift */; };
+		5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */; };
+		5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206E62526DE55002B532D /* AddServerInitViewController.swift */; };
 		5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE7D252254CF0053D8E7 /* Stats.swift */; };
 		5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE83252254EA0053D8E7 /* Stat.swift */; };
 		5B81EE8A252255060053D8E7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE89252255060053D8E7 /* Model.swift */; };
@@ -279,6 +282,8 @@
 		5B27AF65250E2776001577CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		5B53AA2E24D52C120051C296 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5B59AD65250530AD00397FF5 /* StatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCase.swift; sourceTree = "<group>"; };
+		5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitViewController.swift; sourceTree = "<group>"; };
+		5B6206E62526DE55002B532D /* AddServerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInitViewController.swift; sourceTree = "<group>"; };
 		5B81EE7D252254CF0053D8E7 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		5B81EE83252254EA0053D8E7 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		5B81EE89252255060053D8E7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -740,6 +745,7 @@
 				5BD4913924D6934200BF0C8A /* AddServerViewController.swift */,
 				5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */,
 				5BCB7E9C24D88DBC00618676 /* AddServerView.swift */,
+				5B6206E62526DE55002B532D /* AddServerInitViewController.swift */,
 			);
 			path = AddServer;
 			sourceTree = "<group>";
@@ -864,6 +870,7 @@
 			children = (
 				5BD4914024D696DF00BF0C8A /* BaseViewController.swift */,
 				5BD4914224D6971C00BF0C8A /* BaseViewModel.swift */,
+				5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1587,6 +1594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2A82A725288BCF000C8ADF /* Model.xcdatamodeld in Sources */,
 				5BD3195F251A228A005BFAF7 /* DBStatus.swift in Sources */,
 				5BD31960251A228A005BFAF7 /* CoreDataStack.swift in Sources */,
 				5BD31961251A228A005BFAF7 /* ServerEntity+CoreDataClass.swift in Sources */,
@@ -1605,12 +1613,14 @@
 				5BD4914724D6A2A300BF0C8A /* ServerListView.swift in Sources */,
 				5BD4913E24D6936100BF0C8A /* AuthorizeViewController.swift in Sources */,
 				5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */,
+				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
 				5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
 				5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */,
 				5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */,
 				5BD4914324D6971C00BF0C8A /* BaseViewModel.swift in Sources */,
 				5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */,
+				5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */,
 				5BBD27E024FEC6420022994D /* Binding.swift in Sources */,
 				5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */,
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,

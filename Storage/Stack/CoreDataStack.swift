@@ -11,7 +11,7 @@ import CoreData
 
 public final class CoreDataStack {
     private let storeCoordinator: NSPersistentStoreCoordinator
-    let context: NSManagedObjectContext
+    public let context: NSManagedObjectContext
 
     public init() {
         let bundle = Bundle(for: CoreDataStack.self)

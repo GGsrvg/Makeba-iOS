@@ -23,7 +23,7 @@ public class Requests {
 
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
                 if let error = error {
-                    single(.error(error))
+                    single(.error(NetworkError(message: error.localizedDescription)))
                     return
                 }
 

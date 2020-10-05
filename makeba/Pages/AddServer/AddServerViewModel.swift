@@ -27,19 +27,19 @@ class AddServerViewModel: BaseViewModel {
         guard let hostPath = hostPath.value, !hostPath.isEmpty, hostPath.count >= 7 else { return emptyFieldAlert(message: "Host path field is no correct") }
         guard let hostName = hostName.value, !hostName.isEmpty else { return emptyFieldAlert(message: "Host name is empty") }
         
-//        data?.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
-//            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
-//            .observeOn(MainScheduler.instance)
-//            .subscribe({ single in
-//                switch single {
-//                case .success:
-//                    self.isNeedClosed.accept(true)
-//                case .error(let error):
-//                    if let queryError = error as? QueryError {
-//                        self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
-//                    }
-//                }
-//            }).disposed(by: disposeBag)
+        data?.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
+            .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
+            .observeOn(MainScheduler.instance)
+            .subscribe({ single in
+                switch single {
+                case .success:
+                    self.isNeedClosed.accept(true)
+                case .error(let error):
+                    if let queryError = error as? DError {
+                        self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+                    }
+                }
+            }).disposed(by: disposeBag)
     }
     
 }

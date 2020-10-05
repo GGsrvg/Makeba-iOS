@@ -29,6 +29,7 @@ class AddServerView: UIView {
     
     lazy var hostPathTextField: UIMTextField = {
         let textField = UIMTextField()
+        textField.keyboardType = .URL
         textField.placeholder = "0.0.0.0"
         textField.layer.borderColor = UIColor.tertiaryLabel.cgColor
         textField.layer.borderWidth = 1

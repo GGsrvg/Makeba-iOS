@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol DataLayer {
+public protocol DataLayer: class {
     var server: ServerCase { get }
     var stat: StatCase { get }
 }

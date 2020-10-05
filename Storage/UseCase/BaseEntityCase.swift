@@ -10,9 +10,9 @@ import Foundation
 import CoreData
 
 public class BaseEntityCase {
-    let coreDataStack: CoreDataStack
+    weak var coreDataStack: CoreDataStack!
     
-    public required init(coreDataStack: CoreDataStack) {
+    public init(coreDataStack: CoreDataStack) {
         self.coreDataStack = coreDataStack
     }
     

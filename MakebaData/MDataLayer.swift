@@ -13,15 +13,16 @@ import Storage
 
 public final class MDataLayer: DataLayer {
     private let api: Requests
-//    private let db:
+    private let db: CoreDataStack
     
     public let server: ServerCase
     public let stat: StatCase
     
     public init() {
         api = Requests()
+        db = CoreDataStack()
         
-        server = MServerCase()
+        server = MServerCase(entityCase: ServerEntityCase(coreDataStack: db))
         stat = MStatCase(api: api)
     }
     

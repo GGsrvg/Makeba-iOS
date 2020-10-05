@@ -11,7 +11,20 @@ import RxSwift
 import RxRelay
 import RxCocoa
 
-class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel> {
+class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel, AddServerInitViewController> {
+    override class func openIfCan(from parentViewController: UIViewController, widthData data: AddServerInitViewController?) {
+//        guard let data = data else { return }
+        let nextVC = Self.init()
+        parentViewController.show(nextVC, sender: nil)
+    }
+    
+    required override init() {
+        super.init()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     lazy var saveHostBarButton: UIBarButtonItem = {
         let button = UIButton(type: .system)
@@ -30,8 +43,8 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
     }
     
     private func setupBinding() {
-        (_view.hostPathTextField.rx.text --> _viewModel.hostPath).disposed(by: disposeBag)
-        (_view.hostNameTextField.rx.text --> _viewModel.hostName).disposed(by: disposeBag)
+        (_view.hostPathTextField.rx.text <-> _viewModel.hostPath).disposed(by: disposeBag)
+        (_view.hostNameTextField.rx.text <-> _viewModel.hostName).disposed(by: disposeBag)
     }
     
     private func setupNavigationItem() {
