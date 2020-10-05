@@ -24,7 +24,7 @@ class AddServerViewModel: BaseViewModel {
             self.alert.accept(.default(title: "Error", message: message))
         }
         
-        guard let hostPath = hostPath.value, !hostPath.isEmpty, hostPath.count >= 7 else { return emptyFieldAlert(message: "Host path field is no correct") }
+        guard let hostPath = hostPath.value, !hostPath.isEmpty else { return emptyFieldAlert(message: "Host path is empty") }
         guard let hostName = hostName.value, !hostName.isEmpty else { return emptyFieldAlert(message: "Host name is empty") }
         
         data?.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
