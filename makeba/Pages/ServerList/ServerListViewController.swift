@@ -36,11 +36,11 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     }
     
     func setup() {
-        _viewModel.servers.subscribe({ event in
+        viewModel.servers.subscribe({ event in
             switch event {
             case .next(_):
                 self.refreshControl.endRefreshing()
-                self._view.tableView.reloadData()
+                self.contentView.tableView.reloadData()
             case .error(_):
                 break
             case .completed:
@@ -50,7 +50,7 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     }
     
     func updateData() {
-        _viewModel.loadData()
+        viewModel.loadData()
     }
     
     private func setupNavigationItem() {
@@ -61,10 +61,10 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     private func setupView() {
         refreshControl.addTarget(self, action: #selector(valueChangedAction(_:)), for: .valueChanged)
         
-        _view.tableView.register(ServerInfoTableViewCell.self, forCellReuseIdentifier: "\(ServerInfoTableViewCell.self)")
-        _view.tableView.delegate    = self
-        _view.tableView.dataSource  = self
-        _view.tableView.refreshControl = self.refreshControl
+        contentView.tableView.register(ServerInfoTableViewCell.self, forCellReuseIdentifier: "\(ServerInfoTableViewCell.self)")
+        contentView.tableView.delegate    = self
+        contentView.tableView.dataSource  = self
+        contentView.tableView.refreshControl = self.refreshControl
     }
     
     @objc private func valueChangedAction(_ sender: UIRefreshControl) {
@@ -73,20 +73,22 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     
     @objc private func goToAddServer() {
 //        show(AddServerViewController(), sender: nil)
-        
-        AddServerViewController.openIfCan(from: self, widthData: nil)
+        var currentState = viewModel.contentState.value
+        currentState.next()
+        viewModel.contentState.accept(currentState)
+//        AddServerViewController.openIfCan(from: self, widthData: nil)
     }
 }
 
 extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = _viewModel.servers.value.count
+        let count = viewModel.servers.value.count
         return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
-        let server = _viewModel.servers.value[indexPath.row]
+        let server = viewModel.servers.value[indexPath.row]
         cell.setupData(title: server.name, host: server.path, isOnline: true)
         return cell
     }
@@ -94,7 +96,7 @@ extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = StatsViewController()
-        vc._viewModel.server = _viewModel.servers.value[indexPath.row]
+        vc.viewModel.server = viewModel.servers.value[indexPath.row]
         show(vc, sender: nil)
     }
     
@@ -107,7 +109,7 @@ extension ServerListViewController: UITableViewDelegate, UITableViewDataSource {
         let removeAction = UIContextualAction(style: .normal, title: "Remove") { (action, view, success) in
             let alert = UIAlertController(title: "Delete Server", message: nil, preferredStyle: .alert)
             let yesAction = UIAlertAction(title: "Yes", style: .destructive, handler: { action in
-                self._viewModel.removeByIndex(indexPath.row)
+                self.viewModel.removeByIndex(indexPath.row)
                 success(true)
             })
             let noAction = UIAlertAction(title: "No", style: .cancel, handler: { action in success(false) })

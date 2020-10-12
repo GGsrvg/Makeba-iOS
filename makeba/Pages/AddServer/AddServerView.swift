@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import InputMask
 
 class AddServerView: UIView {
     

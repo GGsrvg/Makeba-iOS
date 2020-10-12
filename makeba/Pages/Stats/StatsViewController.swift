@@ -15,23 +15,23 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel, AddServ
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = _viewModel.server?.name
+        self.navigationItem.title = viewModel.server?.name
         configurateView()
         configurateBinding()
-        _viewModel.loadData()
+        viewModel.loadData()
     }
     
     private func configurateView() {
-        _view.tableView.register(StatTableViewCell.self, forCellReuseIdentifier: "\(StatTableViewCell.self)")
-        _view.tableView.delegate    = self
-        _view.tableView.dataSource  = self
+        contentView.tableView.register(StatTableViewCell.self, forCellReuseIdentifier: "\(StatTableViewCell.self)")
+        contentView.tableView.delegate    = self
+        contentView.tableView.dataSource  = self
     }
     
     private func configurateBinding() {
-        _viewModel.containers.subscribe({ [weak self] event in
+        viewModel.containers.subscribe({ [weak self] event in
             switch event {
             case .next(_):
-                self?._view.tableView.reloadData()
+                self?.contentView.tableView.reloadData()
             case .error(_):
                 break
             case .completed:
@@ -43,20 +43,20 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel, AddServ
 
 extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return  _viewModel.containers.value.count
+        return  viewModel.containers.value.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return _viewModel.containers.value[section].stats.count
+        return viewModel.containers.value[section].stats.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return _viewModel.containers.value[section].title
+        return viewModel.containers.value[section].title
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(StatTableViewCell.self)", for: indexPath) as! StatTableViewCell
-        let data =  _viewModel.containers.value[indexPath.section].stats[indexPath.row]
+        let data =  viewModel.containers.value[indexPath.section].stats[indexPath.row]
         cell.setupData(title: data.title, value: data.model?.text)
         return cell
     }

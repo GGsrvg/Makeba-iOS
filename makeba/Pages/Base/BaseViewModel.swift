@@ -12,10 +12,13 @@ import RxSwift
 import RxRelay
 
 class BaseViewModel {
+    // MARK: - for ui
+    var isNeedClosed: BehaviorRelay<Bool> = .init(value: false)
+    var alert: BehaviorRelay<Alert> = .init(value: .none)
+    var contentState: BehaviorRelay<VCStates> = .init(value: .dataEmpty)
+    // MARK: - for ViewModel
     let disposeBag: DisposeBag = DisposeBag()
     weak var data: DataLayer?
-    var isNeedClosed: BehaviorRelay<Bool>! = .init(value: false)
-    var alert: BehaviorRelay<Alert>! = .init(value: .none)
     
     required init() {
         guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }
@@ -25,13 +28,14 @@ class BaseViewModel {
     deinit {
         print("deinit \(self)")
     }
-    
-    
 }
 
 extension BaseViewModel {
     enum Alert {
         case none
-        case `default`(title: String, message: String, successTitle: String = "OK")
+        case `default`(title: String?, message: String?, successTitle: String = "OK")
+        case basic(title: String?, message: String?,
+                   cancelTitle: String?, cancelAction: (() -> Void)?,
+                   positiveTitle: String?, positiveAction: (() -> Void)?)
     }
 }

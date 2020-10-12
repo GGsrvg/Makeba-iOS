@@ -12,9 +12,9 @@ def	rxTest
   pod 'RxTest', '~> 5'
 end
 
-def inputMask
-  pod 'InputMask'
-end
+#def inputMask
+#  pod 'InputMask'
+#end
 
 def rSwift
   pod 'R.swift', '~> 5'
@@ -28,7 +28,7 @@ target 'makeba' do
   # Pods for makeba
   rx
   rSwift
-  inputMask
+#  inputMask
 
   target 'makebaTests' do
     inherit! :search_paths
@@ -71,37 +71,37 @@ target 'API' do
 
 end
 
-target 'MakebaAPI' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  # Pods for MakebaAPI
-  rx
-
-  target 'MakebaAPITests' do
-    # Pods for testing
-    rxTest
-  end
-
-end
+#target 'MakebaAPI' do
+#  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+#  # Pods for MakebaAPI
+#  rx
+#
+#  target 'MakebaAPITests' do
+#    # Pods for testing
+#    rxTest
+#  end
+#
+#end
 
 target 'Storage' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   # Pods for Storage
-  rx
+#  rx
 
 end
 
-target 'MakebaStorage' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-  # Pods for MakebaStorage
-  rx
-  
-  target 'MakebaStorageTests' do
-    # Pods for testing
-    rxTest
-  end
-
-end
+#target 'MakebaStorage' do
+#  # Comment the next line if you don't want to use dynamic frameworks
+#  use_frameworks!
+#  # Pods for MakebaStorage
+#  rx
+#  
+#  target 'MakebaStorageTests' do
+#    # Pods for testing
+#    rxTest
+#  end
+#
+#end
 
