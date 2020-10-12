@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ErrorState: UIViews {
+class ErrorState: UIView {
     
 }

@@ -42,6 +42,7 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
         backgroundView.backgroundColor = .systemBackground
         self.view = backgroundView
         self.view.addSubview(contentView)
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             contentView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor),
             contentView.topAnchor.constraint(equalTo: backgroundView.topAnchor),
@@ -94,16 +95,17 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
                 self.contentView.isHidden = true
                 let state = DataEmptyState()
                 state.tag = 1
+                state.frame = self.view.frame
                 state.translatesAutoresizingMaskIntoConstraints = false
                 self.view.addSubview(state)
-                
+
                 NSLayoutConstraint.activate([
                     state.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
                     state.topAnchor.constraint(equalTo: self.view.topAnchor),
                     state.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
                     state.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
                 ])
-                
+
                 UIView.animate(withDuration: 0.23, animations: { state.alpha = 1 })
                 break
             case .loading:

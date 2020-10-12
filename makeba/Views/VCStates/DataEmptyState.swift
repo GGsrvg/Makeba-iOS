@@ -43,9 +43,4 @@ class DataEmptyState: UIView {
             self.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
         ])
     }
-    
-    
-    override class var requiresConstraintBasedLayout: Bool {
-      return true
-    }
 }
