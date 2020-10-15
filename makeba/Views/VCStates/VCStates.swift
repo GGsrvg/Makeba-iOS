@@ -6,24 +6,26 @@
 //  Copyright © 2020 GGsrvg. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 enum VCStates {
     case content
-    case dataEmpty
     case loading
-    case error(message: String)
+    case error(title: String?, message: String?, retryTitle: String?, retryAction: ErrorState.ErrorRetryAction?)
+    case dataEmpty
     case noInternet
     
     mutating func next() {
         switch self {
         case .content:
-            self = .dataEmpty
-        case .dataEmpty:
             self = .loading
         case .loading:
-            self = .error(message: "")
-        case .error(message: let message):
+            self = .error(title: "Data empty", message: "No data", retryTitle: "Retry", retryAction: { _ in
+                print("retry")
+            })
+        case .error:
+            self = .dataEmpty
+        case .dataEmpty:
             self = .noInternet
         case .noInternet:
             self = .content

@@ -14,6 +14,8 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
         //        viewController.show(Self(), sender: nil)
     }
     
+    private var oldState: UIView? = nil
+    
     let disposeBag: DisposeBag = DisposeBag()
     let contentView: V
     let viewModel: VM
@@ -38,16 +40,18 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
     
     // MARK: - life cycle
     override func loadView() {
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = .systemBackground
-        self.view = backgroundView
+        // init base view
+        self.view = UIView()
+        self.view.backgroundColor = .systemBackground
+        // configare contentView
         self.view.addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
+        // set constraints
         NSLayoutConstraint.activate([
-            contentView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor),
-            contentView.topAnchor.constraint(equalTo: backgroundView.topAnchor),
-            contentView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor),
-            contentView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor),
+            contentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            contentView.topAnchor.constraint(equalTo: view.topAnchor),
+            contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
     
@@ -56,17 +60,23 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
         subscribeToObservable()
     }
     
+    func retryRequest() {
+        
+    }
+    
     @objc func closeAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         //        dismiss(animated: true, completion: nil)
     }
     
     private func subscribeToObservable() {
+        // when value is true, then view controller close
         viewModel.isNeedClosed.bind(onNext: { [weak self] in
             if $0 {
                 self?.navigationController?.popViewController(animated: true)
             }
         }).disposed(by: self.disposeBag)
+        // alert
         viewModel.alert.bind(onNext: { [weak self] in
             switch $0 {
             case .none:
@@ -80,43 +90,56 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
                 fatalError("\($0) dont have realization")
             }
         }).disposed(by: self.disposeBag)
-        viewModel.contentState.bind(onNext: { [weak self] value in
-            guard let self = self else { return }
-            self.view.subviews.forEach {
-                if $0.tag == 1 {
-                    $0.removeFromSuperview()
-                }
-            }
-            
-            switch value {
-            case .content:
-                self.contentView.isHidden = false
-            case .dataEmpty:
-                self.contentView.isHidden = true
-                let state = DataEmptyState()
-                state.tag = 1
-                state.frame = self.view.frame
-                state.translatesAutoresizingMaskIntoConstraints = false
-                self.view.addSubview(state)
-
-                NSLayoutConstraint.activate([
-                    state.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-                    state.topAnchor.constraint(equalTo: self.view.topAnchor),
-                    state.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-                    state.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-                ])
-
-                UIView.animate(withDuration: 0.23, animations: { state.alpha = 1 })
-                break
-            case .loading:
-                break
-            case .error(message: _):
-                break
-            case .noInternet:
-                break
-            }
+        // content state
+        viewModel.contentState.bind(onNext: { [weak self] state in
+            self?.changeState(state)
         }).disposed(by: disposeBag)
+    }
+}
+
+extension BaseViewController {
+    private func changeState(_ state: VCStates) {
+        func hideContent() {
+            self.contentView.isHidden = true
+        }
+        
+        func removeOldState() {
+            self.oldState?.removeFromSuperview()
+        }
+        
+        func setState<V : UIView>(_ type: V.Type) -> V {
+            hideContent()
+            let state = type.init()
+            self.oldState = state
+            self.view.addSubview(state)
+            
+            NSLayoutConstraint.activate([
+                state.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+                state.topAnchor.constraint(equalTo: self.view.topAnchor),
+                state.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+                state.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            ])
+            state.alpha = 1
+            return state
+        }
+        
+        removeOldState()
+        
+        switch state {
+        case .content:
+            self.contentView.isHidden = false
+        case .loading:
+            _ = setState(LoadingState.self)
+        case .error(title: let title, message: let message, retryTitle: let buttonTitle, retryAction: let action):
+            let error = setState(ErrorState.self)
+            error.setContent(title: title, message: message, retryTitle: buttonTitle, retryAction: action)
+        case .dataEmpty:
+            let error = setState(ErrorState.self)
+            error.setContent(title: "Data Empty", message: "Data don't have values", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+        case .noInternet:
+            let error = setState(ErrorState.self)
+            error.setContent(title: "No Internet", message: "Please check your internet access", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+        }
         
     }
-    
 }

@@ -13,9 +13,8 @@ import RxCocoa
 
 class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel, AddServerInitViewController> {
     override class func openIfCan(from parentViewController: UIViewController, widthData data: AddServerInitViewController?) {
-//        guard let data = data else { return }
         let nextVC = Self.init()
-        parentViewController.show(nextVC, sender: nil)
+        parentViewController.navigationController?.show(nextVC, sender: nil)
     }
     
     required override init() {
