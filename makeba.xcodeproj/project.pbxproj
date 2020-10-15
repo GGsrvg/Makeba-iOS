@@ -27,9 +27,9 @@
 		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B2A82A725288BCF000C8ADF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BC29860250E72120067A949 /* Model.xcdatamodeld */; };
-		5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B53AA2E24D52C120051C296 /* R.generated.swift */; };
 		5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD3E2538B74C007BEDD4 /* MButton.swift */; };
 		5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD452538BA66007BEDD4 /* MLabel.swift */; };
+		5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD662538C263007BEDD4 /* R.generated.swift */; };
 		5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */; };
 		5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206E62526DE55002B532D /* AddServerInitViewController.swift */; };
 		5B644B3D252CF53800B3A94E /* VCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B644B3C252CF53800B3A94E /* VCStates.swift */; };
@@ -285,9 +285,9 @@
 		5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityCase.swift; sourceTree = "<group>"; };
 		5B23E1582517778000ECC89A /* StatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsResponse.swift; sourceTree = "<group>"; };
 		5B27AF65250E2776001577CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		5B53AA2E24D52C120051C296 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5B58CD3E2538B74C007BEDD4 /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
 		5B58CD452538BA66007BEDD4 /* MLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLabel.swift; sourceTree = "<group>"; };
+		5B58CD662538C263007BEDD4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		5B59AD65250530AD00397FF5 /* StatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCase.swift; sourceTree = "<group>"; };
 		5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitViewController.swift; sourceTree = "<group>"; };
 		5B6206E62526DE55002B532D /* AddServerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInitViewController.swift; sourceTree = "<group>"; };
@@ -600,7 +600,7 @@
 		5B53AA2B24D52BDB0051C296 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5B53AA2E24D52C120051C296 /* R.generated.swift */,
+				5B58CD662538C263007BEDD4 /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1664,6 +1664,7 @@
 				5BD4914324D6971C00BF0C8A /* BaseViewModel.swift in Sources */,
 				5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */,
 				5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */,
+				5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */,
 				5BBD27E024FEC6420022994D /* Binding.swift in Sources */,
 				5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */,
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,
@@ -1676,7 +1677,6 @@
 				5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */,
 				5BD4913C24D6935300BF0C8A /* AboutAppViewController.swift in Sources */,
 				5BD4914A24D6EFB900BF0C8A /* ServerInfoTableViewCell.swift in Sources */,
-				5B53AA2F24D52C120051C296 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

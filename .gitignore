@@ -94,3 +94,6 @@ iOSInjectionProject/
 Podfile.lock
 Pods/
 *.xcworkspace/
+
+
+R.generated.swift
