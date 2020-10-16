@@ -72,11 +72,7 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     }
     
     @objc private func goToAddServer() {
-//        show(AddServerViewController(), sender: nil)
-        var currentState = viewModel.contentState.value
-        currentState.next()
-        viewModel.contentState.accept(currentState)
-//        AddServerViewController.openIfCan(from: self, widthData: nil)
+        AddServerViewController.openIfCan(from: self, widthData: nil)
     }
 }
 

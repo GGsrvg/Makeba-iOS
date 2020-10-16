@@ -15,7 +15,7 @@ class BaseViewModel {
     // MARK: - for ui
     var isNeedClosed: BehaviorRelay<Bool> = .init(value: false)
     var alert: BehaviorRelay<Alert> = .init(value: .none)
-    var contentState: BehaviorRelay<VCStates> = .init(value: .content)
+    var contentState: BehaviorRelay<VCStates> = .init(value: .loading)
     // MARK: - for ViewModel
     let disposeBag: DisposeBag = DisposeBag()
     weak var data: DataLayer?

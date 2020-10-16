@@ -99,17 +99,36 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
 
 extension BaseViewController {
     private func changeState(_ state: VCStates) {
+        func showState(_ state: UIView) {
+            state.isHidden = false
+            UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseIn, animations: {
+                state.alpha = 1
+            })
+        }
+        
+        func hideState(_ state: UIView) {
+            state.isHidden = true
+            UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+                state.alpha = 0
+            })
+        }
+        
         func hideContent() {
-            self.contentView.isHidden = true
+            hideState(self.contentView)
         }
         
         func removeOldState() {
-            self.oldState?.removeFromSuperview()
+            guard let oldState = self.oldState else {
+                return
+            }
+            
+            hideState(oldState)
+            oldState.removeFromSuperview()
         }
         
-        func setState<V : UIView>(_ type: V.Type) -> V {
+        func setState(_ state: UIView) {
             hideContent()
-            let state = type.init()
+            
             self.oldState = state
             self.view.addSubview(state)
             
@@ -119,27 +138,37 @@ extension BaseViewController {
                 state.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
                 state.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             ])
-            state.alpha = 1
-            return state
         }
         
         removeOldState()
         
+        let needShowState: UIView
+        
         switch state {
         case .content:
-            self.contentView.isHidden = false
+            needShowState = self.contentView
         case .loading:
-            _ = setState(LoadingState.self)
+            let loading = LoadingState()
+            setState(loading)
+            needShowState = loading
         case .error(title: let title, message: let message, retryTitle: let buttonTitle, retryAction: let action):
-            let error = setState(ErrorState.self)
+            let error = ErrorState()
+            setState(error)
             error.setContent(title: title, message: message, retryTitle: buttonTitle, retryAction: action)
+            needShowState = error
         case .dataEmpty:
-            let error = setState(ErrorState.self)
+            let error = ErrorState(withButton: false)
+            setState(error)
             error.setContent(title: "Data Empty", message: "Data don't have values", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+            needShowState = error
         case .noInternet:
-            let error = setState(ErrorState.self)
+            let error = ErrorState()
+            setState(error)
             error.setContent(title: "No Internet", message: "Please check your internet access", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+            needShowState = error
         }
         
+        
+        showState(needShowState)
     }
 }

@@ -27,7 +27,9 @@ class ServerListViewModel: BaseViewModel {
                 switch single {
                 case .success(let data):
                     self.servers.accept(data)
+                    self.contentState.accept(data.count == 0 ? .dataEmpty : .content)
                 case .error(_):
+                    self.contentState.accept(.dataEmpty)
                     break
                 }
             }).disposed(by: disposeBag)
@@ -45,7 +47,9 @@ class ServerListViewModel: BaseViewModel {
                         servers.remove(at: i)
                         self.servers.accept(servers)
                     }
+                    self.contentState.accept(.content)
                 case .error(_):
+                    self.contentState.accept(.dataEmpty)
                     break
                 }
             }).disposed(by: disposeBag)

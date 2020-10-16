@@ -17,6 +17,7 @@ class AddServerViewModel: BaseViewModel {
     
     required init() {
         super.init()
+        self.contentState.accept(.content)
     }
     
     func save() {

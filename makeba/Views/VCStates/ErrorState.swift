@@ -12,6 +12,7 @@ class ErrorState: UIView {
     typealias ErrorRetryAction = ((ErrorState) -> Void)
     
     private var retryAction: ErrorRetryAction? = nil
+    private let withButton: Bool
     
     // MARK: - UI Elements
     lazy var stackView: UIStackView = {
@@ -46,12 +47,20 @@ class ErrorState: UIView {
     }()
     
     // MARK: - init
+    init(withButton: Bool = true) {
+        self.withButton = withButton
+        super.init(frame: .zero)
+        setupView()
+    }
+    
     override init(frame: CGRect) {
+        self.withButton = true
         super.init(frame: frame)
         setupView()
     }
     
     required init?(coder: NSCoder) {
+        self.withButton = true
         super.init(coder: coder)
         setupView()
     }
@@ -68,8 +77,10 @@ class ErrorState: UIView {
         
         stackView.addArrangedSubview(self.titleLabel)
         stackView.addArrangedSubview(self.messageLabel)
-        stackView.addArrangedSubview(self.button)
-        
+        if self.withButton {
+            stackView.addArrangedSubview(self.button)
+        }
+            
         NSLayoutConstraint.activate([
             stackView.widthAnchor.constraint(equalToConstant: 220),
             
@@ -87,7 +98,9 @@ extension ErrorState {
     func setContent(title: String?, message: String?, retryTitle: String?, retryAction: ErrorRetryAction?) {
         self.titleLabel.text = title
         self.messageLabel.text = message
-        self.button.setTitle(retryTitle, for: .normal)
-        self.retryAction = retryAction
+        if self.withButton {
+            self.button.setTitle(retryTitle, for: .normal)
+            self.retryAction = retryAction
+        }
     }
 }
