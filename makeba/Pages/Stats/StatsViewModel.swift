@@ -29,10 +29,11 @@ class StatsViewModel: BaseViewModel {
                     switch single {
                     case .success(let data):
                         self.containers.accept(data)
-//                        self.isNeedClosed.accept(true)
+                        self.contentState.accept(.content)
                     case .error(let error):
                         if let queryError = error as? DError {
                             self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+                            self.contentState.accept(.dataEmpty)
                         }
                     }
                 }).disposed(by: disposeBag)

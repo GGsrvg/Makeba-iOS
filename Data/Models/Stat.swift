@@ -10,18 +10,15 @@ import Foundation
 
 public class Stat: Codable {
     enum CodingKeys: String, CodingKey {
-        case type = "Type"
         case title = "Title"
-        case model = "Model"
+        case text = "Text"
     }
     
-    public let type: String?
     public let title: String?
-    public let model: Model?
+    public let text: Text?
     
-    public init(type: String?, title: String?, model: Model?) {
-        self.type = type
+    public init(title: String?, model: Text?) {
         self.title = title
-        self.model = model
+        self.text = model
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Model.swift
+//  Text.swift
 //  Data
 //
 //  Created by GGsrvg on 28.09.2020.
@@ -8,19 +8,19 @@
 
 import Foundation
 
-public class Model: Codable {
+public class Text: Codable {
     enum CodingKeys: String, CodingKey {
-        case text = "Text"
+        case value = "Value"
         case axis = "Axis"
         case textAligment = "TextAligment"
     }
     
-    public let text: String?
+    public let value: String?
     public let axis: String?
     public let textAligment: String?
 
-    public init(text: String?, axis: String?, textAligment: String?) {
-        self.text = text
+    public init(value: String?, axis: String?, textAligment: String?) {
+        self.value = value
         self.axis = axis
         self.textAligment = textAligment
     }

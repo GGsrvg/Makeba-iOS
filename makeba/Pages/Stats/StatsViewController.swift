@@ -57,7 +57,7 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "\(StatTableViewCell.self)", for: indexPath) as! StatTableViewCell
         let data =  viewModel.containers.value[indexPath.section].stats[indexPath.row]
-        cell.setupData(title: data.title, value: data.model?.text)
+        cell.setupData(title: data.title, value: data.text?.value)
         return cell
     }
     

@@ -46,8 +46,9 @@ class ServerListViewModel: BaseViewModel {
                         var servers = self.servers.value
                         servers.remove(at: i)
                         self.servers.accept(servers)
+                        let content: VCStates = servers.count == 0 ? .dataEmpty : .content
+                        self.contentState.accept(content)
                     }
-                    self.contentState.accept(.content)
                 case .error(_):
                     self.contentState.accept(.dataEmpty)
                     break
