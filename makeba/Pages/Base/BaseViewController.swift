@@ -66,7 +66,6 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
     
     @objc func closeAction(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
-        //        dismiss(animated: true, completion: nil)
     }
     
     private func subscribeToObservable() {
@@ -99,6 +98,7 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
 
 extension BaseViewController {
     private func changeState(_ state: VCStates) {
+        // FIXME: need rewrite
         func showState(_ state: UIView) {
             state.isHidden = false
             UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseIn, animations: {
@@ -151,20 +151,29 @@ extension BaseViewController {
             let loading = LoadingState()
             setState(loading)
             needShowState = loading
-        case .error(title: let title, message: let message, retryTitle: let buttonTitle, retryAction: let action):
-            let error = ErrorState()
-            setState(error)
-            error.setContent(title: title, message: message, retryTitle: buttonTitle, retryAction: action)
-            needShowState = error
+        case .error(let error):
+            let errorState = ErrorState()
+            setState(errorState)
+            errorState.setContent(title: R.string.localization.error(),
+                                  message: error.localizedDescription,
+                                  buttonTitle: R.string.localization.retry(),
+                                  buttonAction: { _ in self.retryRequest() })
+            needShowState = errorState
         case .dataEmpty:
             let error = ErrorState(withButton: false)
             setState(error)
-            error.setContent(title: "Data Empty", message: "Data don't have values", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+            error.setContent(title: R.string.localization.dataEmpty(),
+                             message: R.string.localization.dataEmptyDescription(),
+                             buttonTitle: R.string.localization.retry(),
+                             buttonAction: { _ in self.retryRequest() })
             needShowState = error
         case .noInternet:
             let error = ErrorState()
             setState(error)
-            error.setContent(title: "No Internet", message: "Please check your internet access", retryTitle: "Retry", retryAction: { _ in self.retryRequest() })
+            error.setContent(title: R.string.localization.noInternet(),
+                             message: R.string.localization.noInternetDescription(),
+                             buttonTitle: R.string.localization.retry(),
+                             buttonAction: { _ in self.retryRequest() })
             needShowState = error
         }
         

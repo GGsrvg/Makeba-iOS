@@ -9,3 +9,9 @@
 
 "host" = "хост";
 "servers" = "Сервера";
+"error" = "Ошибка";
+"dataEmpty" = "Данные отсутствуют";
+"dataEmptyDescription" = "Источник данных пуст";
+"noInternet" = "Нет интернета";
+"noInternetDescription" = "Пожалуйста проверьте интернет соединение";
+"retry" = "Повторить";

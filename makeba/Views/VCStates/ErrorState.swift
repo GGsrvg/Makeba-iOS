@@ -9,9 +9,9 @@
 import UIKit
 
 class ErrorState: UIView {
-    typealias ErrorRetryAction = ((ErrorState) -> Void)
+    typealias ErrorButtonAction = ((ErrorState) -> Void)
     
-    private var retryAction: ErrorRetryAction? = nil
+    private var buttonAction: ErrorButtonAction? = nil
     private let withButton: Bool
     
     // MARK: - UI Elements
@@ -90,17 +90,17 @@ class ErrorState: UIView {
     }
     
     @objc private func retryRequestSend() {
-        self.retryAction?(self)
+        self.buttonAction?(self)
     }
 }
 
 extension ErrorState {
-    func setContent(title: String?, message: String?, retryTitle: String?, retryAction: ErrorRetryAction?) {
+    func setContent(title: String?, message: String?, buttonTitle: String?, buttonAction: ErrorButtonAction?) {
         self.titleLabel.text = title
         self.messageLabel.text = message
         if self.withButton {
-            self.button.setTitle(retryTitle, for: .normal)
-            self.retryAction = retryAction
+            self.button.setTitle(buttonTitle, for: .normal)
+            self.buttonAction = buttonAction
         }
     }
 }

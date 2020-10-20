@@ -9,3 +9,9 @@
 
 "host" = "host";
 "servers" = "Servers";
+"error" = "Error";
+"dataEmpty" = "No data";
+"dataEmptyDescription" = "Data source is empty";
+"noInternet" = "No Internet";
+"noInternetDescription" = "Please check your internet access";
+"retry" = "Retry";
