@@ -49,4 +49,24 @@ public class ServerEntityCase: BaseEntityCase {
             return .init(isSuccessfullyCompleted: false, message: error.localizedDescription, data: false)
         }
     }
+    
+    public func update(server: Server) -> DBStatus<Bool> {
+        let request: NSFetchRequest<ServerEntity> = ServerEntity.fetchRequest()
+        request.predicate = NSPredicate(format: "path == %@", server.path)
+        
+        let serverEntities: [ServerEntity]? = try? context.fetch(request)
+        
+        guard let serverEntity = serverEntities?.first else {
+            return .init(isSuccessfullyCompleted: false, message: "Don't found server by path name", data: false)
+        }
+        
+        serverEntity.name = server.name
+        
+        do {
+            try save()
+            return .init(data: true)
+        } catch {
+            return .init(isSuccessfullyCompleted: false, message: error.localizedDescription, data: false)
+        }
+    }
 }

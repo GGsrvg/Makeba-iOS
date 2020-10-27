@@ -56,7 +56,15 @@ final class MServerCase: ServerCase {
     }
     
     func update(_ server: Server) -> Single<Bool> {
-        .just(false)
+        return .create(subscribe: { single in
+            let status = self.entityCase.update(server: server)
+            if status.isSuccessfullyCompleted {
+                single(.success(status.data))
+            } else {
+                single(.error(MDError(typeError: .database, message: status.message)))
+            }
+            return Disposables.create()
+        })
     }
     
 }

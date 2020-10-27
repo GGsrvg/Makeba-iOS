@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import Data
 
 class AddServerInitViewController: BaseInitViewController {
+    let server: Server
     
+    init(server: Server) {
+        self.server = server
+    }
 }
