@@ -60,8 +60,6 @@
 		5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCAE60E24D68FEA0002945B /* TabBarController.swift */; };
 		5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */; };
 		5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9C24D88DBC00618676 /* AddServerView.swift */; };
-		5BCC3BC024D1F42500A7C7DA /* NavigationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC3BBF24D1F42500A7C7DA /* NavigationRule.swift */; };
-		5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC3BC124D1F4A800A7C7DA /* ViewControllers.swift */; };
 		5BD31901251A19F0005BFAF7 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B12E94A2506996100647C60 /* StatusCode.swift */; };
 		5BD31903251A19F0005BFAF7 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1B24F96DB900FD80B0 /* Requests.swift */; };
 		5BD31907251A19F0005BFAF7 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACE48F24FFE793003EB2BE /* BaseResponse.swift */; };
@@ -330,8 +328,6 @@
 		5BCAE60E24D68FEA0002945B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewModel.swift; sourceTree = "<group>"; };
 		5BCB7E9C24D88DBC00618676 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
-		5BCC3BBF24D1F42500A7C7DA /* NavigationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRule.swift; sourceTree = "<group>"; };
-		5BCC3BC124D1F4A800A7C7DA /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		5BD31974251A74CC005BFAF7 /* MStatCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MStatCase.swift; sourceTree = "<group>"; };
 		5BD3197D251A75AD005BFAF7 /* MServerCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MServerCase.swift; sourceTree = "<group>"; };
 		5BD31A0E251CD7B2005BFAF7 /* MDataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDataLayer.swift; sourceTree = "<group>"; };
@@ -730,7 +726,6 @@
 			children = (
 				5B53AA2B24D52BDB0051C296 /* Resources */,
 				5BDEE32F24D45402000B5AF3 /* Utils */,
-				5BCC3BBE24D1F3F800A7C7DA /* NavigationRule */,
 				5BD4912E24D692E200BF0C8A /* Views */,
 				5BCC3BBD24D1F3EE00A7C7DA /* Pages */,
 				5BBABE3624CDA01100C3A22C /* AppDelegate.swift */,
@@ -843,15 +838,6 @@
 				5BCAE60624D68F750002945B /* TabBar */,
 			);
 			path = Pages;
-			sourceTree = "<group>";
-		};
-		5BCC3BBE24D1F3F800A7C7DA /* NavigationRule */ = {
-			isa = PBXGroup;
-			children = (
-				5BCC3BBF24D1F42500A7C7DA /* NavigationRule.swift */,
-				5BCC3BC124D1F4A800A7C7DA /* ViewControllers.swift */,
-			);
-			path = NavigationRule;
 			sourceTree = "<group>";
 		};
 		5BD31973251A747D005BFAF7 /* UseCases */ = {
@@ -1690,7 +1676,6 @@
 				5BA5ABC7254149E5003F0C2F /* ObservableArray.swift in Sources */,
 				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
 				5B64C280254299BF0095DE18 /* ObservableDataSourceDelegate.swift in Sources */,
-				5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */,
 				5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
 				5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */,
@@ -1706,7 +1691,6 @@
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,
 				5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */,
 				5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */,
-				5BCC3BC024D1F42500A7C7DA /* NavigationRule.swift in Sources */,
 				5BD4914524D699E800BF0C8A /* ServerListViewModel.swift in Sources */,
 				5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */,
 				5BF5385D24DF270F004B513D /* StatsView.swift in Sources */,
