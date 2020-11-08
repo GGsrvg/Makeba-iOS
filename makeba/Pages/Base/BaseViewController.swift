@@ -11,7 +11,7 @@ import RxSwift
 
 class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewController>: UIViewController {
     class func openIfCan(from viewController: UIViewController, widthData data: D?) {
-        //        viewController.show(Self(), sender: nil)
+//                viewController.show(Self(), sender: nil)
     }
     
     private var oldState: UIView? = nil

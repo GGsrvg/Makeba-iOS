@@ -1,5 +1,5 @@
 //
-//  ObservableArrayCallback.swift
+//  ObservableDataSourceDelegate.swift
 //  makeba
 //
 //  Created by GGsrvg on 23.10.2020.
@@ -19,9 +19,9 @@ protocol ObservableDataSourceDelegate: class {
     func changeHeader(observableArray: ObservableArrayProtocol, section: Int)
     func changeFooter(observableArray: ObservableArrayProtocol, section: Int)
     
-    func addRow(observableArray: ObservableArrayProtocol, section: Int)
-    func insertRow(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func updateRow(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func removeRow(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func clearRows(observableArray: ObservableArrayProtocol, section: Int, count: Int)
+    func addCell(observableArray: ObservableArrayProtocol, section: Int)
+    func insertCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
+    func updateCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
+    func removeCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
+    func clearCells(observableArray: ObservableArrayProtocol, section: Int, count: Int)
 }

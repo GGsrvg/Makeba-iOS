@@ -13,9 +13,14 @@ import RxCocoa
 
 class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel, AddServerInitViewController> {
     override class func openIfCan(from parentViewController: UIViewController, widthData data: AddServerInitViewController?) {
-        let nextVC = AddServerViewController()
-        nextVC.viewModel.server = data?.server
-        parentViewController.navigationController?.show(nextVC, sender: nil)
+        let vc = AddServerViewController()
+        if let data = data {
+            vc.contentView.hostNameTextField.text = data.server.name
+            vc.contentView.hostPathTextField.text = data.server.path
+            vc.contentView.hostPathTextField.isEnabled = false
+            vc.viewModel.server = data.server
+        }
+        parentViewController.navigationController?.show(vc, sender: nil)
     }
     
     required override init() {
@@ -39,12 +44,6 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationItem()
-        setupBinding()
-    }
-    
-    private func setupBinding() {
-        (contentView.hostPathTextField.rx.text <-> viewModel.hostPath).disposed(by: disposeBag)
-        (contentView.hostNameTextField.rx.text <-> viewModel.hostName).disposed(by: disposeBag)
     }
     
     private func setupNavigationItem() {
@@ -54,6 +53,7 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
     
     @objc private func saveAction() {
         self.view.endEditing(true)
-        self.viewModel.save()
+        self.viewModel.save(hostPath: self.contentView.hostPathTextField.text,
+                            hostName: self.contentView.hostNameTextField.text)
     }
 }

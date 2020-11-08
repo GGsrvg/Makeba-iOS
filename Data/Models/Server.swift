@@ -9,7 +9,7 @@
 import Foundation
 
 public class Server {
-    public let name: String
+    public var name: String
     public let path: String
     public let dateCreated: Date
     

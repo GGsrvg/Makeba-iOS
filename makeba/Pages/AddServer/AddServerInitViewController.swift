@@ -9,10 +9,8 @@
 import Foundation
 import Data
 
-class AddServerInitViewController: BaseInitViewController {
+struct AddServerInitViewController: BaseInitViewController {
     let server: Server
-    
-    init(server: Server) {
-        self.server = server
-    }
+    let addComplete: (() -> Void)?
+    let updateComplete: (() -> Void)?
 }

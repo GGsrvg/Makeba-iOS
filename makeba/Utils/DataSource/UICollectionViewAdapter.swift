@@ -1,14 +1,14 @@
 //
-//  TableViewDataSource.swift
+//  UICollectionViewAdapter.swift
 //  makeba
 //
-//  Created by GGsrvg on 31.10.2020.
+//  Created by GGsrvg on 08.11.2020.
 //  Copyright © 2020 GGsrvg. All rights reserved.
 //
 
 import UIKit
 
-class UITableViewAdapter<Header, Row, Footer>: NSObject, UITableViewDataSource {
+class UICollectionViewAdapter<Header, Row, Footer>: NSObject, UICollectionViewDelegate {
     
     typealias OA = ObservableDataSource<Header, Row, Footer>
     typealias CellForRow = ((UITableView, IndexPath) -> UITableViewCell)
@@ -16,15 +16,15 @@ class UITableViewAdapter<Header, Row, Footer>: NSObject, UITableViewDataSource {
     
     // TODO: need check on leeks
     private let observable: OA
-    private let tableView: UITableView
+    private let collectionView: UICollectionView
     
     public var cellForRow: CellForRow? = nil
     public var titleForHeaderSection: ViewForSection? = nil
     public var titleForFooterSection: ViewForSection? = nil
     
-    init(_ tableView: UITableView, observableArray: OA) {
+    init(_ collectionView: UICollectionView, observableArray: OA) {
         self.observable = observableArray
-        self.tableView = tableView
+        self.collectionView = collectionView
         super.init()
         observableArray.addCallback(self)
     }
@@ -51,52 +51,52 @@ class UITableViewAdapter<Header, Row, Footer>: NSObject, UITableViewDataSource {
     }
 }
 
-extension UITableViewAdapter: ObservableDataSourceDelegate {
+extension UICollectionViewAdapter: ObservableDataSourceDelegate {
     func addSection(observableArray: ObservableArrayProtocol) {
         let indexLastSection: Int = observable.array.count - 1
-        tableView.insertSections(.init(integer: indexLastSection), with: .automatic)
+        collectionView.insertSections(.init(integer: indexLastSection))
     }
     
     func insertSection(observableArray: ObservableArrayProtocol, at index: Int) {
-        tableView.insertSections(.init(integer: index), with: .automatic)
+        collectionView.insertSections(.init(integer: index))
     }
     
     func updateSection(observableArray: ObservableArrayProtocol, at index: Int) {
-        tableView.reloadSections(.init(integer: index), with: .automatic)
+        collectionView.reloadSections(.init(integer: index))
     }
     
     func removeSection(observableArray: ObservableArrayProtocol, at index: Int) {
-        tableView.deleteSections(.init(integer: index), with: .automatic)
+        collectionView.deleteSections(.init(integer: index))
     }
     
     func clear(observableArray: ObservableArrayProtocol) {
-        tableView.reloadData()
+        collectionView.reloadData()
     }
     
     func changeHeader(observableArray: ObservableArrayProtocol, section: Int) {
-        tableView.reloadSections(.init(integer: section), with: .automatic)
+        collectionView.reloadSections(.init(integer: section))
     }
     
     func changeFooter(observableArray: ObservableArrayProtocol, section: Int) {
-        tableView.reloadSections(.init(integer: section), with: .automatic)
+        collectionView.reloadSections(.init(integer: section))
     }
     
     func addCell(observableArray: ObservableArrayProtocol, section: Int) {
         let indexLasrRow = self.observable.array[section].rows.count - 1
-        self.tableView.insertRows(at: [.init(row: indexLasrRow, section: section)], with: .automatic)
-        self.tableView.refreshControl?.endRefreshing()
+        self.collectionView.insertItems(at: [.init(row: indexLasrRow, section: section)])
+        self.collectionView.refreshControl?.endRefreshing()
     }
     
     func insertCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int) {
-        self.tableView.insertRows(at: [.init(row: index, section: section)], with: .automatic)
+        self.collectionView.insertItems(at: [.init(row: index, section: section)])
     }
     
     func updateCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int) {
-        self.tableView.reloadRows(at: [.init(row: index, section: section)], with: .automatic)
+        self.collectionView.insertItems(at: [.init(row: index, section: section)])
     }
     
     func removeCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int) {
-        self.tableView.deleteRows(at: [.init(row: index, section: section)], with: .automatic)
+        self.collectionView.insertItems(at: [.init(row: index, section: section)])
     }
     
     func clearCells(observableArray: ObservableArrayProtocol, section: Int, count: Int) {
@@ -104,6 +104,7 @@ extension UITableViewAdapter: ObservableDataSourceDelegate {
         for i in 0..<count {
             indexPaths.append(IndexPath(row: i, section: section))
         }
-        self.tableView.deleteRows(at: indexPaths, with: .fade)
+        self.collectionView.deleteItems(at: indexPaths)
     }
 }
+

@@ -81,7 +81,8 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
         let data: AddServerInitViewController?
         
         if let indexPath = indexPath {
-            data = .init(server: self.viewModel.servers.array[indexPath.section].rows[indexPath.row])
+            let server = self.viewModel.servers.array[indexPath.section].rows[indexPath.row]
+            data = .init(server: server, addComplete: nil, updateComplete: nil)
         } else {
             data = nil
         }

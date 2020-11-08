@@ -12,13 +12,9 @@ protocol ObservableArrayProtocol: class {
     func addCallback(_ callback: ObservableDataSourceDelegate)
     func removeCallback(_ callback: ObservableDataSourceDelegate)
 }
-/**
-    H - header
-    R - row
-    F - footer
- */
-final class ObservableDataSource<H, R, F>: ObservableArrayProtocol {
-    public typealias SI = SectionItem<H, R, F>
+
+final class ObservableDataSource<Header, Row, Footer>: ObservableArrayProtocol {
+    public typealias SI = SectionItem<Header, Row, Footer>
     
     private(set) var array: [SI] = []
     private var callbacks: [ObservableDataSourceDelegate] = []
@@ -51,27 +47,27 @@ extension ObservableDataSource {
         notifyClear()
     }
     
-    public func header(_ header: H, section: Int) {
+    public func header(_ header: Header, section: Int) {
         array[section].header = header
         notifyHeader(section: section)
     }
     
-    public func footer(_ footer: F, section: Int) {
+    public func footer(_ footer: Footer, section: Int) {
         array[section].footer = footer
         notifyFooter(section: section)
     }
     
-    public func addRow(_ element: R, section: Int) {
+    public func addRow(_ element: Row, section: Int) {
         array[section].rows.append(element)
         notifyAddRow(section: section)
     }
     
-    public func insertRow(_ element: R, section: Int, at index: Int) {
+    public func insertRow(_ element: Row, section: Int, at index: Int) {
         array[section].rows.insert(element, at: index)
         notifyInsertRow(section: section, at: index)
     }
     
-    public func updateRow(_ element: R, section: Int, at index: Int) {
+    public func updateRow(_ element: Row, section: Int, at index: Int) {
         array[section].rows[index] = element
         notifyUpdateRow(section: section, at: index)
     }
@@ -144,31 +140,31 @@ extension ObservableDataSource {
     
     private func notifyAddRow(section: Int) {
         callbacks.forEach {
-            $0.addRow(observableArray: self, section: section)
+            $0.addCell(observableArray: self, section: section)
         }
     }
     
     private func notifyInsertRow(section: Int, at index: Int) {
         callbacks.forEach {
-            $0.insertRow(observableArray: self, section: section, at: index)
+            $0.insertCell(observableArray: self, section: section, at: index)
         }
     }
     
     private func notifyUpdateRow(section: Int, at index: Int) {
         callbacks.forEach {
-            $0.updateRow(observableArray: self, section: section, at: index)
+            $0.updateCell(observableArray: self, section: section, at: index)
         }
     }
     
     private func notifyRemoveRow(section: Int, at index: Int) {
         callbacks.forEach {
-            $0.removeRow(observableArray: self, section: section, at: index)
+            $0.removeCell(observableArray: self, section: section, at: index)
         }
     }
     
     private func notifyClearRow(section: Int, count: Int) {
         callbacks.forEach {
-            $0.clearRows(observableArray: self, section: section, count: count)
+            $0.clearCells(observableArray: self, section: section, count: count)
         }
     }
 }

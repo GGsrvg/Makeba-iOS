@@ -26,13 +26,14 @@
 		5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B20341825582D4D0090EEAD /* UICollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */; };
 		5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD3E2538B74C007BEDD4 /* MButton.swift */; };
 		5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD452538BA66007BEDD4 /* MLabel.swift */; };
 		5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD662538C263007BEDD4 /* R.generated.swift */; };
 		5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */; };
 		5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206E62526DE55002B532D /* AddServerInitViewController.swift */; };
 		5B644B3D252CF53800B3A94E /* VCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B644B3C252CF53800B3A94E /* VCStates.swift */; };
-		5B64C280254299BF0095DE18 /* ObservableArrayCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */; };
+		5B64C280254299BF0095DE18 /* ObservableDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */; };
 		5B69CE582549CE3600557BDA /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69CE572549CE3600557BDA /* DataItem.swift */; };
 		5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE7D252254CF0053D8E7 /* Stats.swift */; };
 		5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE83252254EA0053D8E7 /* Stat.swift */; };
@@ -279,6 +280,7 @@
 		5B1617A62519E30500A3D78F /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1617A82519E30500A3D78F /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		5B1617A92519E30500A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewAdapter.swift; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
 		5B219A2324F9766300FD80B0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -296,7 +298,7 @@
 		5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitViewController.swift; sourceTree = "<group>"; };
 		5B6206E62526DE55002B532D /* AddServerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInitViewController.swift; sourceTree = "<group>"; };
 		5B644B3C252CF53800B3A94E /* VCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStates.swift; sourceTree = "<group>"; };
-		5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArrayCallback.swift; sourceTree = "<group>"; };
+		5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableDataSourceDelegate.swift; sourceTree = "<group>"; };
 		5B69CE572549CE3600557BDA /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		5B81EE7D252254CF0053D8E7 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		5B81EE83252254EA0053D8E7 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
@@ -668,7 +670,7 @@
 			isa = PBXGroup;
 			children = (
 				5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */,
-				5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */,
+				5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */,
 				5B69CE572549CE3600557BDA /* DataItem.swift */,
 			);
 			path = ObservableArray;
@@ -678,6 +680,7 @@
 			isa = PBXGroup;
 			children = (
 				5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */,
+				5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -1686,7 +1689,7 @@
 				5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */,
 				5BA5ABC7254149E5003F0C2F /* ObservableArray.swift in Sources */,
 				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
-				5B64C280254299BF0095DE18 /* ObservableArrayCallback.swift in Sources */,
+				5B64C280254299BF0095DE18 /* ObservableDataSourceDelegate.swift in Sources */,
 				5BCC3BC224D1F4A800A7C7DA /* ViewControllers.swift in Sources */,
 				5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
@@ -1699,6 +1702,7 @@
 				5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */,
 				5BBD27E024FEC6420022994D /* Binding.swift in Sources */,
 				5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */,
+				5B20341825582D4D0090EEAD /* UICollectionViewAdapter.swift in Sources */,
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,
 				5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */,
 				5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */,
