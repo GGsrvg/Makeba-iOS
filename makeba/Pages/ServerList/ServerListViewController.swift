@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Data
 import RxSwift
 
 class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel, AddServerInitViewController> {
+    
+    var tableViewAdapter: UITableViewAdapter<String, Server, String>! = nil
     
     lazy var refreshControl = UIRefreshControl()
     
@@ -24,6 +27,7 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewAdapter = UITableViewAdapter(self.contentView.tableView, observableArray: self.viewModel.servers)
         setupNavigationItem()
         setupView()
         setup()
@@ -36,20 +40,23 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
     }
     
     func setup() {
-        viewModel.servers.subscribe({ event in
-            switch event {
-            case .next(_):
-                self.refreshControl.endRefreshing()
-                self.contentView.tableView.reloadData()
-            case .error(_):
-                break
-            case .completed:
-                break
-            }
-            }).disposed(by: disposeBag)
-        viewModel.servers.bind(to: self.contentView.tableView.rx.items(cellIdentifier: "\(ServerInfoTableViewCell.self)")) { row, server, cell in
-            (cell as! ServerInfoTableViewCell).setupData(title: server.name, host: server.path, isOnline: true)
-        }.disposed(by: disposeBag)
+        tableViewAdapter.cellForRow = { [weak self] tableView, indexPath in
+            guard let self = self else { return UITableViewCell() }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "\(ServerInfoTableViewCell.self)", for: indexPath) as! ServerInfoTableViewCell
+            let row = self.viewModel.servers.array[indexPath.section].rows[indexPath.row]
+            cell.setupData(title: row.name, host: row.path, isOnline: true)
+            return cell
+        }
+        tableViewAdapter.titleForHeaderSection = { [weak self] tableView, section in
+            guard let self = self else { return nil }
+            let header = self.viewModel.servers.array[section].header
+            return header
+        }
+        tableViewAdapter.titleForFooterSection = { [weak self] tableView, section in
+            guard let self = self else { return nil }
+            let footer = self.viewModel.servers.array[section].footer
+            return footer
+        }
     }
     
     func updateData() {
@@ -65,16 +72,16 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
         refreshControl.addTarget(self, action: #selector(valueChangedAction(_:)), for: .valueChanged)
         
         contentView.tableView.register(ServerInfoTableViewCell.self, forCellReuseIdentifier: "\(ServerInfoTableViewCell.self)")
-        contentView.tableView.delegate    = self
-//        contentView.tableView.dataSource  = self
-        contentView.tableView.refreshControl = self.refreshControl
+        contentView.tableView.delegate          = self
+        contentView.tableView.dataSource        = tableViewAdapter
+        contentView.tableView.refreshControl    = self.refreshControl
     }
     
     private func goToAddServer(indexPath: IndexPath? = nil) {
         let data: AddServerInitViewController?
         
         if let indexPath = indexPath {
-            data = .init(server: self.viewModel.servers.value[indexPath.row])
+            data = .init(server: self.viewModel.servers.array[indexPath.section].rows[indexPath.row])
         } else {
             data = nil
         }
@@ -96,7 +103,7 @@ extension ServerListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = StatsViewController()
-        vc.viewModel.server = viewModel.servers.value[indexPath.row]
+        vc.viewModel.server = viewModel.servers.array[indexPath.section].rows[indexPath.row]
         show(vc, sender: nil)
     }
 

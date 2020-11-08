@@ -35,7 +35,9 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
     }
     
     deinit {
+        #if DEBUG
         print("deinit \(self)")
+        #endif
     }
     
     // MARK: - life cycle

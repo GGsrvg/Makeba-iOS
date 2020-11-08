@@ -26,7 +26,9 @@ class BaseViewModel {
     }
     
     deinit {
+        #if DEBUG
         print("deinit \(self)")
+        #endif
     }
 }
 

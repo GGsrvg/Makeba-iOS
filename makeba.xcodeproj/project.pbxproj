@@ -33,6 +33,7 @@
 		5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206E62526DE55002B532D /* AddServerInitViewController.swift */; };
 		5B644B3D252CF53800B3A94E /* VCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B644B3C252CF53800B3A94E /* VCStates.swift */; };
 		5B64C280254299BF0095DE18 /* ObservableArrayCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */; };
+		5B69CE582549CE3600557BDA /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69CE572549CE3600557BDA /* DataItem.swift */; };
 		5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE7D252254CF0053D8E7 /* Stats.swift */; };
 		5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE83252254EA0053D8E7 /* Stat.swift */; };
 		5B81EE8A252255060053D8E7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE89252255060053D8E7 /* Text.swift */; };
@@ -42,6 +43,7 @@
 		5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA1252D85F6007E6609 /* LoadingState.swift */; };
 		5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA7252D8616007E6609 /* ErrorState.swift */; };
 		5BA5ABC7254149E5003F0C2F /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */; };
+		5BAB7DA2254D80D50054EF2F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */; };
 		5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3624CDA01100C3A22C /* AppDelegate.swift */; };
 		5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3824CDA01100C3A22C /* SceneDelegate.swift */; };
 		5BBABE4024CDA01200C3A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBABE3F24CDA01200C3A22C /* Assets.xcassets */; };
@@ -295,6 +297,7 @@
 		5B6206E62526DE55002B532D /* AddServerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInitViewController.swift; sourceTree = "<group>"; };
 		5B644B3C252CF53800B3A94E /* VCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStates.swift; sourceTree = "<group>"; };
 		5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArrayCallback.swift; sourceTree = "<group>"; };
+		5B69CE572549CE3600557BDA /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
 		5B81EE7D252254CF0053D8E7 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		5B81EE83252254EA0053D8E7 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		5B81EE89252255060053D8E7 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -304,6 +307,7 @@
 		5B939FA1252D85F6007E6609 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		5B939FA7252D8616007E6609 /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
 		5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
+		5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		5BACE48F24FFE793003EB2BE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5BACE49424FFE817003EB2BE /* DBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStatus.swift; sourceTree = "<group>"; };
 		5BBABE3324CDA01100C3A22C /* Makeba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makeba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -665,8 +669,17 @@
 			children = (
 				5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */,
 				5B64C27F254299BF0095DE18 /* ObservableArrayCallback.swift */,
+				5B69CE572549CE3600557BDA /* DataItem.swift */,
 			);
 			path = ObservableArray;
+			sourceTree = "<group>";
+		};
+		5BAB7DA0254D80BB0054EF2F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		5BACE49124FFE7DF003EB2BE /* Status */ = {
@@ -928,6 +941,7 @@
 		5BDEE32F24D45402000B5AF3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				5BAB7DA0254D80BB0054EF2F /* DataSource */,
 				5BA5ABB7254144FA003F0C2F /* ObservableArray */,
 				5BBD27DD24FEC6200022994D /* Rx */,
 			);
@@ -1663,8 +1677,10 @@
 			files = (
 				5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */,
 				5BD4913624D6933000BF0C8A /* ServerListViewController.swift in Sources */,
+				5BAB7DA2254D80D50054EF2F /* TableViewDataSource.swift in Sources */,
 				5BD4914724D6A2A300BF0C8A /* ServerListView.swift in Sources */,
 				5BD4913E24D6936100BF0C8A /* AuthorizeViewController.swift in Sources */,
+				5B69CE582549CE3600557BDA /* DataItem.swift in Sources */,
 				5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */,
 				5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */,
 				5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */,

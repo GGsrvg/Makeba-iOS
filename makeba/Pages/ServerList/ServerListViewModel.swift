@@ -13,10 +13,11 @@ import Data
 
 class ServerListViewModel: BaseViewModel {
 
-    let servers: BehaviorRelay<[Server]> = .init(value: [])
+    let servers: ObservableDataSource<String, Server, String> = .init()
     
     required init() {
         super.init()
+        servers.addSection(.init(header: "", rows: [], footer: ""))
     }
     
     func loadData() {
@@ -26,7 +27,10 @@ class ServerListViewModel: BaseViewModel {
             .subscribe({ single in
                 switch single {
                 case .success(let data):
-                    self.servers.accept(data)
+                    self.servers.clearRow(section: 0)
+                    data.forEach {
+                        self.servers.addRow($0, section: 0)
+                    }
                     self.contentState.accept(data.count == 0 ? .dataEmpty : .content)
                 case .error(_):
                     self.contentState.accept(.dataEmpty)
@@ -36,17 +40,15 @@ class ServerListViewModel: BaseViewModel {
     }
     
     func removeByIndex(_ i: Int) {
-        data?.server.delete(servers.value[i])
+        data?.server.delete(servers.array[0].rows[i])
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe({ single in
                 switch single {
                 case .success(let data):
                     if data {
-                        var servers = self.servers.value
-                        servers.remove(at: i)
-                        self.servers.accept(servers)
-                        let content: VCStates = servers.count == 0 ? .dataEmpty : .content
+                        self.servers.removeRow(section: 0, at: i)
+                        let content: VCStates = self.servers.array[0].rows.count == 0 ? .dataEmpty : .content
                         self.contentState.accept(content)
                     }
                 case .error(_):
