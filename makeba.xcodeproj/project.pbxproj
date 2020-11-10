@@ -19,13 +19,7 @@
 		5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; };
 		5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617492519E29100A3D78F /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617392519E29100A3D78F /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B16174C2519E29100A3D78F /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
-		5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617AA2519E30500A3D78F /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617A82519E30500A3D78F /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
-		5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5B1617F22519E37500A3D78F /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
-		5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B20341825582D4D0090EEAD /* UICollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */; };
 		5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD3E2538B74C007BEDD4 /* MButton.swift */; };
 		5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD452538BA66007BEDD4 /* MLabel.swift */; };
@@ -79,10 +73,6 @@
 		5BD319D3251BB5AD005BFAF7 /* ServerCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2F24FABE6700FD80B0 /* ServerCase.swift */; };
 		5BD319D4251BB5AD005BFAF7 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A2324F9766300FD80B0 /* Server.swift */; };
 		5BD319DF251BB5BA005BFAF7 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B219A1F24F96EED00FD80B0 /* DataLayer.swift */; };
-		5BD319F6251BB76C005BFAF7 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
-		5BD319F7251BB76C005BFAF7 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5BD319FA251BB76C005BFAF7 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
-		5BD319FB251BB76C005BFAF7 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BD31A0F251CD7B2005BFAF7 /* MDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD31A0E251CD7B2005BFAF7 /* MDataLayer.swift */; };
 		5BD4913624D6933000BF0C8A /* ServerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4913524D6933000BF0C8A /* ServerListViewController.swift */; };
 		5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4913724D6933900BF0C8A /* StatsViewController.swift */; };
@@ -94,6 +84,16 @@
 		5BD4914524D699E800BF0C8A /* ServerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4914424D699E800BF0C8A /* ServerListViewModel.swift */; };
 		5BD4914724D6A2A300BF0C8A /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4914624D6A2A300BF0C8A /* ServerListView.swift */; };
 		5BD4914A24D6EFB900BF0C8A /* ServerInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4914924D6EFB900BF0C8A /* ServerInfoTableViewCell.swift */; };
+		5BD5EA182559A80900E317F0 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
+		5BD5EA192559A80900E317F0 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD5EA1E2559A89300E317F0 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5BD5EA1F2559A89300E317F0 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD5EA202559A89800E317F0 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5BD5EA212559A89800E317F0 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD5EA262559A91000E317F0 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; };
+		5BD5EA272559A91000E317F0 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617372519E29100A3D78F /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BD5EA2A2559A91000E317F0 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; };
+		5BD5EA2B2559A91000E317F0 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1617A62519E30500A3D78F /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BDEE33624D45782000B5AF3 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BDEE33824D45782000B5AF3 /* Localization.strings */; };
 		5BF5385D24DF270F004B513D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5385C24DF270F004B513D /* StatsView.swift */; };
 		5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5385E24DF271A004B513D /* StatsViewModel.swift */; };
@@ -127,20 +127,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5B16170E2519E12600A3D78F;
 			remoteInfo = MakebaData;
-		};
-		5B16174A2519E29100A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617362519E29100A3D78F;
-			remoteInfo = API;
-		};
-		5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
-			remoteInfo = Storage;
 		};
 		5B1617F42519E37500A3D78F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -191,6 +177,20 @@
 			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
 			remoteInfo = Storage;
 		};
+		5BD5EA282559A91000E317F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617362519E29100A3D78F;
+			remoteInfo = API;
+		};
+		5BD5EA2C2559A91000E317F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1617A52519E30500A3D78F;
+			remoteInfo = Storage;
+		};
 		5BF5387824DFC4EC004B513D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5BBABE2B24CDA01100C3A22C /* Project object */;
@@ -207,9 +207,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5B1617F32519E37500A3D78F /* Data.framework in Embed Frameworks */,
-				5BD319F7251BB76C005BFAF7 /* API.framework in Embed Frameworks */,
-				5BD319FB251BB76C005BFAF7 /* Storage.framework in Embed Frameworks */,
+				5BD5EA192559A80900E317F0 /* Data.framework in Embed Frameworks */,
+				5BD5EA1F2559A89300E317F0 /* API.framework in Embed Frameworks */,
+				5BD5EA212559A89800E317F0 /* Storage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,8 +221,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */,
-				5B16174D2519E29100A3D78F /* API.framework in Embed Frameworks */,
-				5B1617AE2519E30500A3D78F /* Storage.framework in Embed Frameworks */,
+				5BD5EA272559A91000E317F0 /* API.framework in Embed Frameworks */,
+				5BD5EA2B2559A91000E317F0 /* Storage.framework in Embed Frameworks */,
 				5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -384,10 +384,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B1617F22519E37500A3D78F /* Data.framework in Frameworks */,
-				5BD319F6251BB76C005BFAF7 /* API.framework in Frameworks */,
-				5BD319FA251BB76C005BFAF7 /* Storage.framework in Frameworks */,
+				5BD5EA182559A80900E317F0 /* Data.framework in Frameworks */,
 				64C01F7CDBD0F6536D8C7228 /* Pods_MakebaData.framework in Frameworks */,
+				5BD5EA202559A89800E317F0 /* Storage.framework in Frameworks */,
+				5BD5EA1E2559A89300E317F0 /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,9 +424,9 @@
 			files = (
 				5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */,
 				5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */,
-				5B1617AD2519E30500A3D78F /* Storage.framework in Frameworks */,
-				5B16174C2519E29100A3D78F /* API.framework in Frameworks */,
+				5BD5EA2A2559A91000E317F0 /* Storage.framework in Frameworks */,
 				48985FE5479CC487E08FFCBA /* Pods_makeba.framework in Frameworks */,
+				5BD5EA262559A91000E317F0 /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1151,8 +1151,8 @@
 			dependencies = (
 				5BF5387924DFC4EC004B513D /* PBXTargetDependency */,
 				5B1617232519E12600A3D78F /* PBXTargetDependency */,
-				5B16174B2519E29100A3D78F /* PBXTargetDependency */,
-				5B1617AC2519E30500A3D78F /* PBXTargetDependency */,
+				5BD5EA292559A91000E317F0 /* PBXTargetDependency */,
+				5BD5EA2D2559A91000E317F0 /* PBXTargetDependency */,
 			);
 			name = makeba;
 			productName = makeba;
@@ -1751,16 +1751,6 @@
 			target = 5B16170E2519E12600A3D78F /* MakebaData */;
 			targetProxy = 5B1617222519E12600A3D78F /* PBXContainerItemProxy */;
 		};
-		5B16174B2519E29100A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617362519E29100A3D78F /* API */;
-			targetProxy = 5B16174A2519E29100A3D78F /* PBXContainerItemProxy */;
-		};
-		5B1617AC2519E30500A3D78F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B1617A52519E30500A3D78F /* Storage */;
-			targetProxy = 5B1617AB2519E30500A3D78F /* PBXContainerItemProxy */;
-		};
 		5B1617F52519E37500A3D78F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5BF5386424DFC4EC004B513D /* Data */;
@@ -1795,6 +1785,16 @@
 			isa = PBXTargetDependency;
 			target = 5B1617A52519E30500A3D78F /* Storage */;
 			targetProxy = 5BD319FC251BB76C005BFAF7 /* PBXContainerItemProxy */;
+		};
+		5BD5EA292559A91000E317F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617362519E29100A3D78F /* API */;
+			targetProxy = 5BD5EA282559A91000E317F0 /* PBXContainerItemProxy */;
+		};
+		5BD5EA2D2559A91000E317F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1617A52519E30500A3D78F /* Storage */;
+			targetProxy = 5BD5EA2C2559A91000E317F0 /* PBXContainerItemProxy */;
 		};
 		5BF5387924DFC4EC004B513D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1935,6 +1935,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1965,6 +1966,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2233,7 +2235,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/makeba.app/makeba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
 			};
 			name = Debug;
 		};
@@ -2256,7 +2258,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/makeba.app/makeba";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Makeba.app/Makeba";
 			};
 			name = Release;
 		};

@@ -10,18 +10,18 @@ import Foundation
 
 // u dont need call this methods
 protocol ObservableDataSourceDelegate: class {
-    func addSection(observableArray: ObservableArrayProtocol)
-    func insertSection(observableArray: ObservableArrayProtocol, at index: Int)
-    func updateSection(observableArray: ObservableArrayProtocol, at index: Int)
-    func removeSection(observableArray: ObservableArrayProtocol, at index: Int)
-    func clear(observableArray: ObservableArrayProtocol)
+    func addSection(observableArray: ObservableArray)
+    func insertSection(observableArray: ObservableArray, at index: Int)
+    func updateSection(observableArray: ObservableArray, at index: Int)
+    func removeSection(observableArray: ObservableArray, at index: Int)
+    func clear(observableArray: ObservableArray)
     
-    func changeHeader(observableArray: ObservableArrayProtocol, section: Int)
-    func changeFooter(observableArray: ObservableArrayProtocol, section: Int)
+    func changeHeader(observableArray: ObservableArray, section: Int)
+    func changeFooter(observableArray: ObservableArray, section: Int)
     
-    func addCell(observableArray: ObservableArrayProtocol, section: Int)
-    func insertCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func updateCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func removeCell(observableArray: ObservableArrayProtocol, section: Int, at index: Int)
-    func clearCells(observableArray: ObservableArrayProtocol, section: Int, count: Int)
+    func addCell(observableArray: ObservableArray, section: Int)
+    func insertCell(observableArray: ObservableArray, section: Int, at index: Int)
+    func updateCell(observableArray: ObservableArray, section: Int, at index: Int)
+    func removeCell(observableArray: ObservableArray, section: Int, at index: Int)
+    func clearCells(observableArray: ObservableArray, section: Int, count: Int)
 }

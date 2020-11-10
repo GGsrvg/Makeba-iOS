@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol ObservableArrayProtocol: class {
+protocol ObservableArray: class {
     func addCallback(_ callback: ObservableDataSourceDelegate)
     func removeCallback(_ callback: ObservableDataSourceDelegate)
 }
 
-final class ObservableDataSource<Header, Row, Footer>: ObservableArrayProtocol {
+final class ObservableDataSource<Header, Row, Footer>: ObservableArray {
     public typealias SI = SectionItem<Header, Row, Footer>
     
     private(set) var array: [SI] = []
