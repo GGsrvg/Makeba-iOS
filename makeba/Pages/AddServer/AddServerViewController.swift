@@ -12,7 +12,7 @@ import RxRelay
 import RxCocoa
 
 class AddServerViewController: BaseViewController<AddServerView, AddServerViewModel, AddServerInitViewController> {
-    override class func openIfCan(from parentViewController: UIViewController, widthData data: AddServerInitViewController?) {
+    override class func openIfCan(widthData data: AddServerInitViewController?) -> Self {
         let vc = AddServerViewController()
         if let data = data {
             vc.contentView.hostNameTextField.text = data.server.name
@@ -20,7 +20,7 @@ class AddServerViewController: BaseViewController<AddServerView, AddServerViewMo
             vc.contentView.hostPathTextField.isEnabled = false
             vc.viewModel.server = data.server
         }
-        parentViewController.navigationController?.show(vc, sender: nil)
+        return vc as! Self
     }
     
     required override init() {

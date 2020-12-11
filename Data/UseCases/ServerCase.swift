@@ -10,6 +10,8 @@ import Foundation
 import RxSwift
 
 public protocol ServerCase: BaseCase {
+    var observable: Observable<ObjectState<Server>?> { get }
+    
     func get()                      -> Single<[Server]>
     func save(_ server: Server)     -> Single<Bool>
     func delete(_ server: Server)   -> Single<Bool>

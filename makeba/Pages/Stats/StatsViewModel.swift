@@ -20,6 +20,10 @@ class StatsViewModel: BaseViewModel {
         super.init()
     }
     
+    override func retryLoad() {
+        self.loadData()
+    }
+    
     func loadData() {
         if let server = self.server {
             data?.stat.get(server: server)

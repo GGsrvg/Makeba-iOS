@@ -23,6 +23,7 @@ class StatsViewController: BaseViewController<StatsView, StatsViewModel, AddServ
     
     private func configurateView() {
         contentView.tableView.register(StatTableViewCell.self, forCellReuseIdentifier: "\(StatTableViewCell.self)")
+        contentView.tableView.register(UINib(nibName: "\(DiagramTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "\(DiagramTableViewCell.self)")
         contentView.tableView.delegate    = self
         contentView.tableView.dataSource  = self
     }
@@ -55,9 +56,22 @@ extension StatsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "\(StatTableViewCell.self)", for: indexPath) as! StatTableViewCell
-        let data =  viewModel.containers.value[indexPath.section].stats[indexPath.row]
-        cell.setupData(title: data.title, value: data.text?.value)
+        let data = viewModel.containers.value[indexPath.section].stats[indexPath.row]
+        let cell: UITableViewCell
+            
+        if let text = data.text {
+            let statCell = tableView.dequeueReusableCell(withIdentifier: "\(StatTableViewCell.self)", for: indexPath) as! StatTableViewCell
+            statCell.setupData(title: data.title, value: text.value)
+            cell = statCell
+        } else if let _ = data.diagram {
+            let diagramCell = tableView.dequeueReusableCell(withIdentifier: "\(DiagramTableViewCell.self)", for: indexPath) as! DiagramTableViewCell
+            diagramCell.setupData()
+            cell = diagramCell
+        } else {
+            cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+            cell.largeContentTitle = "No support this type"
+        }
+        
         return cell
     }
     

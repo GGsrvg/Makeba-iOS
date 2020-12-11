@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06B54FD080C1EE3C509FCEF4 /* Pods_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */; };
-		160904FF4939EF8DB1574FCE /* Pods_makeba_makebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */; };
-		29732A0C1547077F024380C6 /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C52354A2D52F1A03A77743 /* Pods_Data.framework */; };
-		48985FE5479CC487E08FFCBA /* Pods_makeba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5945C6159641D51F064EACA2 /* Pods_makeba.framework */; };
-		50FCDD9F1251F05C99A7BEEA /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9601E2B37A6585F07A982D20 /* Pods_API.framework */; };
+		04DE9C89690BD193F85FE31B /* Pods_makeba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8DBE5426471FFC9A104628 /* Pods_makeba.framework */; };
+		0BFAB754271F2BD41081D00B /* Pods_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94B21EADCBB9052A60903D0 /* Pods_Storage.framework */; };
+		321B01164B123E860F67E0BC /* Pods_makeba_makebaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84303A41B28A86027302CF6 /* Pods_makeba_makebaUITests.framework */; };
+		55A8241B98AE3C9B8799E842 /* Pods_MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6686E762FD9D77D8E17ED2 /* Pods_MakebaData.framework */; };
 		5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1616F32519D87500A3D78F /* StatTableViewCell.swift */; };
 		5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; };
 		5B16171F2519E12600A3D78F /* MakebaDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16171E2519E12600A3D78F /* MakebaDataTests.swift */; };
@@ -20,15 +19,17 @@
 		5B1617252519E12600A3D78F /* MakebaData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B16170F2519E12600A3D78F /* MakebaData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B1617492519E29100A3D78F /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617392519E29100A3D78F /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B1617AA2519E30500A3D78F /* Storage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1617A82519E30500A3D78F /* Storage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B20341825582D4D0090EEAD /* UICollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */; };
+		5B47F0712580974B00FE20E5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47F0702580974B00FE20E5 /* Color.swift */; };
+		5B47F07B2580979000FE20E5 /* DiagramItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47F07A2580979000FE20E5 /* DiagramItem.swift */; };
+		5B47F081258097BB00FE20E5 /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47F080258097BB00FE20E5 /* Diagram.swift */; };
 		5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD3E2538B74C007BEDD4 /* MButton.swift */; };
 		5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD452538BA66007BEDD4 /* MLabel.swift */; };
 		5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B58CD662538C263007BEDD4 /* R.generated.swift */; };
 		5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */; };
 		5B6206E72526DE55002B532D /* AddServerInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6206E62526DE55002B532D /* AddServerInitViewController.swift */; };
 		5B644B3D252CF53800B3A94E /* VCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B644B3C252CF53800B3A94E /* VCStates.swift */; };
-		5B64C280254299BF0095DE18 /* ObservableDataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */; };
-		5B69CE582549CE3600557BDA /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B69CE572549CE3600557BDA /* DataItem.swift */; };
+		5B6AE656257CE5D100074ECD /* DiagramCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AE655257CE5D100074ECD /* DiagramCircleView.swift */; };
+		5B71C46C257B857D00825EE5 /* ObjectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B71C46B257B857D00825EE5 /* ObjectState.swift */; };
 		5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE7D252254CF0053D8E7 /* Stats.swift */; };
 		5B81EE84252254EA0053D8E7 /* Stat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE83252254EA0053D8E7 /* Stat.swift */; };
 		5B81EE8A252255060053D8E7 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EE89252255060053D8E7 /* Text.swift */; };
@@ -37,8 +38,8 @@
 		5B81EECB252449D00053D8E7 /* DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EECA252449D00053D8E7 /* DError.swift */; };
 		5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA1252D85F6007E6609 /* LoadingState.swift */; };
 		5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA7252D8616007E6609 /* ErrorState.swift */; };
-		5BA5ABC7254149E5003F0C2F /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */; };
-		5BAB7DA2254D80D50054EF2F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */; };
+		5BB99AF5257E8B5500128DCE /* DiagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB99AF3257E8B5500128DCE /* DiagramTableViewCell.swift */; };
+		5BB99AF6257E8B5500128DCE /* DiagramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB99AF4257E8B5500128DCE /* DiagramTableViewCell.xib */; };
 		5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3624CDA01100C3A22C /* AppDelegate.swift */; };
 		5BBABE3924CDA01100C3A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3824CDA01100C3A22C /* SceneDelegate.swift */; };
 		5BBABE4024CDA01200C3A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BBABE3F24CDA01200C3A22C /* Assets.xcassets */; };
@@ -101,9 +102,10 @@
 		5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; };
 		5BF5387B24DFC4EC004B513D /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF5386524DFC4EC004B513D /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5BF7130F2543FA470017F9C9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7130D2543FA470017F9C9 /* Model.xcdatamodeld */; };
-		64C01F7CDBD0F6536D8C7228 /* Pods_MakebaData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */; };
-		A27CED656412141179531FFD /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */; };
-		FFF6EA83A97F0C4F535BC877 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */; };
+		C28D3779388E4630934C657C /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A100AD3026E7DE72650004 /* Pods_API.framework */; };
+		D89B814F41FFB790DA54EDB1 /* Pods_makebaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E2FF5AA6D2D06BD08682C2 /* Pods_makebaTests.framework */; };
+		E5A53691F2ABFD6034550E6C /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23081D60A47FD8AC36AD2E0 /* Pods_Data.framework */; };
+		EBE27DE640E7FCAB062B53D6 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A4631B44E9D9FBA45DD044 /* Pods_MakebaData_MakebaDataTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,16 +255,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.release.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.release.xcconfig"; sourceTree = "<group>"; };
-		1F8BADB2EE1E44F054E56943 /* Pods_MakebaStorage_MakebaStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaStorage_MakebaStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
-		35DDF84EF45605B8E074520B /* Pods_MakebaStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F2A1475662ED59C483A7684 /* Pods-MakebaAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI.release.xcconfig"; path = "Target Support Files/Pods-MakebaAPI/Pods-MakebaAPI.release.xcconfig"; sourceTree = "<group>"; };
-		44864B8A34DF12365939B3EA /* Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaStorage-MakebaStorageTests/Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
-		47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
-		4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.debug.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5945C6159641D51F064EACA2 /* Pods_makeba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0698FA2817957383E8CDF7DE /* Pods-MakebaData-MakebaDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.release.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		0D4950090C552035F48D7EBF /* Pods-makeba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.debug.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.debug.xcconfig"; sourceTree = "<group>"; };
+		12D351DD6C19289F8B358E8F /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
+		377FC7E2B03E1B51AF64E322 /* Pods-makeba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.release.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.release.xcconfig"; sourceTree = "<group>"; };
+		3F3FD8E7AF568F9088A4852A /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
+		3FC9138083FCBC5B65205EC1 /* Pods-makebaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.debug.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55B6BC6253FDB80EE5BBA92C /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
 		5B12E94725067AAB00647C60 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		5B12E94A2506996100647C60 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		5B1616F32519D87500A3D78F /* StatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTableViewCell.swift; sourceTree = "<group>"; };
@@ -278,7 +277,6 @@
 		5B1617A62519E30500A3D78F /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1617A82519E30500A3D78F /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
 		5B1617A92519E30500A3D78F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewAdapter.swift; sourceTree = "<group>"; };
 		5B219A1B24F96DB900FD80B0 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		5B219A1F24F96EED00FD80B0 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
 		5B219A2324F9766300FD80B0 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -289,6 +287,9 @@
 		5B219A4B24FBE47300FD80B0 /* BaseEntityCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityCase.swift; sourceTree = "<group>"; };
 		5B23E1582517778000ECC89A /* StatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsResponse.swift; sourceTree = "<group>"; };
 		5B27AF65250E2776001577CC /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		5B47F0702580974B00FE20E5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5B47F07A2580979000FE20E5 /* DiagramItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramItem.swift; sourceTree = "<group>"; };
+		5B47F080258097BB00FE20E5 /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
 		5B58CD3E2538B74C007BEDD4 /* MButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MButton.swift; sourceTree = "<group>"; };
 		5B58CD452538BA66007BEDD4 /* MLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLabel.swift; sourceTree = "<group>"; };
 		5B58CD662538C263007BEDD4 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
@@ -296,8 +297,8 @@
 		5B6206DC2526DD1D002B532D /* BaseInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInitViewController.swift; sourceTree = "<group>"; };
 		5B6206E62526DE55002B532D /* AddServerInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerInitViewController.swift; sourceTree = "<group>"; };
 		5B644B3C252CF53800B3A94E /* VCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStates.swift; sourceTree = "<group>"; };
-		5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableDataSourceDelegate.swift; sourceTree = "<group>"; };
-		5B69CE572549CE3600557BDA /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		5B6AE655257CE5D100074ECD /* DiagramCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramCircleView.swift; sourceTree = "<group>"; };
+		5B71C46B257B857D00825EE5 /* ObjectState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectState.swift; sourceTree = "<group>"; };
 		5B81EE7D252254CF0053D8E7 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		5B81EE83252254EA0053D8E7 /* Stat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stat.swift; sourceTree = "<group>"; };
 		5B81EE89252255060053D8E7 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -306,10 +307,10 @@
 		5B81EECA252449D00053D8E7 /* DError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DError.swift; sourceTree = "<group>"; };
 		5B939FA1252D85F6007E6609 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		5B939FA7252D8616007E6609 /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
-		5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
-		5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		5BACE48F24FFE793003EB2BE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5BACE49424FFE817003EB2BE /* DBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStatus.swift; sourceTree = "<group>"; };
+		5BB99AF3257E8B5500128DCE /* DiagramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramTableViewCell.swift; sourceTree = "<group>"; };
+		5BB99AF4257E8B5500128DCE /* DiagramTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiagramTableViewCell.xib; sourceTree = "<group>"; };
 		5BBABE3324CDA01100C3A22C /* Makeba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makeba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBABE3624CDA01100C3A22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BBABE3824CDA01100C3A22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -344,6 +345,7 @@
 		5BDEE33524D45766000B5AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BDEE33724D45782000B5AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
 		5BDEE33924D457A0000B5AF3 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localization.strings; sourceTree = "<group>"; };
+		5BEE9D0E256ADF9400E29511 /* Makeba.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Makeba.entitlements; sourceTree = "<group>"; };
 		5BF5385C24DF270F004B513D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		5BF5385E24DF271A004B513D /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
 		5BF5386524DFC4EC004B513D /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,32 +353,23 @@
 		5BF5386824DFC4EC004B513D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF7130E2543FA470017F9C9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5BFF260924E1BDEB00C83286 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
-		5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
-		66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.release.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.release.xcconfig"; sourceTree = "<group>"; };
-		80FA3C2D60BE41D13DD57B04 /* Pods_MakebaAPI_MakebaAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaAPI_MakebaAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82C52354A2D52F1A03A77743 /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82EC83C0540ABE2903EF4D50 /* Pods_MakebaAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8ACA7C6E41898E730312F219 /* Pods-MakebaStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage.release.xcconfig"; path = "Target Support Files/Pods-MakebaStorage/Pods-MakebaStorage.release.xcconfig"; sourceTree = "<group>"; };
-		9601E2B37A6585F07A982D20 /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		999D1CA58C9B2B40515F16A9 /* Pods-MakebaAPI-MakebaAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI-MakebaAPITests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaAPI-MakebaAPITests/Pods-MakebaAPI-MakebaAPITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.release.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.release.xcconfig"; sourceTree = "<group>"; };
-		A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba_makebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData_MakebaDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B39669BF38C9C2C2C5F0044E /* Pods-MakebaAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI.debug.xcconfig"; path = "Target Support Files/Pods-MakebaAPI/Pods-MakebaAPI.debug.xcconfig"; sourceTree = "<group>"; };
-		B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.debug.xcconfig"; sourceTree = "<group>"; };
-		C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.debug.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.debug.xcconfig"; sourceTree = "<group>"; };
-		C446B6563AC9A5848B12EE00 /* Pods-MakebaStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage.debug.xcconfig"; path = "Target Support Files/Pods-MakebaStorage/Pods-MakebaStorage.debug.xcconfig"; sourceTree = "<group>"; };
-		CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba.release.xcconfig"; path = "Target Support Files/Pods-makeba/Pods-makeba.release.xcconfig"; sourceTree = "<group>"; };
-		DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.debug.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
-		DE1372895C90E1462D963EC4 /* Pods-MakebaAPI-MakebaAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaAPI-MakebaAPITests.release.xcconfig"; path = "Target Support Files/Pods-MakebaAPI-MakebaAPITests/Pods-MakebaAPI-MakebaAPITests.release.xcconfig"; sourceTree = "<group>"; };
-		E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
-		E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.release.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.release.xcconfig"; sourceTree = "<group>"; };
-		F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.release.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F87CA2AD626FD1E828CBB9CD /* Pods-MakebaStorage-MakebaStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaStorage-MakebaStorageTests.release.xcconfig"; path = "Target Support Files/Pods-MakebaStorage-MakebaStorageTests/Pods-MakebaStorage-MakebaStorageTests.release.xcconfig"; sourceTree = "<group>"; };
+		72A325F47E8926C8828E75FA /* Pods-makebaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makebaTests.release.xcconfig"; path = "Target Support Files/Pods-makebaTests/Pods-makebaTests.release.xcconfig"; sourceTree = "<group>"; };
+		73E2FF5AA6D2D06BD08682C2 /* Pods_makebaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makebaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A4631B44E9D9FBA45DD044 /* Pods_MakebaData_MakebaDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData_MakebaDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		863F2E1AC050B55A10EF17C5 /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
+		90A100AD3026E7DE72650004 /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9572BA04D61E65841389C447 /* Pods-MakebaData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.release.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.release.xcconfig"; sourceTree = "<group>"; };
+		A39C4897DBBA1B1740E8BD11 /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
+		A66D401073EA899369600651 /* Pods-makeba-makebaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.release.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A84303A41B28A86027302CF6 /* Pods_makeba_makebaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba_makebaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23081D60A47FD8AC36AD2E0 /* Pods_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37FBC59A6B9636ABCAA06C9 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData-MakebaDataTests.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDA01F57D5530C54F2991812 /* Pods-MakebaData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakebaData.debug.xcconfig"; path = "Target Support Files/Pods-MakebaData/Pods-MakebaData.debug.xcconfig"; sourceTree = "<group>"; };
+		D6FE906C6B05263ADE819E1C /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
+		DA6686E762FD9D77D8E17ED2 /* Pods_MakebaData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MakebaData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A360EE4403BC13DCB3CE2 /* Pods-makeba-makebaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeba-makebaUITests.debug.xcconfig"; path = "Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E94B21EADCBB9052A60903D0 /* Pods_Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8DBE5426471FFC9A104628 /* Pods_makeba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,9 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD5EA182559A80900E317F0 /* Data.framework in Frameworks */,
-				64C01F7CDBD0F6536D8C7228 /* Pods_MakebaData.framework in Frameworks */,
 				5BD5EA202559A89800E317F0 /* Storage.framework in Frameworks */,
 				5BD5EA1E2559A89300E317F0 /* API.framework in Frameworks */,
+				55A8241B98AE3C9B8799E842 /* Pods_MakebaData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,7 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B1617182519E12600A3D78F /* MakebaData.framework in Frameworks */,
-				FFF6EA83A97F0C4F535BC877 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */,
+				EBE27DE640E7FCAB062B53D6 /* Pods_MakebaData_MakebaDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BCAB5822520F61000247BF4 /* Data.framework in Frameworks */,
-				50FCDD9F1251F05C99A7BEEA /* Pods_API.framework in Frameworks */,
+				C28D3779388E4630934C657C /* Pods_API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BCAB5872520F61600247BF4 /* Data.framework in Frameworks */,
-				06B54FD080C1EE3C509FCEF4 /* Pods_Storage.framework in Frameworks */,
+				0BFAB754271F2BD41081D00B /* Pods_Storage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +418,8 @@
 				5BF5387A24DFC4EC004B513D /* Data.framework in Frameworks */,
 				5B1617242519E12600A3D78F /* MakebaData.framework in Frameworks */,
 				5BD5EA2A2559A91000E317F0 /* Storage.framework in Frameworks */,
-				48985FE5479CC487E08FFCBA /* Pods_makeba.framework in Frameworks */,
 				5BD5EA262559A91000E317F0 /* API.framework in Frameworks */,
+				04DE9C89690BD193F85FE31B /* Pods_makeba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +427,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27CED656412141179531FFD /* Pods_makebaTests.framework in Frameworks */,
+				D89B814F41FFB790DA54EDB1 /* Pods_makebaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +435,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160904FF4939EF8DB1574FCE /* Pods_makeba_makebaUITests.framework in Frameworks */,
+				321B01164B123E860F67E0BC /* Pods_makeba_makebaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +443,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29732A0C1547077F024380C6 /* Pods_Data.framework in Frameworks */,
+				E5A53691F2ABFD6034550E6C /* Pods_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,11 +551,15 @@
 		5B219A2124F975EF00FD80B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B71C46A257B855500825EE5 /* Observable */,
 				5B81EE9325225C0D0053D8E7 /* Helpers */,
 				5B81EE7D252254CF0053D8E7 /* Stats.swift */,
 				5B219A2324F9766300FD80B0 /* Server.swift */,
 				5B81EE83252254EA0053D8E7 /* Stat.swift */,
 				5B81EE89252255060053D8E7 /* Text.swift */,
+				5B47F0702580974B00FE20E5 /* Color.swift */,
+				5B47F07A2580979000FE20E5 /* DiagramItem.swift */,
+				5B47F080258097BB00FE20E5 /* Diagram.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -637,6 +634,31 @@
 			path = VCStates;
 			sourceTree = "<group>";
 		};
+		5B6AE64D257CE38000074ECD /* Diagram */ = {
+			isa = PBXGroup;
+			children = (
+				5BB99AF3257E8B5500128DCE /* DiagramTableViewCell.swift */,
+				5BB99AF4257E8B5500128DCE /* DiagramTableViewCell.xib */,
+			);
+			path = Diagram;
+			sourceTree = "<group>";
+		};
+		5B6AE654257CE59A00074ECD /* DiagramCircle */ = {
+			isa = PBXGroup;
+			children = (
+				5B6AE655257CE5D100074ECD /* DiagramCircleView.swift */,
+			);
+			path = DiagramCircle;
+			sourceTree = "<group>";
+		};
+		5B71C46A257B855500825EE5 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				5B71C46B257B857D00825EE5 /* ObjectState.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
 		5B81EE9325225C0D0053D8E7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -660,25 +682,6 @@
 				5B81EE9E2523B5E50053D8E7 /* MDError.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		5BA5ABB7254144FA003F0C2F /* ObservableArray */ = {
-			isa = PBXGroup;
-			children = (
-				5BA5ABC6254149E5003F0C2F /* ObservableArray.swift */,
-				5B64C27F254299BF0095DE18 /* ObservableDataSourceDelegate.swift */,
-				5B69CE572549CE3600557BDA /* DataItem.swift */,
-			);
-			path = ObservableArray;
-			sourceTree = "<group>";
-		};
-		5BAB7DA0254D80BB0054EF2F /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				5BAB7DA1254D80D50054EF2F /* TableViewDataSource.swift */,
-				5B20341725582D4D0090EEAD /* UICollectionViewAdapter.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 		5BACE49124FFE7DF003EB2BE /* Status */ = {
@@ -733,6 +736,7 @@
 				5BBABE3F24CDA01200C3A22C /* Assets.xcassets */,
 				5BBABE4124CDA01200C3A22C /* LaunchScreen.storyboard */,
 				5BBABE4424CDA01200C3A22C /* Info.plist */,
+				5BEE9D0E256ADF9400E29511 /* Makeba.entitlements */,
 				5BDEE33824D45782000B5AF3 /* Localization.strings */,
 			);
 			path = makeba;
@@ -889,6 +893,7 @@
 		5BD4913224D6930100BF0C8A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				5B6AE64D257CE38000074ECD /* Diagram */,
 				5B1616EE2519D84100A3D78F /* Stat */,
 				5BD4914824D6EF8C00BF0C8A /* ServerInfo */,
 			);
@@ -930,8 +935,6 @@
 		5BDEE32F24D45402000B5AF3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5BAB7DA0254D80BB0054EF2F /* DataSource */,
-				5BA5ABB7254144FA003F0C2F /* ObservableArray */,
 				5BBD27DD24FEC6200022994D /* Rx */,
 			);
 			path = Utils;
@@ -952,6 +955,7 @@
 		5BF5388224DFC6AC004B513D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				5B6AE654257CE59A00074ECD /* DiagramCircle */,
 				5B58CD442538BA55007BEDD4 /* Labels */,
 				5B58CD3D2538B731007BEDD4 /* Buttons */,
 				5BBD27E124FF57B90022994D /* UIMTextField.swift */,
@@ -963,18 +967,14 @@
 			isa = PBXGroup;
 			children = (
 				5BFF260924E1BDEB00C83286 /* CoreData.framework */,
-				9601E2B37A6585F07A982D20 /* Pods_API.framework */,
-				82C52354A2D52F1A03A77743 /* Pods_Data.framework */,
-				82EC83C0540ABE2903EF4D50 /* Pods_MakebaAPI.framework */,
-				80FA3C2D60BE41D13DD57B04 /* Pods_MakebaAPI_MakebaAPITests.framework */,
-				5CD30F4B4F2D5FC3D189BFA2 /* Pods_MakebaData.framework */,
-				B1F9892F3C356D9E5FC17446 /* Pods_MakebaData_MakebaDataTests.framework */,
-				35DDF84EF45605B8E074520B /* Pods_MakebaStorage.framework */,
-				1F8BADB2EE1E44F054E56943 /* Pods_MakebaStorage_MakebaStorageTests.framework */,
-				CDD245AC18A2C3EA0882B27C /* Pods_Storage.framework */,
-				5945C6159641D51F064EACA2 /* Pods_makeba.framework */,
-				A2E4023D0977F9A2CA8D0602 /* Pods_makeba_makebaUITests.framework */,
-				B63AE8C6BC843DD19A27F461 /* Pods_makebaTests.framework */,
+				90A100AD3026E7DE72650004 /* Pods_API.framework */,
+				B23081D60A47FD8AC36AD2E0 /* Pods_Data.framework */,
+				DA6686E762FD9D77D8E17ED2 /* Pods_MakebaData.framework */,
+				78A4631B44E9D9FBA45DD044 /* Pods_MakebaData_MakebaDataTests.framework */,
+				E94B21EADCBB9052A60903D0 /* Pods_Storage.framework */,
+				EA8DBE5426471FFC9A104628 /* Pods_makeba.framework */,
+				A84303A41B28A86027302CF6 /* Pods_makeba_makebaUITests.framework */,
+				73E2FF5AA6D2D06BD08682C2 /* Pods_makebaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -982,30 +982,22 @@
 		BABDF36AF2B8C83ED3C4B9F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */,
-				DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */,
-				204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */,
-				47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */,
-				B39669BF38C9C2C2C5F0044E /* Pods-MakebaAPI.debug.xcconfig */,
-				3F2A1475662ED59C483A7684 /* Pods-MakebaAPI.release.xcconfig */,
-				999D1CA58C9B2B40515F16A9 /* Pods-MakebaAPI-MakebaAPITests.debug.xcconfig */,
-				DE1372895C90E1462D963EC4 /* Pods-MakebaAPI-MakebaAPITests.release.xcconfig */,
-				BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */,
-				E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */,
-				4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */,
-				066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */,
-				C446B6563AC9A5848B12EE00 /* Pods-MakebaStorage.debug.xcconfig */,
-				8ACA7C6E41898E730312F219 /* Pods-MakebaStorage.release.xcconfig */,
-				44864B8A34DF12365939B3EA /* Pods-MakebaStorage-MakebaStorageTests.debug.xcconfig */,
-				F87CA2AD626FD1E828CBB9CD /* Pods-MakebaStorage-MakebaStorageTests.release.xcconfig */,
-				63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */,
-				9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */,
-				C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */,
-				D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */,
-				DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */,
-				F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */,
-				4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */,
-				66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */,
+				D6FE906C6B05263ADE819E1C /* Pods-API.debug.xcconfig */,
+				3F3FD8E7AF568F9088A4852A /* Pods-API.release.xcconfig */,
+				863F2E1AC050B55A10EF17C5 /* Pods-Data.debug.xcconfig */,
+				A39C4897DBBA1B1740E8BD11 /* Pods-Data.release.xcconfig */,
+				BDA01F57D5530C54F2991812 /* Pods-MakebaData.debug.xcconfig */,
+				9572BA04D61E65841389C447 /* Pods-MakebaData.release.xcconfig */,
+				B37FBC59A6B9636ABCAA06C9 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */,
+				0698FA2817957383E8CDF7DE /* Pods-MakebaData-MakebaDataTests.release.xcconfig */,
+				12D351DD6C19289F8B358E8F /* Pods-Storage.debug.xcconfig */,
+				55B6BC6253FDB80EE5BBA92C /* Pods-Storage.release.xcconfig */,
+				0D4950090C552035F48D7EBF /* Pods-makeba.debug.xcconfig */,
+				377FC7E2B03E1B51AF64E322 /* Pods-makeba.release.xcconfig */,
+				DC5A360EE4403BC13DCB3CE2 /* Pods-makeba-makebaUITests.debug.xcconfig */,
+				A66D401073EA899369600651 /* Pods-makeba-makebaUITests.release.xcconfig */,
+				3FC9138083FCBC5B65205EC1 /* Pods-makebaTests.debug.xcconfig */,
+				72A325F47E8926C8828E75FA /* Pods-makebaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1052,7 +1044,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16172A2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaData" */;
 			buildPhases = (
-				F3296F29A3BEA1FB0379FDEB /* [CP] Check Pods Manifest.lock */,
+				BD38EEA2403DA635B16C472B /* [CP] Check Pods Manifest.lock */,
 				5B16170A2519E12600A3D78F /* Headers */,
 				5B16170B2519E12600A3D78F /* Sources */,
 				5B16170C2519E12600A3D78F /* Frameworks */,
@@ -1075,11 +1067,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16172B2519E12600A3D78F /* Build configuration list for PBXNativeTarget "MakebaDataTests" */;
 			buildPhases = (
-				C54077ECA609B3BB71D04D9D /* [CP] Check Pods Manifest.lock */,
+				AB7962D84E35A55C7C78629B /* [CP] Check Pods Manifest.lock */,
 				5B1617132519E12600A3D78F /* Sources */,
 				5B1617142519E12600A3D78F /* Frameworks */,
 				5B1617152519E12600A3D78F /* Resources */,
-				B5680EDBB600F88C9874F0C5 /* [CP] Embed Pods Frameworks */,
+				2B9EE5929CA2717A4B0B4BAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1096,7 +1088,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B16174E2519E29200A3D78F /* Build configuration list for PBXNativeTarget "API" */;
 			buildPhases = (
-				1DFD64CCE1E4529969521368 /* [CP] Check Pods Manifest.lock */,
+				BEFA57FA34E27BA27BCAD052 /* [CP] Check Pods Manifest.lock */,
 				5B1617322519E29100A3D78F /* Headers */,
 				5B1617332519E29100A3D78F /* Sources */,
 				5B1617342519E29100A3D78F /* Frameworks */,
@@ -1117,7 +1109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B1617AF2519E30500A3D78F /* Build configuration list for PBXNativeTarget "Storage" */;
 			buildPhases = (
-				A974B930A2027C5EC9A8CA08 /* [CP] Check Pods Manifest.lock */,
+				2F2220B578D7EE9AFFCE7014 /* [CP] Check Pods Manifest.lock */,
 				5B1617A12519E30500A3D78F /* Headers */,
 				5B1617A22519E30500A3D78F /* Sources */,
 				5B1617A32519E30500A3D78F /* Frameworks */,
@@ -1138,13 +1130,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE5D24CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makeba" */;
 			buildPhases = (
-				19D99CD6D88DE371B514008E /* [CP] Check Pods Manifest.lock */,
+				0204C9DA53C415B71BA367F2 /* [CP] Check Pods Manifest.lock */,
 				5B35223624D52AC90090078D /* ShellScript */,
 				5BBABE2F24CDA01100C3A22C /* Sources */,
 				5BBABE3024CDA01100C3A22C /* Frameworks */,
 				5BBABE3124CDA01100C3A22C /* Resources */,
 				5B960D5524D32A2B00E7850D /* Embed Frameworks */,
-				6C51B0BA394295B6371E8D0B /* [CP] Embed Pods Frameworks */,
+				7B2980295FE47F5D1A0C56E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1163,11 +1155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE6024CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makebaTests" */;
 			buildPhases = (
-				113FE1999C01F786D7FC4A47 /* [CP] Check Pods Manifest.lock */,
+				3A97B4A49BEF8BE95C3546ED /* [CP] Check Pods Manifest.lock */,
 				5BBABE4524CDA01200C3A22C /* Sources */,
 				5BBABE4624CDA01200C3A22C /* Frameworks */,
 				5BBABE4724CDA01200C3A22C /* Resources */,
-				CF4B71B4E55B2B36A8ADAD6C /* [CP] Embed Pods Frameworks */,
+				389891DC275683C73D4FC914 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1183,11 +1175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BBABE6324CDA01200C3A22C /* Build configuration list for PBXNativeTarget "makebaUITests" */;
 			buildPhases = (
-				16F4FE88663084F1AB55466A /* [CP] Check Pods Manifest.lock */,
+				608D283F09DA74D23983D80A /* [CP] Check Pods Manifest.lock */,
 				5BBABE5024CDA01200C3A22C /* Sources */,
 				5BBABE5124CDA01200C3A22C /* Frameworks */,
 				5BBABE5224CDA01200C3A22C /* Resources */,
-				C537052887AC997CE8508878 /* [CP] Embed Pods Frameworks */,
+				3225F6706809FF65B16BD0B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1203,7 +1195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BF5387C24DFC4EC004B513D /* Build configuration list for PBXNativeTarget "Data" */;
 			buildPhases = (
-				5B6022C1C61B7791C9AA7BFE /* [CP] Check Pods Manifest.lock */,
+				641A209FBA00DC73C350D305 /* [CP] Check Pods Manifest.lock */,
 				5BF5386024DFC4EC004B513D /* Headers */,
 				5BF5386124DFC4EC004B513D /* Sources */,
 				5BF5386224DFC4EC004B513D /* Frameworks */,
@@ -1319,6 +1311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BBABE4324CDA01200C3A22C /* LaunchScreen.storyboard in Resources */,
+				5BB99AF6257E8B5500128DCE /* DiagramTableViewCell.xib in Resources */,
 				5BDEE33624D45782000B5AF3 /* Localization.strings in Resources */,
 				5BBABE4024CDA01200C3A22C /* Assets.xcassets in Resources */,
 			);
@@ -1348,51 +1341,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		113FE1999C01F786D7FC4A47 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-makebaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		16F4FE88663084F1AB55466A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-makeba-makebaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		19D99CD6D88DE371B514008E /* [CP] Check Pods Manifest.lock */ = {
+		0204C9DA53C415B71BA367F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1414,7 +1363,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DFD64CCE1E4529969521368 /* [CP] Check Pods Manifest.lock */ = {
+		2B9EE5929CA2717A4B0B4BAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F2220B578D7EE9AFFCE7014 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1429,7 +1395,63 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-API-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Storage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3225F6706809FF65B16BD0B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389891DC275683C73D4FC914 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A97B4A49BEF8BE95C3546ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makebaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1455,7 +1477,29 @@
 			shellPath = /bin/sh;
 			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
 		};
-		5B6022C1C61B7791C9AA7BFE /* [CP] Check Pods Manifest.lock */ = {
+		608D283F09DA74D23983D80A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makeba-makebaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		641A209FBA00DC73C350D305 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1477,7 +1521,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6C51B0BA394295B6371E8D0B /* [CP] Embed Pods Frameworks */ = {
+		7B2980295FE47F5D1A0C56E2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1494,63 +1538,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba/Pods-makeba-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A974B930A2027C5EC9A8CA08 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Storage-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B5680EDBB600F88C9874F0C5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MakebaData-MakebaDataTests/Pods-MakebaData-MakebaDataTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C537052887AC997CE8508878 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makeba-makebaUITests/Pods-makeba-makebaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C54077ECA609B3BB71D04D9D /* [CP] Check Pods Manifest.lock */ = {
+		AB7962D84E35A55C7C78629B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1572,24 +1560,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF4B71B4E55B2B36A8ADAD6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makebaTests/Pods-makebaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3296F29A3BEA1FB0379FDEB /* [CP] Check Pods Manifest.lock */ = {
+		BD38EEA2403DA635B16C472B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1605,6 +1576,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-MakebaData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFA57FA34E27BA27BCAD052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-API-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1666,16 +1659,13 @@
 			files = (
 				5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */,
 				5BD4913624D6933000BF0C8A /* ServerListViewController.swift in Sources */,
-				5BAB7DA2254D80D50054EF2F /* TableViewDataSource.swift in Sources */,
 				5BD4914724D6A2A300BF0C8A /* ServerListView.swift in Sources */,
 				5BD4913E24D6936100BF0C8A /* AuthorizeViewController.swift in Sources */,
-				5B69CE582549CE3600557BDA /* DataItem.swift in Sources */,
 				5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */,
 				5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */,
 				5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */,
-				5BA5ABC7254149E5003F0C2F /* ObservableArray.swift in Sources */,
+				5BB99AF5257E8B5500128DCE /* DiagramTableViewCell.swift in Sources */,
 				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
-				5B64C280254299BF0095DE18 /* ObservableDataSourceDelegate.swift in Sources */,
 				5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
 				5B1616F42519D87500A3D78F /* StatTableViewCell.swift in Sources */,
@@ -1687,13 +1677,13 @@
 				5B58CD672538C263007BEDD4 /* R.generated.swift in Sources */,
 				5BBD27E024FEC6420022994D /* Binding.swift in Sources */,
 				5BF5385F24DF271A004B513D /* StatsViewModel.swift in Sources */,
-				5B20341825582D4D0090EEAD /* UICollectionViewAdapter.swift in Sources */,
 				5BD4913A24D6934200BF0C8A /* AddServerViewController.swift in Sources */,
 				5B58CD3F2538B74C007BEDD4 /* MButton.swift in Sources */,
 				5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */,
 				5BD4914524D699E800BF0C8A /* ServerListViewModel.swift in Sources */,
 				5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */,
 				5BF5385D24DF270F004B513D /* StatsView.swift in Sources */,
+				5B6AE656257CE5D100074ECD /* DiagramCircleView.swift in Sources */,
 				5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */,
 				5BD4913C24D6935300BF0C8A /* AboutAppViewController.swift in Sources */,
 				5BD4914A24D6EFB900BF0C8A /* ServerInfoTableViewCell.swift in Sources */,
@@ -1725,10 +1715,14 @@
 				5BD319DF251BB5BA005BFAF7 /* DataLayer.swift in Sources */,
 				5BD319D1251BB5AD005BFAF7 /* BaseCase.swift in Sources */,
 				5BD319D2251BB5AD005BFAF7 /* StatCase.swift in Sources */,
+				5B47F0712580974B00FE20E5 /* Color.swift in Sources */,
 				5BD319D3251BB5AD005BFAF7 /* ServerCase.swift in Sources */,
 				5B81EE8A252255060053D8E7 /* Text.swift in Sources */,
 				5BD319D4251BB5AD005BFAF7 /* Server.swift in Sources */,
+				5B47F081258097BB00FE20E5 /* Diagram.swift in Sources */,
+				5B47F07B2580979000FE20E5 /* DiagramItem.swift in Sources */,
 				5B81EE7E252254CF0053D8E7 /* Stats.swift in Sources */,
+				5B71C46C257B857D00825EE5 /* ObjectState.swift in Sources */,
 				5B81EECB252449D00053D8E7 /* DError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1826,7 +1820,7 @@
 /* Begin XCBuildConfiguration section */
 		5B1617262519E12600A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF7F9432FD77CC1BBD0AB3CE /* Pods-MakebaData.debug.xcconfig */;
+			baseConfigurationReference = BDA01F57D5530C54F2991812 /* Pods-MakebaData.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1858,7 +1852,7 @@
 		};
 		5B1617272519E12600A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2DA147EC70DC09A5916E140 /* Pods-MakebaData.release.xcconfig */;
+			baseConfigurationReference = 9572BA04D61E65841389C447 /* Pods-MakebaData.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1889,7 +1883,7 @@
 		};
 		5B1617282519E12600A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AA82C7F0D094F47F48B5126 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */;
+			baseConfigurationReference = B37FBC59A6B9636ABCAA06C9 /* Pods-MakebaData-MakebaDataTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1911,7 +1905,7 @@
 		};
 		5B1617292519E12600A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 066C6EFEC49FF3FA389D7C8F /* Pods-MakebaData-MakebaDataTests.release.xcconfig */;
+			baseConfigurationReference = 0698FA2817957383E8CDF7DE /* Pods-MakebaData-MakebaDataTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1933,7 +1927,7 @@
 		};
 		5B16174F2519E29200A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0B776997B069D5794A52D7C /* Pods-API.debug.xcconfig */;
+			baseConfigurationReference = D6FE906C6B05263ADE819E1C /* Pods-API.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1964,7 +1958,7 @@
 		};
 		5B1617502519E29200A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDB800FB364ABA13C98BD8F0 /* Pods-API.release.xcconfig */;
+			baseConfigurationReference = 3F3FD8E7AF568F9088A4852A /* Pods-API.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1995,7 +1989,7 @@
 		};
 		5B1617B02519E30500A3D78F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63F620BB7F8D18846DFAB231 /* Pods-Storage.debug.xcconfig */;
+			baseConfigurationReference = 12D351DD6C19289F8B358E8F /* Pods-Storage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2025,7 +2019,7 @@
 		};
 		5B1617B12519E30500A3D78F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AF060F3C030D8A4656657B6 /* Pods-Storage.release.xcconfig */;
+			baseConfigurationReference = 55B6BC6253FDB80EE5BBA92C /* Pods-Storage.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2173,15 +2167,17 @@
 		};
 		5BBABE5E24CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A812D962F195C906BC9416 /* Pods-makeba.debug.xcconfig */;
+			baseConfigurationReference = 0D4950090C552035F48D7EBF /* Pods-makeba.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = makeba/Makeba.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = GUPNP9UD97;
 				INFOPLIST_FILE = makeba/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2189,6 +2185,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.makeba;
 				PRODUCT_NAME = Makeba;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2196,14 +2193,16 @@
 		};
 		5BBABE5F24CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D97B672820DDD8232FFB55BB /* Pods-makeba.release.xcconfig */;
+			baseConfigurationReference = 377FC7E2B03E1B51AF64E322 /* Pods-makeba.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = makeba/Makeba.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GUPNP9UD97;
 				INFOPLIST_FILE = makeba/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2211,6 +2210,7 @@
 				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ggsrvg.makeba;
 				PRODUCT_NAME = Makeba;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2218,7 +2218,7 @@
 		};
 		5BBABE6124CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B48266F37DF84B05260F2A4 /* Pods-makebaTests.debug.xcconfig */;
+			baseConfigurationReference = 3FC9138083FCBC5B65205EC1 /* Pods-makebaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2241,7 +2241,7 @@
 		};
 		5BBABE6224CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66B597A60A77CDC171EA0F90 /* Pods-makebaTests.release.xcconfig */;
+			baseConfigurationReference = 72A325F47E8926C8828E75FA /* Pods-makebaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -2264,7 +2264,7 @@
 		};
 		5BBABE6424CDA01200C3A22C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCEB5E0B2F42F1CB769C041D /* Pods-makeba-makebaUITests.debug.xcconfig */;
+			baseConfigurationReference = DC5A360EE4403BC13DCB3CE2 /* Pods-makeba-makebaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2285,7 +2285,7 @@
 		};
 		5BBABE6524CDA01200C3A22C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6AB7F25FB9208FBB18F7FCA /* Pods-makeba-makebaUITests.release.xcconfig */;
+			baseConfigurationReference = A66D401073EA899369600651 /* Pods-makeba-makebaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2306,7 +2306,7 @@
 		};
 		5BF5387D24DFC4EC004B513D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 204EBD8592CB267574E83417 /* Pods-Data.debug.xcconfig */;
+			baseConfigurationReference = 863F2E1AC050B55A10EF17C5 /* Pods-Data.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -2338,7 +2338,7 @@
 		};
 		5BF5387E24DFC4EC004B513D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47ECDA53D7C387C81C12142C /* Pods-Data.release.xcconfig */;
+			baseConfigurationReference = A39C4897DBBA1B1740E8BD11 /* Pods-Data.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

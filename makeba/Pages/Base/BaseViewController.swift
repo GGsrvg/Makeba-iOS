@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 
 class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewController>: UIViewController {
-    class func openIfCan(from viewController: UIViewController, widthData data: D?) {
-//                viewController.show(Self(), sender: nil)
+    class func openIfCan(widthData data: D?) -> Self? {
+        return nil
     }
     
     private var oldState: UIView? = nil
@@ -63,7 +63,7 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
     }
     
     func retryRequest() {
-        
+        viewModel.retryLoad()
     }
     
     @objc func closeAction(_ sender: UIButton) {
@@ -154,7 +154,7 @@ extension BaseViewController {
             setState(loading)
             needShowState = loading
         case .error(let error):
-            let errorState = ErrorState()
+            let errorState = ErrorState(withButton: true)
             setState(errorState)
             errorState.setContent(title: R.string.localization.error(),
                                   message: error.localizedDescription,
@@ -162,7 +162,7 @@ extension BaseViewController {
                                   buttonAction: { _ in self.retryRequest() })
             needShowState = errorState
         case .dataEmpty:
-            let error = ErrorState(withButton: false)
+            let error = ErrorState(withButton: true)
             setState(error)
             error.setContent(title: R.string.localization.dataEmpty(),
                              message: R.string.localization.dataEmptyDescription(),
@@ -170,7 +170,7 @@ extension BaseViewController {
                              buttonAction: { _ in self.retryRequest() })
             needShowState = error
         case .noInternet:
-            let error = ErrorState()
+            let error = ErrorState(withButton: true)
             setState(error)
             error.setContent(title: R.string.localization.noInternet(),
                              message: R.string.localization.noInternetDescription(),

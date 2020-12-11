@@ -19,12 +19,14 @@ class StatTableViewCell: UITableViewCell {
     let labelTitle: UILabel = {
         let label = UILabel()
         label.font = label.font.withSize(18)
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     let labelValue: UILabel = {
         let label = UILabel()
         label.font = label.font.withSize(12)
+        label.setContentHuggingPriority(.defaultLow, for: .vertical)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

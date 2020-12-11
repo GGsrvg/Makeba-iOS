@@ -9,6 +9,7 @@
 import UIKit
 import Data
 import RxSwift
+import LDS
 
 class ServerListViewController: BaseViewController<ServerListView, ServerListViewModel, AddServerInitViewController> {
     
@@ -87,7 +88,8 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
             data = nil
         }
         
-        AddServerViewController.openIfCan(from: self, widthData: data)
+        let vc = AddServerViewController.openIfCan(widthData: data)
+        show(vc, sender: nil)
     }
     
     

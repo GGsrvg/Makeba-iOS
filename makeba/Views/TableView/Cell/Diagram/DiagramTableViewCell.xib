@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiagramTableViewCell" rowHeight="331" id="KGk-i7-Jjw" customClass="DiagramTableViewCell" customModule="Makeba" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJb-LZ-OTl">
+                        <rect key="frame" x="16" y="14" width="288" height="230"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-PK-09X" customClass="DiagramCircleView" customModule="Makeba" customModuleProvider="target">
+                        <rect key="frame" x="16" y="256" width="288" height="140"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="hnf-HC-mAy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jSu-PK-09X" secondAttribute="bottom" constant="14" id="2xR-Wv-L9C"/>
+                    <constraint firstItem="jSu-PK-09X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="F83-uT-aB9"/>
+                    <constraint firstItem="bJb-LZ-OTl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="FAN-kq-ivg"/>
+                    <constraint firstAttribute="trailing" secondItem="jSu-PK-09X" secondAttribute="trailing" constant="16" id="NvB-ww-ioV"/>
+                    <constraint firstItem="bJb-LZ-OTl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WR4-XT-CN5"/>
+                    <constraint firstItem="jSu-PK-09X" firstAttribute="top" secondItem="bJb-LZ-OTl" secondAttribute="bottom" constant="12" id="aAw-vY-OYW"/>
+                    <constraint firstAttribute="trailing" secondItem="bJb-LZ-OTl" secondAttribute="trailing" constant="16" id="ocu-Yu-Xbk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="diagramCircle" destination="jSu-PK-09X" id="scL-pC-cpV"/>
+                <outlet property="titleLabel" destination="bJb-LZ-OTl" id="w0D-jI-RKT"/>
+            </connections>
+            <point key="canvasLocation" x="107.24637681159422" y="110.49107142857143"/>
+        </tableViewCell>
+    </objects>
+</document>

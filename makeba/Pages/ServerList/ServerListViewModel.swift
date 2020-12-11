@@ -10,14 +10,19 @@ import Foundation
 import RxRelay
 import RxSwift
 import Data
+import LDS
 
 class ServerListViewModel: BaseViewModel {
 
-    let servers: ObservableDataSource<String, Server, String> = .init()
+    let servers: ObservableDataSource<String, Server, String> = ObservableDataSource()
     
     required init() {
         super.init()
         servers.addSection(.init(header: "", rows: [], footer: ""))
+    }
+    
+    override func retryLoad() {
+        self.loadData()
     }
     
     func loadData() {

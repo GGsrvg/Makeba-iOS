@@ -20,9 +20,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            let viewController = ServerListViewController()
-            let navigationController = UINavigationController(rootViewController: viewController)
-            window.rootViewController = navigationController
+            
+            
+            let serverListViewController = ServerListViewController()
+            
+            
+//            let splitViewController = UISplitViewController()
+//            splitViewController.preferredPrimaryColumnWidthFraction = 0.33
+//            splitViewController.maximumPrimaryColumnWidth = 2000
+//            splitViewController.viewControllers = [
+//                UINavigationController(rootViewController: serverListViewController),
+//                UINavigationController(rootViewController: AddServerViewController())
+//            ]
+//
+//            window.rootViewController = splitViewController
+            window.rootViewController = UINavigationController(rootViewController: serverListViewController)
             
             self.window = window
             self.window!.makeKeyAndVisible()

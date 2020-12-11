@@ -30,6 +30,10 @@ class BaseViewModel {
         print("deinit \(self)")
         #endif
     }
+    
+    func retryLoad() {
+        
+    }
 }
 
 extension BaseViewModel {

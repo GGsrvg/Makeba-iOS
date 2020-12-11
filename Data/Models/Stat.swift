@@ -12,13 +12,16 @@ public class Stat: Codable {
     enum CodingKeys: String, CodingKey {
         case title = "Title"
         case text = "Text"
+        case diagram = "Diagram"
     }
     
     public let title: String?
     public let text: Text?
+    public let diagram: Diagram?
     
-    public init(title: String?, model: Text?) {
+    public init(title: String?, text: Text?, diagram: Diagram?) {
         self.title = title
-        self.text = model
+        self.text = text
+        self.diagram = diagram
     }
 }

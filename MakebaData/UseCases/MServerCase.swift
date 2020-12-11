@@ -13,6 +13,8 @@ import API
 import Storage
 
 final class MServerCase: ServerCase {
+    var observable: Observable<ObjectState<Server>?> = .just(nil)
+    
     let entityCase: ServerEntityCase
     
     public init(entityCase: ServerEntityCase) {

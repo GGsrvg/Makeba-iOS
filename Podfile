@@ -28,6 +28,9 @@ target 'makeba' do
   # Pods for makeba
   rx
   rSwift
+
+  pod 'LDS', '0.2.3'
+
 #  inputMask
 
   target 'makebaTests' do
