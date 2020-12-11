@@ -28,29 +28,9 @@ final class MStatCase: StatCase {
                 return .error(correctError)
             })
             .map({ response -> [Stats] in
-//                var result: [Stats] = []
                 guard let data = response.data else {
-                    print(response)
                     throw MDError(typeError: .network(statusCode: response.statusCode), message: response.description)
                 }
-
-//                for container in data.data {
-//                    var parsedStats: [Stat] = []
-//                    let stats = container.stats
-//                    for stat in stats {
-//                        parsedStats.append(
-//                            .init(
-//                                title: stat.title,
-//                                model: Model(
-//                                    value: stat.text?.value,
-//                                    axis: stat.text?.axis,
-//                                    textAligment: stat.text?.textAligment)
-//                            )
-//                        )
-//                    }
-//
-//                    result.append(.init(title: container.title, stats: container.stats))
-//                }
                 return data.data
             })
     }

@@ -47,7 +47,6 @@ struct DiogramItem {
         self.items.forEach {
             allNumberVotes += $0.numberVotes
         }
-        print(items.count)
         
         var startPercent: CGFloat = 0
         self.items.forEach {
@@ -79,9 +78,6 @@ struct DiogramItem {
             }
             
             label.frame.origin = .init(x: x, y: y)
-            
-            print("Title: \($0.text)")
-            print("Angle: \(angleDegrees)")
             
             startPercent = endPercent
         }
