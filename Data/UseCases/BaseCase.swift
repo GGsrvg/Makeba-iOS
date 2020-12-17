@@ -9,15 +9,4 @@
 import Foundation
 
 public protocol BaseCase {
-//    associatedtype EC: BaseEntityCase
-//    
-//    var entityCase: EC! { get }
-//    var network: Requests! { get }
 }
-
-//extension BaseCase {
-//    init(coreDataStack: CoreDataStack, network: Requests) {
-//        self.entityCase = EC.init(coreDataStack: coreDataStack)
-//        self.network = network
-//    }
-//}

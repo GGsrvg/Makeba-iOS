@@ -13,7 +13,7 @@ import API
 import Storage
 
 final class MServerCase: ServerCase {
-    var observable: Observable<ObjectState<Server>?> = .just(nil)
+    var objectState: BehaviorSubject<ObjectState<Server>?> = .init(value: nil)
     
     let entityCase: ServerEntityCase
     
@@ -38,6 +38,7 @@ final class MServerCase: ServerCase {
             let addStatus = self.entityCase.add(server: server)
             if addStatus.isSuccessfullyCompleted {
                 single(.success(true))
+                self.objectState.onNext(ObjectState.add(value: server))
             } else {
                 single(.error(MDError(typeError: .database, message: addStatus.message)))
             }
@@ -50,6 +51,7 @@ final class MServerCase: ServerCase {
             let addStatus = self.entityCase.delete(server: server)
             if addStatus.isSuccessfullyCompleted {
                 single(.success(addStatus.data))
+                self.objectState.onNext(ObjectState.delete(value: server))
             } else {
                 single(.error(MDError(typeError: .database, message: addStatus.message)))
             }
@@ -62,6 +64,7 @@ final class MServerCase: ServerCase {
             let status = self.entityCase.update(server: server)
             if status.isSuccessfullyCompleted {
                 single(.success(status.data))
+                self.objectState.onNext(ObjectState.update(value: server))
             } else {
                 single(.error(MDError(typeError: .database, message: status.message)))
             }

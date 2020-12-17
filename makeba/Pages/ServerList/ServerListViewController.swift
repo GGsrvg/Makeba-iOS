@@ -35,11 +35,6 @@ class ServerListViewController: BaseViewController<ServerListView, ServerListVie
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.updateData()
-    }
-    
     func setup() {
         tableViewAdapter.cellForRow = { [weak self] tableView, indexPath in
             guard let self = self else { return UITableViewCell() }

@@ -38,6 +38,7 @@
 		5B81EECB252449D00053D8E7 /* DError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81EECA252449D00053D8E7 /* DError.swift */; };
 		5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA1252D85F6007E6609 /* LoadingState.swift */; };
 		5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B939FA7252D8616007E6609 /* ErrorState.swift */; };
+		5BACDBCD2587C2A9009582B0 /* AddServerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BACDBCC2587C2A9009582B0 /* AddServerViewControllerDelegate.swift */; };
 		5BB99AF5257E8B5500128DCE /* DiagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB99AF3257E8B5500128DCE /* DiagramTableViewCell.swift */; };
 		5BB99AF6257E8B5500128DCE /* DiagramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB99AF4257E8B5500128DCE /* DiagramTableViewCell.xib */; };
 		5BBABE3724CDA01100C3A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE3624CDA01100C3A22C /* AppDelegate.swift */; };
@@ -307,6 +308,7 @@
 		5B81EECA252449D00053D8E7 /* DError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DError.swift; sourceTree = "<group>"; };
 		5B939FA1252D85F6007E6609 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
 		5B939FA7252D8616007E6609 /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
+		5BACDBCC2587C2A9009582B0 /* AddServerViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewControllerDelegate.swift; sourceTree = "<group>"; };
 		5BACE48F24FFE793003EB2BE /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		5BACE49424FFE817003EB2BE /* DBStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBStatus.swift; sourceTree = "<group>"; };
 		5BB99AF3257E8B5500128DCE /* DiagramTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramTableViewCell.swift; sourceTree = "<group>"; };
@@ -810,6 +812,7 @@
 				5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */,
 				5BCB7E9C24D88DBC00618676 /* AddServerView.swift */,
 				5B6206E62526DE55002B532D /* AddServerInitViewController.swift */,
+				5BACDBCC2587C2A9009582B0 /* AddServerViewControllerDelegate.swift */,
 			);
 			path = AddServer;
 			sourceTree = "<group>";
@@ -1663,6 +1666,7 @@
 				5BD4913E24D6936100BF0C8A /* AuthorizeViewController.swift in Sources */,
 				5BD4913824D6933900BF0C8A /* StatsViewController.swift in Sources */,
 				5B939FA8252D8616007E6609 /* ErrorState.swift in Sources */,
+				5BACDBCD2587C2A9009582B0 /* AddServerViewControllerDelegate.swift in Sources */,
 				5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */,
 				5BB99AF5257E8B5500128DCE /* DiagramTableViewCell.swift in Sources */,
 				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
@@ -2177,7 +2181,6 @@
 				DEVELOPMENT_TEAM = GUPNP9UD97;
 				INFOPLIST_FILE = makeba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2202,7 +2205,6 @@
 				DEVELOPMENT_TEAM = GUPNP9UD97;
 				INFOPLIST_FILE = makeba/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -19,6 +19,25 @@ class ServerListViewModel: BaseViewModel {
     required init() {
         super.init()
         servers.addSection(.init(header: "", rows: [], footer: ""))
+        loadData()
+//        data?.server.objectState.subscribe { event in
+//            switch event {
+//            case .next(let state):
+//                guard let state = state else { return }
+//                switch state.status {
+//                case .add:
+//                    self.servers.addRow(state.value, section: 0)
+//                case .update:
+//                    self.servers.updateRow(state.value, section: 0, at: 0) //(state.value, section: 0)
+//                case .delete:
+//                    self.servers.removeRow(section: 0, at: 0)
+//                }
+//            case .error(_):
+//                break
+//            case .completed:
+//                break
+//            }
+//        }.disposed(by: self.disposeBag)
     }
     
     override func retryLoad() {

@@ -19,8 +19,23 @@ public struct ObjectState<T> {
     public let status: Status
     public let value: T
     
-    init(status: Status, value: T) {
+    public init(status: Status, value: T) {
         self.status = status
         self.value = value
+    }
+}
+
+// just simple methods
+extension ObjectState {
+    public static func add(value: T) -> ObjectState {
+        return ObjectState(status: .add, value: value)
+    }
+    
+    public static func update(value: T) -> ObjectState {
+        return ObjectState(status: .update, value: value)
+    }
+    
+    public static func delete(value: T) -> ObjectState {
+        return ObjectState(status: .delete, value: value)
     }
 }
