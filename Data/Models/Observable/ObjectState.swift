@@ -26,16 +26,16 @@ public struct ObjectState<T> {
 }
 
 // just simple methods
-extension ObjectState {
-    public static func add(value: T) -> ObjectState {
+public extension ObjectState {
+    static func add(value: T) -> ObjectState {
         return ObjectState(status: .add, value: value)
     }
     
-    public static func update(value: T) -> ObjectState {
+    static func update(value: T) -> ObjectState {
         return ObjectState(status: .update, value: value)
     }
     
-    public static func delete(value: T) -> ObjectState {
+    static func delete(value: T) -> ObjectState {
         return ObjectState(status: .delete, value: value)
     }
 }

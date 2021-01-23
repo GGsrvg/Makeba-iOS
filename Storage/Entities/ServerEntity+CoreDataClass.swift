@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-import Data
+import DataModels
 
 class ServerEntity: NSManagedObject {
     convenience init(context: NSManagedObjectContext, model: Server) {

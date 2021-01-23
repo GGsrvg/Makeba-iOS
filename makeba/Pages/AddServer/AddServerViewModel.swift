@@ -8,6 +8,7 @@
 
 import Foundation
 import Data
+import DataModels
 import RxRelay
 import RxSwift
 

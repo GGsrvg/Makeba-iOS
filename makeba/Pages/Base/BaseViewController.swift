@@ -41,9 +41,9 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
     }
     
     // MARK: - life cycle
-    override func loadView() {
-        // init base view
-        self.view = UIView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
         self.view.backgroundColor = .systemBackground
         // configare contentView
         self.view.addSubview(contentView)
@@ -55,10 +55,7 @@ class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewControll
             contentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+        
         subscribeToObservable()
     }
     

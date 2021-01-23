@@ -16,6 +16,7 @@ public class NetworkError: Error {
         case url
         case jsonNotCorrect
         case convertToHTTPURLResponse
+        case unauthorized
         case custom
     }
     
@@ -38,6 +39,8 @@ public class NetworkError: Error {
             self.message = "URL not correct"
         case .jsonNotCorrect:
             self.message = "JSON not correct"
+        case .unauthorized:
+            self.message = "User unauthorized"
         case .convertToHTTPURLResponse:
             self.message = "Response is not HTTPURLResponse"
         case .custom:

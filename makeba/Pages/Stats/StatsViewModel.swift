@@ -10,6 +10,7 @@ import Foundation
 import RxRelay
 import RxSwift
 import Data
+import DataModels
 
 class StatsViewModel: BaseViewModel {
     

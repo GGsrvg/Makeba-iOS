@@ -56,29 +56,29 @@ struct DiogramItem {
             self.addSubview(label)
             label.text = $0.text
             label.sizeToFit()
-            
+
             let mediumPercent = ((endPercent - startPercent) / 2.0) + startPercent
             let angle: CGFloat = self.angle(percent: mediumPercent)
             let angleDegrees = abs(angle) * 180 / .pi
             let radiusForLabel = radius + 4
-            
+
             var x: CGFloat = (radiusForLabel * cos(angle)) + center.x
             var y: CGFloat = (radiusForLabel * sin(angle)) + center.y
-            
+
             let frame = label.frame
-            
+
             if angleDegrees >= 0 && angleDegrees < 90 {
             } else if angleDegrees >= 90 && angleDegrees < 180 {
                 x -= frame.width
             } else if angleDegrees >= 180 && angleDegrees < 270 {
                 x -= frame.width
                 y -= frame.height
-            } else {
+            } else { // 270 0
                 y -= frame.height
             }
-            
+
             label.frame.origin = .init(x: x, y: y)
-            
+
             startPercent = endPercent
         }
     }

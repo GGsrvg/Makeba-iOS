@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Data
+import DataModels
 
 struct AddServerInitViewController: BaseInitViewController {
     let server: Server

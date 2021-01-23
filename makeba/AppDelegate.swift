@@ -8,7 +8,6 @@
 
 import UIKit
 import Data
-import MakebaData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let data: DataLayer
     
     override init() {
-        self.data = MDataLayer()
+        self.data = DataLayer()
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

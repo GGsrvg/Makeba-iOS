@@ -7,8 +7,22 @@
 //
 
 import Foundation
+import API
+import Storage
 
-public protocol DataLayer: class {
-    var server: ServerCase { get }
-    var stat: StatCase { get }
+public class DataLayer {
+    private let api: Requests
+    private let db: CoreDataStack
+    
+    public let server: ServerCase
+    public let stat: StatCase
+    
+    public init() {
+        api = Requests()
+        db = CoreDataStack()
+        
+        server = ServerCase(entityCase: ServerEntityCase(coreDataStack: db))
+        stat = StatCase(api: api)
+    }
+    
 }

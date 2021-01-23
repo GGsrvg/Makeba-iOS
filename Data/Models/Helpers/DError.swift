@@ -13,15 +13,15 @@ public enum TypeError {
     case network(statusCode: Int)
 }
 
-public protocol DError: Error {
+public class DError: Error {
     
-    var typeError: TypeError { get }
+    public let typeError: TypeError
     
-    var message: String { get }
+    public let message: String
     
-//    init(typeError: TypeError, message: String)
-//    {
-//        self.typeError = typeError
-//        self.message = message
-//    }
+    internal init(typeError: TypeError, message: String) {
+        self.typeError = typeError
+        self.message = message
+    }
 }
+

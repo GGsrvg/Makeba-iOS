@@ -8,6 +8,7 @@
 
 import UIKit
 import Data
+import DataModels
 import RxSwift
 import LDS
 

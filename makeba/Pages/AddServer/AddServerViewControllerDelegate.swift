@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Data
+import DataModels
 
 protocol AddServerViewControllerDelegate: class {
     func addNewServer(_ addServerViewController: AddServerViewControllerDelegate)

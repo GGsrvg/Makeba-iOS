@@ -19,3 +19,15 @@ public class Server {
         self.dateCreated = dateCreated
     }
 }
+
+extension Server : Hashable {
+    public static func == (lhs: Server, rhs: Server) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(path)
+        hasher.combine(name)
+        hasher.combine(dateCreated)
+    }
+}
