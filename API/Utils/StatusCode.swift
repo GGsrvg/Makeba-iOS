@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal enum StatusCode: Int {
+public enum StatusCode: Int {
     // MARK: 1×× Informational
     case `continue`                         = 100
     case switchingProtocols                 = 101

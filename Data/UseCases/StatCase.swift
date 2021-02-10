@@ -27,10 +27,10 @@ public class StatCase: BaseCase {
                 return .error(correctError)
             })
             .map({ response -> [Stats] in
-                guard let data = response.data else {
-                    throw DError(typeError: .network(statusCode: response.statusCode), message: response.description)
-                }
-                return data.data
+//                guard let data = response.data else {
+//                    throw DError(typeError: .network(statusCode: response.statusCode), message: response.description)
+//                }
+                return response.data.data
             })
     }
 }

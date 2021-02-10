@@ -9,8 +9,8 @@
 import UIKit
 import RxSwift
 
-class BaseViewController<V : UIView, VM: BaseViewModel, D : BaseInitViewController>: UIViewController {
-    class func openIfCan(widthData data: D?) -> Self? {
+class BaseViewController<V : UIView, VM: BaseViewModel, I : BaseInitViewController>: UIViewController {
+    class func openIfCan(widthData data: I?) -> Self? {
         return nil
     }
     
