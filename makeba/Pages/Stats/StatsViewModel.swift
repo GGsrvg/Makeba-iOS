@@ -36,9 +36,18 @@ class StatsViewModel: BaseViewModel {
                         self.containers.accept(data)
                         self.contentState.accept(.content)
                     case .error(let error):
-                        if let queryError = error as? DError {
-                            self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
-                            self.contentState.accept(.dataEmpty)
+                        
+                        self.contentState.accept(.error(error))
+                        
+                        guard let cError = error as? CError else {
+                            return
+                        }
+                        
+                        switch cError.statusCode {
+                        case .unauthorized:
+                            self.alert.accept(.default(title: "Error", message: "hui"))
+                        default:
+                            break
                         }
                     }
                 }).disposed(by: disposeBag)

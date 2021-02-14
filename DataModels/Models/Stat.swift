@@ -16,6 +16,7 @@ public class Stat: Codable {
     }
     
     public let title: String?
+    
     public let text: Text?
     public let diagram: Diagram?
     

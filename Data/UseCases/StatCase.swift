@@ -21,16 +21,16 @@ public class StatCase: BaseCase {
     
     public func get(server: Server) -> Single<[Stats]> {
         return api.stats(server: server)
-            .catchError({ error in
-                guard let networkError = error as? NetworkError else { fatalError("Error is not equil type of the NetworkError") }
-                let correctError = DError(typeError: .network(statusCode: 0), message: networkError.message)
-                return .error(correctError)
-            })
             .map({ response -> [Stats] in
-//                guard let data = response.data else {
-//                    throw DError(typeError: .network(statusCode: response.statusCode), message: response.description)
-//                }
-                return response.data.data
+                switch response.statusCode {
+                case .ok:
+                    guard let stats = response.container.data else {
+                        throw CError.init(message: response.container.message)
+                    }
+                    return stats
+                default:
+                    throw CError.init(message: response.container.message, statusCode: response.statusCode)
+                }
             })
     }
 }

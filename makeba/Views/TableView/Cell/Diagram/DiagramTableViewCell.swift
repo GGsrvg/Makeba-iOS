@@ -25,11 +25,11 @@ class DiagramTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupData() {
-        diagramCircle.addItem(.init(text: "C++",     color: .systemYellow,   numberVotes: 10))
-        diagramCircle.addItem(.init(text: "C",       color: .systemGreen,    numberVotes: 40))
-        diagramCircle.addItem(.init(text: "C#",      color: .systemOrange,   numberVotes: 30))
-        diagramCircle.addItem(.init(text: "Java",    color: .systemPurple,   numberVotes: 20))
-        diagramCircle.addItem(.init(text: "Swift",   color: .systemPink,     numberVotes: 20))
-    }
+//    func setupData() {
+//        diagramCircle.addItem(.init(text: "C++",     color: .systemYellow,   numberVotes: 10))
+//        diagramCircle.addItem(.init(text: "C",       color: .systemGreen,    numberVotes: 40))
+//        diagramCircle.addItem(.init(text: "C#",      color: .systemOrange,   numberVotes: 30))
+//        diagramCircle.addItem(.init(text: "Java",    color: .systemPurple,   numberVotes: 20))
+//        diagramCircle.addItem(.init(text: "Swift",   color: .systemPink,     numberVotes: 20))
+//    }
 }

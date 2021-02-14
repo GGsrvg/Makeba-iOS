@@ -8,14 +8,10 @@
 
 import Foundation
 
-public struct AuthorizeResponse: BaseResponse {
-    public let message: String?
-    public let errorMessage: String?
+public struct AuthorizeResponse: Codable {
     public let token: String?
     
-    public init(message: String?, errorMessage: String?, token: String?) {
-        self.message = message
-        self.errorMessage = errorMessage
+    public init(token: String?) {
         self.token = token
     }
 }

@@ -28,8 +28,8 @@ class MButton: UIButton {
     private func setView() {
         self.layer.cornerRadius = 8
         self.layer.masksToBounds = true
-        self.adjustsImageSizeForAccessibilityContentSizeCategory = true
-        self.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+//        self.adjustsImageSizeForAccessibilityContentSizeCategory = true
+//        self.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         self.contentEdgeInsets = .init(top: 10, left: 14, bottom: 10, right: 14)
         
         self.backgroundColor = .systemBlue

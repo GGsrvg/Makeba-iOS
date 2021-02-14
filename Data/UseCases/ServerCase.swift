@@ -24,7 +24,7 @@ public class ServerCase: BaseCase {
         return .create(subscribe: { single in
             let serverEntities = self.entityCase.get()
             guard let serverEntity = serverEntities.data, serverEntities.isSuccessfullyCompleted else {
-                single(.error(DError(typeError: .database, message: serverEntities.message)))
+                single(.error(CError.init(message: serverEntities.message)))
                 return Disposables.create()
             }
             single(.success(serverEntity))
@@ -39,7 +39,7 @@ public class ServerCase: BaseCase {
                 single(.success(true))
                 self.objectState.onNext(ObjectState.add(value: server))
             } else {
-                single(.error(DError(typeError: .database, message: addStatus.message)))
+                single(.error(CError.init(message: addStatus.message)))
             }
             return Disposables.create()
         })
@@ -47,12 +47,12 @@ public class ServerCase: BaseCase {
     
     public func delete(_ server: Server) -> Single<Bool> {
         return .create(subscribe: { single in
-            let addStatus = self.entityCase.delete(server: server)
-            if addStatus.isSuccessfullyCompleted {
-                single(.success(addStatus.data))
+            let deleteStatus = self.entityCase.delete(server: server)
+            if deleteStatus.isSuccessfullyCompleted {
+                single(.success(deleteStatus.data))
                 self.objectState.onNext(ObjectState.delete(value: server))
             } else {
-                single(.error(DError(typeError: .database, message: addStatus.message)))
+                single(.error(CError.init(message: deleteStatus.message)))
             }
             return Disposables.create()
         })
@@ -65,7 +65,7 @@ public class ServerCase: BaseCase {
                 single(.success(status.data))
                 self.objectState.onNext(ObjectState.update(value: server))
             } else {
-                single(.error(DError(typeError: .database, message: status.message)))
+                single(.error(CError.init(message: status.message)))
             }
             return Disposables.create()
         })

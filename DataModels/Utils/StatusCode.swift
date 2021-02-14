@@ -1,6 +1,6 @@
 //
 //  StatusCode.swift
-//  API
+//  DataModels
 //
 //  Created by GGsrvg on 07.09.2020.
 //  Copyright © 2020 GGsrvg. All rights reserved.

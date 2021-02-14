@@ -21,7 +21,7 @@ class ServerListViewModel: BaseViewModel {
         super.init()
         servers.addSection(.init(header: "", rows: [], footer: ""))
         loadData()
-        data?.server.objectState
+        data!.server.objectState
             .observeOn(MainScheduler.instance)
             .subscribe { event in
                 switch event {

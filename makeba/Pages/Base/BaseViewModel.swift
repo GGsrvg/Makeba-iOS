@@ -18,7 +18,7 @@ class BaseViewModel {
     var contentState: BehaviorRelay<VCStates> = .init(value: .loading)
     // MARK: - for ViewModel
     let disposeBag: DisposeBag = DisposeBag()
-    weak var data: DataLayer?
+    weak var data: DataLayer!
     
     required init() {
         guard let data = (UIApplication.shared.delegate as? AppDelegate)?.data else { fatalError("AppDelegate not have Data attribute") }

@@ -9,14 +9,15 @@
 import Foundation
 import DataModels
 
-public struct StatsResponse: BaseResponse {
-    public let message: String?
-    public let errorMessage: String?
-    public let data: [Stats]
-    
-    public enum CodingKeys: String, CodingKey {
-        case message = "Message"
-        case errorMessage = "ErrorMessage"
-        case data = "Data"
-    }
-}
+
+public typealias StatsResponse = [Stats]
+
+//public struct StatsResponse: Codable {
+//    public let title: String?
+//    public let stats: [Stats]
+//
+//    public enum CodingKeys: String, CodingKey {
+//        case title = "Title"
+//        case stats = "Stats"
+//    }
+//}

@@ -25,7 +25,7 @@ class ErrorState: UIView {
     
     lazy var titleLabel: MLabel = {
         let label = MLabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title3)
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -80,9 +80,13 @@ class ErrorState: UIView {
         if self.withButton {
             stackView.addArrangedSubview(self.button)
         }
-            
+        
+        let widthMulti = stackView.widthAnchor.constraint(greaterThanOrEqualTo: self.widthAnchor, multiplier: 0.8)
+        widthMulti.priority = .defaultHigh
+        
         NSLayoutConstraint.activate([
-            stackView.widthAnchor.constraint(equalToConstant: 220),
+            widthMulti,
+            stackView.widthAnchor.constraint(lessThanOrEqualToConstant: 400),
             
             self.centerYAnchor.constraint(equalTo: stackView.centerYAnchor),
             self.centerXAnchor.constraint(equalTo: stackView.centerXAnchor),

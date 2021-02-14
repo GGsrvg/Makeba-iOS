@@ -7,20 +7,20 @@
 //
 
 import Foundation
+import DataModels
 
-
-public class NetworkResponse<D> {
+public class NetworkResponse<D : Codable> {
     
     public let statusCode: StatusCode
-    public let data: D
+    public let container: ContainerResponse<D>
     
-    init(statusCode: StatusCode, data: D) {
+    init(statusCode: StatusCode, container: ContainerResponse<D>) {
         self.statusCode = statusCode
-        self.data       = data
+        self.container  = container
     }
     
-    init(statusCode: Int, data: D) {
+    init(statusCode: Int, container: ContainerResponse<D>) {
         self.statusCode = StatusCode(rawValue: statusCode) ?? .badGateway
-        self.data       = data
+        self.container  = container
     }
 }

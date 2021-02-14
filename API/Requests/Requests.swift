@@ -18,7 +18,7 @@ public class Requests {
         return .create(subscribe: { single in
             // check url path
             guard let url = URL(string: server.path) else {
-                single(.error(NetworkError.urlNotCorrect))
+                single(.error(CError.urlNotCorrect))
                 return Disposables.create()
             }
             
@@ -33,24 +33,24 @@ public class Requests {
                 // if `response` it is not HTTPURLResponse type
                 // then return error about it
                 guard let response = response as? HTTPURLResponse else {
-                    single(.error(NetworkError.failedConvert(to: HTTPURLResponse.self)))
+                    single(.error(CError.failedConvert(to: HTTPURLResponse.self)))
                     return
                 }
                 
                 guard let data = data else {
-                    single(.error(NetworkError.objectDataNil))
+                    single(.error(CError.objectDataNil))
                     return
                 }
             
-                let statsResponseOrNil = try? JSONDecoder().decode(StatsResponse.self, from: data)
+                let statsResponseOrNil = try? JSONDecoder().decode(ContainerResponse<StatsResponse>.self, from: data)
                 guard let statsResponse = statsResponseOrNil else {
-                    single(.error(NetworkError.failedConvert(to: StatsResponse.self)))
+                    single(.error(CError.failedConvert(to: ContainerResponse<StatsResponse>.self)))
                     return
                 }
                 
                 let responseModel = NetworkResponse(
                     statusCode: response.statusCode,
-                    data: statsResponse
+                    container: statsResponse
                 )
                 
                 single(.success(responseModel))
@@ -65,7 +65,7 @@ public class Requests {
         return .create(subscribe: { single in
             // check url path
             guard let url = URL(string: urlPath) else {
-                single(.error(NetworkError.urlNotCorrect))
+                single(.error(CError.urlNotCorrect))
                 return Disposables.create()
             }
             
@@ -80,24 +80,24 @@ public class Requests {
                 // if `response` it is not HTTPURLResponse type
                 // then return error about it
                 guard let response = response as? HTTPURLResponse else {
-                    single(.error(NetworkError.failedConvert(to: HTTPURLResponse.self)))
+                    single(.error(CError.failedConvert(to: HTTPURLResponse.self)))
                     return
                 }
                 
                 guard let data = data else {
-                    single(.error(NetworkError.objectDataNil))
+                    single(.error(CError.objectDataNil))
                     return
                 }
             
-                let statsResponseOrNil = try? JSONDecoder().decode(AuthorizeResponse.self, from: data)
+                let statsResponseOrNil = try? JSONDecoder().decode(ContainerResponse<AuthorizeResponse>.self, from: data)
                 guard let statsResponse = statsResponseOrNil else {
-                    single(.error(NetworkError.failedConvert(to: AuthorizeResponse.self)))
+                    single(.error(CError.failedConvert(to: ContainerResponse<AuthorizeResponse>.self)))
                     return
                 }
                 
                 let responseModel = NetworkResponse(
                     statusCode: response.statusCode,
-                    data: statsResponse
+                    container: statsResponse
                 )
                 
                 single(.success(responseModel))

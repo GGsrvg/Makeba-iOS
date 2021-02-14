@@ -8,14 +8,8 @@
 
 import UIKit
 
-struct DiogramItem {
-    let text: String
-    let color: UIColor
-    let numberVotes: UInt
-}
-
 @IBDesignable class DiagramCircleView: UIView {
-    private var items: [DiogramItem] = []
+    private var items: [DiagramItem] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -99,7 +93,7 @@ struct DiogramItem {
         items = []
     }
     
-    func addItem(_ item: DiogramItem) {
+    func addItem(_ item: DiagramItem) {
         items.append(item)
         setNeedsDisplay()
     }

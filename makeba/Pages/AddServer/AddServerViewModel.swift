@@ -29,16 +29,16 @@ class AddServerViewModel: BaseViewModel {
         guard let hostPath = hostPath, !hostPath.isEmpty else { return emptyFieldAlert(message: "Host path is empty") }
         guard let hostName = hostName, !hostName.isEmpty else { return emptyFieldAlert(message: "Host name is empty") }
         
-        let request: Single<Bool>
+        let requestOnUpdateOrSave: Single<Bool>
             
         if let server = self.server {
             server.name = hostName
-            request = data.server.update(server)
+            requestOnUpdateOrSave = data.server.update(server)
         } else {
-            request = data.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
+            requestOnUpdateOrSave = data.server.save(.init(name: hostName, path: hostPath, dateCreated: .init()))
         }
             
-        request
+        requestOnUpdateOrSave
             .subscribeOn(SerialDispatchQueueScheduler(qos: .background))
             .observeOn(MainScheduler.instance)
             .subscribe({ single in
@@ -46,9 +46,10 @@ class AddServerViewModel: BaseViewModel {
                 case .success:
                     self.isNeedClosed.accept(true)
                 case .error(let error):
-                    if let queryError = error as? DError {
-                        self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
-                    }
+                    break
+//                    if let queryError = error as? DError {
+//                        self.alert.accept(.default(title: "Error", message: queryError.localizedDescription))
+//                    }
                 }
             }).disposed(by: disposeBag)
     }
