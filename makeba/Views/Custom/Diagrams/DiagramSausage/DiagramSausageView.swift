@@ -10,18 +10,39 @@ import UIKit
 
 @IBDesignable class DiagramSausageView: UIView {
     
+    private let typeCollectionViewCell = "\(TypeCollectionViewCell.self)"
+    
     private var items: [DiagramItem] = []
     
+    lazy var collectionViewLayout: UICollectionViewFlowLayout = {
+        let cvfl = UICollectionViewFlowLayout()
+        cvfl.scrollDirection = .horizontal
+        // TODO: dynamic width
+        cvfl.itemSize = .init(width: 150, height: 40)
+        return cvfl
+    }()
     
+    lazy var collectionView: UICollectionView = {
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
+        cv.showsHorizontalScrollIndicator = false
+        cv.backgroundColor = .clear
+        cv.delegate = self
+        cv.dataSource = self
+        cv.register(UINib(nibName: typeCollectionViewCell, bundle: .main), forCellWithReuseIdentifier: typeCollectionViewCell)
+        cv.translatesAutoresizingMaskIntoConstraints = false
+        return cv
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .clear
+        self.setupView()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         self.backgroundColor = .clear
+        self.setupView()
     }
     
     override func prepareForInterfaceBuilder() {
@@ -33,19 +54,14 @@ import UIKit
     }
     
     override func draw(_ rect: CGRect) {
-        self.subviews.forEach {
-            $0.removeFromSuperview()
-        }
-        
         let fullWidth = rect.width
-        let fullHeight = rect.height
+        let fullHeight = rect.height - 40
         var allNumberVotes: CGFloat = 0
         self.items.forEach {
             allNumberVotes += CGFloat($0.numberVotes)
         }
         
         var continueX: CGFloat = 0
-        
         
         items.forEach { item in
             let width = fullWidth * CGFloat(item.numberVotes) / allNumberVotes
@@ -54,7 +70,6 @@ import UIKit
             }
             
             let path = UIBezierPath(rect: .init(x: continueX, y: 0, width: width, height: fullHeight))
-            path.stroke()
             item.color.setFill()
             path.fill()
         }
@@ -62,10 +77,49 @@ import UIKit
     
     func clear() {
         items = []
+        collectionView.reloadData()
     }
     
     func addItem(_ item: DiagramItem) {
         items.append(item)
         setNeedsDisplay()
+        collectionView.reloadData()
     }
+    
+    private func setupView() {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(collectionView)
+        self.setupConstraints()
+    }
+    
+    private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            self.trailingAnchor.constraint(equalTo: collectionView.trailingAnchor),
+            self.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor),
+            
+            collectionView.heightAnchor.constraint(equalToConstant: 40),
+        ])
+    }
+}
+
+extension DiagramSausageView: UICollectionViewDelegate, UICollectionViewDataSource { //}, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let count = items.count
+        return count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = items[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: typeCollectionViewCell, for: indexPath) as! TypeCollectionViewCell
+        cell.typeColor.backgroundColor = item.color
+        cell.label.text = item.text
+        return cell
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: typeCollectionViewCell, for: indexPath) as! TypeCollectionViewCell
+//        let size = cell.systemLayoutSizeFitting(.init(width: 0, height: 40))
+//        return size
+//    }
 }

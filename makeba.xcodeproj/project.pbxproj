@@ -63,6 +63,8 @@
 		5BBABE5924CDA01200C3A22C /* makebaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABE5824CDA01200C3A22C /* makebaUITests.swift */; };
 		5BBD27E024FEC6420022994D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27DF24FEC6420022994D /* Binding.swift */; };
 		5BBD27E224FF57B90022994D /* UIMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBD27E124FF57B90022994D /* UIMTextField.swift */; };
+		5BC9EB2825DA2AAA007331FD /* TypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC9EB2625DA2AAA007331FD /* TypeCollectionViewCell.swift */; };
+		5BC9EB2925DA2AAA007331FD /* TypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC9EB2725DA2AAA007331FD /* TypeCollectionViewCell.xib */; };
 		5BCAE60F24D68FEA0002945B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCAE60E24D68FEA0002945B /* TabBarController.swift */; };
 		5BCB7E9B24D88DB100618676 /* AddServerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */; };
 		5BCB7E9D24D88DBC00618676 /* AddServerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCB7E9C24D88DBC00618676 /* AddServerView.swift */; };
@@ -286,6 +288,8 @@
 		5BBD27E124FF57B90022994D /* UIMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMTextField.swift; sourceTree = "<group>"; };
 		5BC29857250E6FFC0067A949 /* ServerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5BC29858250E6FFC0067A949 /* ServerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServerEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5BC9EB2625DA2AAA007331FD /* TypeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BC9EB2725DA2AAA007331FD /* TypeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeCollectionViewCell.xib; sourceTree = "<group>"; };
 		5BCAE60E24D68FEA0002945B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		5BCB7E9A24D88DB100618676 /* AddServerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewModel.swift; sourceTree = "<group>"; };
 		5BCB7E9C24D88DBC00618676 /* AddServerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerView.swift; sourceTree = "<group>"; };
@@ -730,6 +734,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5BC9EB2325DA2A73007331FD /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				5BC9EB2625DA2AAA007331FD /* TypeCollectionViewCell.swift */,
+				5BC9EB2725DA2AAA007331FD /* TypeCollectionViewCell.xib */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
 		5BCAE60624D68F750002945B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,6 +881,7 @@
 		5BD4913424D6930B00BF0C8A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				5BC9EB2325DA2A73007331FD /* Type */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1237,6 +1251,7 @@
 				5BB99AF6257E8B5500128DCE /* DiagramTableViewCell.xib in Resources */,
 				5BF9BAB525D832D700FC3E98 /* DiagramSausageTableViewCell.xib in Resources */,
 				5BDEE33624D45782000B5AF3 /* Localization.strings in Resources */,
+				5BC9EB2925DA2AAA007331FD /* TypeCollectionViewCell.xib in Resources */,
 				5BBABE4024CDA01200C3A22C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1528,6 +1543,7 @@
 				5BACDBCD2587C2A9009582B0 /* AddServerViewControllerDelegate.swift in Sources */,
 				5B58CD462538BA66007BEDD4 /* MLabel.swift in Sources */,
 				5BB99AF5257E8B5500128DCE /* DiagramTableViewCell.swift in Sources */,
+				5BC9EB2825DA2AAA007331FD /* TypeCollectionViewCell.swift in Sources */,
 				5B6206DD2526DD1D002B532D /* BaseInitViewController.swift in Sources */,
 				5B939FA2252D85F6007E6609 /* LoadingState.swift in Sources */,
 				5BD4914124D696DF00BF0C8A /* BaseViewController.swift in Sources */,
